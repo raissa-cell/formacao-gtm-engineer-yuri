@@ -1,0 +1,24 @@
+# segredos
+.env
+.env.*
+!.env.example
+
+# dados de leads (PII): nunca versionar
+**/leads/*.csv
+**/signals/**
+!**/signals/.gitkeep
+*.csv
+!automations/content-curation/perfis.csv
+Connections.csv
+engagement_ledger.json*
+processed.csv
+rounds.log
+**/output/
+
+# sistema
+.DS_Store
+__pycache__/
+*.pyc
+
+# mapa da sua conta Nuvia (IDs)
+.claude/skills/nuvia-crm/references/conta-nuvia.md

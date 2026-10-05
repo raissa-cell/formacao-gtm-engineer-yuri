@@ -1,0 +1,9 @@
+{
+  "_doc": "Pesos do engagement_score. Sinais de post (gatilho/comentou/like) contam UMA vez POR POST; flags de lead (conversou/comunidade/formacao) contam UMA vez no total. 'gatilho' e 'comentou' são exclusivos: quem comentou a palavra-gatilho leva 3, não 3+5.",
+  "formacao": 50,
+  "comunidade": 15,
+  "conversou": 10,
+  "comentou": 5,
+  "gatilho": 3,
+  "like": 1
+}

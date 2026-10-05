@@ -1,0 +1,1386 @@
+{
+ "fonte": "Templates de ganchos.txt (curadoria o usuário, ago/2026)",
+ "total": 79,
+ "hooks": [
+  {
+   "id": 1,
+   "titulo": "Justin Welsh: The Escape",
+   "slots": {
+    "Situação Desafiadora": "Escapei do trabalho exaustivo",
+    "Período de Tempo": "2,5 anos atrás",
+    "Abordagem Contraintuitiva": "Meu segredo é ter menos ambição"
+   },
+   "exemplo": "Eu escapei do trabalho exaustivo 2,5 anos atrás. Meu segredo? Menos ambição.",
+   "chars": 79,
+   "porque_funciona": "Essa estrutura usa uma situação comum e desafiadora como ponto de partida, seguida por um tempo específico, destacando uma abordagem surpreendente como solução vencedora.",
+   "tags": [
+    "Inspiração",
+    "Transformação",
+    "Aprendizado"
+   ]
+  },
+  {
+   "id": 2,
+   "titulo": "Nicolas Cole: 7 Lessons To Success",
+   "slots": {
+    "Situação Inicial": "Quando me formei na faculdade, me mudei para um pequeno apartamento.",
+    "Período de Tempo": "8 anos depois",
+    "Situação Atual": "Me mudei para meu apartamento dos sonhos na praia",
+    "Tipo de Conteúdo": "7 lições difíceis",
+    "Resultado Desejável": "sucesso"
+   },
+   "exemplo": "Quando me formei na faculdade, me mudei para um pequeno apartamento. Oito anos depois, conquistei meu apartamento dos sonhos na praia. Aqui estão 7 lições difíceis que aprendi ao longo do caminho para alcançar o sucesso.",
+   "chars": 213,
+   "porque_funciona": "Essa estrutura destaca uma transição pessoal significativa de uma situação desconfortável para uma mais desejável, compartilhando lições práticas e emocionais.",
+   "tags": [
+    "Inspiração",
+    "Lições",
+    "Transformação"
+   ]
+  },
+  {
+   "id": 3,
+   "titulo": "Brianna Doe: The (Nearly) Dream Job",
+   "slots": {
+    "Posição/Projeto": "Emprego dos sonhos",
+    "Ponto de Virada": "Na entrevista final, percebi que não era o que parecia",
+    "Tempo Curto": "30 minutos",
+    "Experiências Negativas": "O CEO criticou meu histórico profissional, desmereceu minhas perguntas e falou mal da própria equipe"
+   },
+   "exemplo": "Pensei que havia encontrado o emprego dos sonhos. Até que, na entrevista final, o CEO criticou meu histórico, desmereceu minhas perguntas e falou mal da própria equipe. Tudo isso em 30 minutos.",
+   "chars": 206,
+   "porque_funciona": "Começa com uma expectativa elevada que é rapidamente frustrada, criando uma narrativa de decepção que engaja o leitor.",
+   "tags": [
+    "Decepção",
+    "Autenticidade",
+    "Narrativa"
+   ]
+  },
+  {
+   "id": 4,
+   "titulo": "Lara Acosta: The Unconventional Hire",
+   "slots": {
+    "Período de Tempo": "Um ano atrás",
+    "Ação Inconvencional": "Contratei alguém da seção de comentários",
+    "Ações Esperadas 1 e 2": "Não pedi um currículo nem fiz entrevista",
+    "Resultado Desejável": "Hoje ele comanda uma agência e viaja pelo mundo"
+   },
+   "exemplo": "Um ano atrás, contratei alguém da seção de comentários. Nunca pedi um currículo ou fiz entrevista. Hoje, ele comanda uma agência e viaja pelo mundo.",
+   "chars": 163,
+   "porque_funciona": "Essa estrutura subverte expectativas ao destacar uma decisão pouco convencional que leva a um grande resultado.",
+   "tags": [
+    "Inovação",
+    "Resultados",
+    "Surpresa"
+   ]
+  },
+  {
+   "id": 5,
+   "titulo": "Pierre Herubel: From Struggle To Success",
+   "slots": {
+    "Empresa/Produto": "Minha startup",
+    "Valor Impressionante": "Hoje vale mais de US$ 10 milhões",
+    "Ano de Início": "2015",
+    "Dificuldade Inicial": "Eu dormia no sofá de amigos e vivia com menos de US$ 100 por semana"
+   },
+   "exemplo": "Hoje, minha startup vale mais de US$ 10 milhões. Mas em 2015, eu dormia no sofá de amigos e vivia com menos de US$ 100 por semana.",
+   "chars": 139,
+   "porque_funciona": "Essa estrutura combina marcos impressionantes com desafios iniciais, criando uma narrativa inspiradora e autêntica.",
+   "tags": [
+    "Inspiração",
+    "Transformação",
+    "Superação"
+   ]
+  },
+  {
+   "id": 6,
+   "titulo": "Nick Broekema: Something Was Off",
+   "slots": {
+    "Falta de Experiência Convencional": "Nunca fui empregado",
+    "Projeto": "Iniciei meu primeiro negócio",
+    "Idade": "23 anos",
+    "Contexto": "Ainda estava na faculdade e não sabia o que estava fazendo",
+    "Resultado Alcançado": "Cresci para uma agência com 10 pessoas"
+   },
+   "exemplo": "Nunca fui empregado. Aos 23 anos, ainda na faculdade, iniciei meu primeiro negócio sem saber o que estava fazendo. Cresci para uma agência com 10 pessoas.",
+   "chars": 179,
+   "porque_funciona": "Essa estrutura utiliza a falta de experiência como ponto de partida, criando curiosidade e destacando resiliência.",
+   "tags": [
+    "Resiliência",
+    "Surpresa",
+    "Autenticidade"
+   ]
+  },
+  {
+   "id": 7,
+   "titulo": "Sahil Bloom: The Life-Changing Lesson",
+   "slots": {
+    "Período de Tempo": "Ontem à noite",
+    "Figura Conhecida": "Gary Vaynerchuk",
+    "Resultado Desejável": "incrível longevidade na carreira como empreendedor e criador",
+    "Desafio Associado": "prosperar nos negócios por longos períodos, enquanto outros desaparecem"
+   },
+   "exemplo": "Ontem à noite, conversei com Gary Vaynerchuk. Uma lição que me surpreendeu: ele conseguiu incrível longevidade em sua carreira como empreendedor e criador. Discutimos como prosperar nos negócios por longos períodos enquanto outros desaparecem. A resposta dele foi: ...",
+   "chars": 267,
+   "porque_funciona": "Essa estrutura utiliza a conexão com uma figura reconhecida para atrair atenção e credibilidade. Ao introduzir uma lição impactante aprendida, seguida por uma reflexão sobre desafios e resultados, cria um gancho poderoso que promete insights valiosos ao público.",
+   "tags": [
+    "Lições",
+    "Credibilidade",
+    "Conexão"
+   ]
+  },
+  {
+   "id": 8,
+   "titulo": "Eddie Shleyner: Best Laid Plans",
+   "slots": {
+    "Evento Notável": "Não fui contratado pela HubSpot",
+    "Pessoa": "Minha irmã",
+    "Pergunta": "Como foi?",
+    "Resposta": "Eu estraguei tudo."
+   },
+   "exemplo": "\"Não fui contratado pela HubSpot\", eu disse. \"Minha irmã perguntou: 'Como foi?'. Respondi: 'Eu estraguei tudo.'\"",
+   "chars": 124,
+   "porque_funciona": "Essa estrutura se baseia em uma situação marcante e pessoal, introduzida com um toque de vulnerabilidade e humor. O diálogo curto e direto estabelece conexão emocional e autenticidade.",
+   "tags": [
+    "Autenticidade",
+    "Vulnerabilidade",
+    "Humor"
+   ]
+  },
+  {
+   "id": 9,
+   "titulo": "Grace Beverley: Tumultuous Tale",
+   "slots": {
+    "Indivíduo/Empresa": "Will Ahmed",
+    "Contexto": "Era um estudante de 22 anos com uma ideia genial para um monitor de saúde",
+    "Marcos Alcançados": "Construiu a WHOOP, um negócio bilionário que compete com Apple e Nike",
+    "Reviravolta": "Mas a jornada foi tudo, menos direta"
+   },
+   "exemplo": "Will Ahmed era um estudante de 22 anos com uma ideia genial para um monitor de saúde. Alguns anos depois, ele construiu a WHOOP, um negócio bilionário que compete com Apple e Nike. Mas a jornada foi tudo, menos direta.",
+   "chars": 223,
+   "porque_funciona": "Essa estrutura cria um enredo aspiracional e envolvente ao apresentar um personagem que supera desafios, gerando curiosidade e conexão com a audiência.",
+   "tags": [
+    "Inspiração",
+    "Complexidade",
+    "Autenticidade"
+   ]
+  },
+  {
+   "id": 10,
+   "titulo": "Tim Ferriss: Anything But Straightforward",
+   "slots": {
+    "Produto/Serviço": "The 4-Hour Workweek",
+    "Obstáculo Inicial": "Foi rejeitado por 26 de 27 editoras",
+    "Contexto": "O presidente de uma potencial parceira de marketing afirmou que não seria um sucesso mainstream"
+   },
+   "exemplo": "O livro 'The 4-Hour Workweek' foi rejeitado por 26 de 27 editoras. Depois de vendido, o presidente de uma potencial parceira de marketing enviou estatísticas históricas de best-sellers dizendo que não seria um sucesso mainstream.",
+   "chars": 238,
+   "porque_funciona": "Essa estrutura captura a atenção ao destacar rejeições significativas, gerando curiosidade sobre como os desafios foram superados.",
+   "tags": [
+    "Superação",
+    "Curiosidade",
+    "Desafios"
+   ]
+  },
+  {
+   "id": 11,
+   "titulo": "Beatrice Vladut: More in Store",
+   "slots": {
+    "Ano": "2020",
+    "Evento Significativo": "Consegui um estágio em Barcelona",
+    "Reflexão": "Achei que fosse minha maior conquista até agora"
+   },
+   "exemplo": "Em 2020, consegui um estágio em Barcelona. Achei que fosse minha maior conquista até agora.",
+   "chars": 86,
+   "porque_funciona": "Essa estrutura utiliza um marco significativo como ponto de partida, seguido de uma reflexão intrigante que sugere uma evolução na narrativa.",
+   "tags": [
+    "Transformação",
+    "Reflexão",
+    "Conquista"
+   ]
+  },
+  {
+   "id": 12,
+   "titulo": "Richard Moore: Contrarian Approach",
+   "slots": {
+    "Abordagem Contrária": "Venda a emoção, não o dispositivo",
+    "Exemplo Surpreendente": "Quando promovi minhas academias de taekwondo, nunca postei uma única foto de alguém chutando"
+   },
+   "exemplo": "\"Venda a emoção, não o dispositivo.\" Quando promovi minhas academias de taekwondo, nunca postei uma única foto de alguém chutando.",
+   "chars": 146,
+   "porque_funciona": "Essa estrutura apresenta uma ideia provocativa seguida de um exemplo concreto, gerando curiosidade e incentivando a reflexão.",
+   "tags": [
+    "Provocativo",
+    "Inovação",
+    "Curiosidade"
+   ]
+  },
+  {
+   "id": 13,
+   "titulo": "Jennifer Welsh: Transformative Insight",
+   "slots": {
+    "Período de Tempo": "35 anos",
+    "Realização": "Apreciar segurança financeira mais do que símbolos de status",
+    "Insight Transformador": "O mundo material é uma armadilha pegajosa, e isso me mantinha pobre"
+   },
+   "exemplo": "Levou-me 35 anos para apreciar segurança financeira mais do que símbolos de status. O mundo material é uma armadilha pegajosa, e isso me mantinha pobre.",
+   "chars": 168,
+   "porque_funciona": "Essa estrutura destaca um insight transformador adquirido ao longo de um período significativo, conectando-se emocionalmente com o público.",
+   "tags": [
+    "Reflexão",
+    "Transformação",
+    "Autenticidade"
+   ]
+  },
+  {
+   "id": 14,
+   "titulo": "Vedika Bhaia: A Challenging Time",
+   "slots": {
+    "Período": "2020",
+    "Impacto Emocional": "Estava confusa e perdida",
+    "Desafio Específico": "Não sabia o que queria fazer da vida",
+    "Ação": "Enviei e-mails para 12 fundadores pedindo conselhos",
+    "Resultado Inicial": "Apenas 2 responderam"
+   },
+   "exemplo": "2020 foi um dos momentos mais desafiadores da minha vida. Eu estava confusa e perdida, sem saber o que queria fazer. Enviei e-mails para 12 fundadores pedindo conselhos, e apenas 2 responderam.",
+   "chars": 203,
+   "porque_funciona": "Essa estrutura cria uma narrativa vulnerável e autêntica que ressoa com a audiência ao abordar momentos de dificuldade e ações para superá-los.",
+   "tags": [
+    "Vulnerabilidade",
+    "Ação",
+    "Inspiração"
+   ]
+  },
+  {
+   "id": 15,
+   "titulo": "Dakota Robertson: Decisive Actions",
+   "slots": {
+    "Período de Tempo": "3 anos atrás",
+    "Decisão de Vida": "Tomei a maior decisão da minha vida",
+    "Ação Inicial": "Saí do meu 2º ano de faculdade",
+    "Ação Secundária": "Pedi demissão do meu emprego na Domino's",
+    "Ação Terciária": "Criei uma nova conta no Twitter"
+   },
+   "exemplo": "Três anos atrás, tomei a maior decisão da minha vida. Saí do meu 2º ano de faculdade, pedi demissão do meu emprego na Domino's e criei uma nova conta no Twitter.",
+   "chars": 175,
+   "porque_funciona": "Essa estrutura destaca decisões ousadas e sequenciais, criando curiosidade sobre os motivos e resultados dessas escolhas.",
+   "tags": [
+    "Decisão",
+    "Coragem",
+    "Curiosidade"
+   ]
+  },
+  {
+   "id": 16,
+   "titulo": "Ehlimana Kurgas: The Gamechanger",
+   "slots": {
+    "Pessoa/Influência": "Este homem",
+    "Impacto": "Mudou minha vida",
+    "Oportunidade": "E agora ele me contratou",
+    "Reflexão Pessoal": "Não é de surpreender que eu esteja tão chocado quanto você!"
+   },
+   "exemplo": "Este homem mudou minha vida. E agora ele me contratou. (Não é de surpreender que eu esteja tão chocado quanto você!) Aqui está o que aconteceu:",
+   "chars": 149,
+   "porque_funciona": "Esse gancho aproveita a gratidão e a conexão emocional com um mentor ou figura influente para criar impacto. A revelação de uma oportunidade inesperada gera surpresa e curiosidade.",
+   "tags": [
+    "Gratidão",
+    "Conexão",
+    "Curiosidade"
+   ]
+  },
+  {
+   "id": 17,
+   "titulo": "Alex Merry: A Gift Gone Wrong?",
+   "slots": {
+    "Período de Tempo": "Este ano",
+    "Indivíduo": "Olivia Newton",
+    "Presente": "Um calendário do advento Tony's Chocolonely",
+    "Evento Inesperado": "Quando ela abriu o dia 8, o slot estava vazio"
+   },
+   "exemplo": "Este ano, dei para Olivia Newton um calendário do advento Tony's Chocolonely, mas quando ela abriu o dia 8, o slot estava vazio. Curiosamente...",
+   "chars": 147,
+   "porque_funciona": "Esse formato mistura humor e surpresa para cativar a audiência. A menção de um presente incomum, seguida por um incidente inesperado, mantém a atenção e sugere uma conclusão curiosa.",
+   "tags": [
+    "Humor",
+    "Surpresa",
+    "História Compartilhável"
+   ]
+  },
+  {
+   "id": 18,
+   "titulo": "Nathan Baugh: Meet This Impressive Individual",
+   "slots": {
+    "Indivíduo Único": "Um empreendedor incrível disfarçado de autor de fantasia",
+    "Conquista Extraordinária": "Arrecadou US$ 41 milhões no Kickstarter em 2 semanas para uma edição limitada de 4 livros",
+    "Habilidades/Características-Chave": "Escrita fenomenal e construção de um império silencioso"
+   },
+   "exemplo": "Conheça um empreendedor incrível disfarçado de autor de fantasia: arrecadou US$ 41 milhões no Kickstarter em 2 semanas para uma edição limitada de 4 livros. Como ele fez isso? Uma mistura de escrita fenomenal e construção de um império silencioso.",
+   "chars": 232,
+   "porque_funciona": "Essa estrutura gera curiosidade ao introduzir um personagem extraordinário com uma conquista impressionante, destacando traços ou habilidades-chave como pontos de aprendizado.",
+   "tags": [
+    "Inspirador",
+    "Curiosidade",
+    "História de Sucesso"
+   ]
+  },
+  {
+   "id": 19,
+   "titulo": "Nicolas Cole: Hard-Won Lessons",
+   "slots": {
+    "Ação Anterior": "Formei-me na faculdade",
+    "Início Humilde": "Mudei-me para um pequeno apartamento",
+    "Período de Tempo": "8 anos depois",
+    "Marco Importante": "Mudei-me para meu apartamento dos sonhos na praia",
+    "Lições": "7 lições difíceis que aprendi na jornada para o sucesso"
+   },
+   "exemplo": "Quando me formei na faculdade, mudei-me para um pequeno apartamento. Oito anos depois, conquistei meu apartamento dos sonhos na praia. Aqui estão 7 lições difíceis que aprendi na jornada para o sucesso.",
+   "chars": 207,
+   "porque_funciona": "Essa estrutura destaca o progresso de uma situação inicial modesta para uma realização impressionante, cativando a audiência com um contraste aspiracional.",
+   "tags": [
+    "Aspiracional",
+    "Lições",
+    "Transformação"
+   ]
+  },
+  {
+   "id": 20,
+   "titulo": "Katelyn Bourgoin: The Work Involved",
+   "slots": {
+    "Ação Significativa": "Trabalhei cerca de 10 horas por dia",
+    "Período de Tempo": "Nos últimos 4 meses",
+    "Projeto": "Construir PAINKILLER, meu novo curso de mensagens",
+    "Restrição Pessoal": "Isso é especialmente difícil sendo mãe de uma criança pequena"
+   },
+   "exemplo": "Trabalhei cerca de 10 horas por dia nos últimos 4 meses para construir PAINKILLER, meu novo curso de mensagens. Isso é especialmente difícil sendo mãe de uma criança pequena.",
+   "chars": 172,
+   "porque_funciona": "Essa estrutura enfatiza o esforço necessário para alcançar um objetivo, tornando a mensagem mais relacionável ao introduzir um obstáculo pessoal ou responsabilidade.",
+   "tags": [
+    "Empatia",
+    "Esforço",
+    "Determinação"
+   ]
+  },
+  {
+   "id": 21,
+   "titulo": "Dickie Bush: The Addiction",
+   "slots": {
+    "Hábito Relacionável": "Planejar",
+    "Impacto Negativo": "Meu cérebro adorava a dopamina barata de reunir informações"
+   },
+   "exemplo": "Eu costumava ter uma obsessão nada saudável por planejar. Meu cérebro adorava a dopamina barata de reunir informações, até que descobri: ...",
+   "chars": 144,
+   "porque_funciona": "Esse formato cria conexão ao admitir uma fraqueza ou hábito negativo comum, sugerindo que a solução será apresentada. Gera curiosidade e ressonância emocional.",
+   "tags": [
+    "Vulnerabilidade",
+    "Curiosidade",
+    "Conexão"
+   ]
+  },
+  {
+   "id": 22,
+   "titulo": "Lara Acosta: Hack to the Top",
+   "slots": {
+    "Caminho Inconvencional": "Hackeei meu caminho até o top 1%",
+    "Insight Prático": "Essa dica simples mudou minha vida"
+   },
+   "exemplo": "Como hackeei meu caminho até o top 1%: Essa dica simples mudou minha vida.",
+   "chars": 78,
+   "porque_funciona": "Apresenta uma abordagem prática e surpreendente para atingir grandes resultados, engajando a audiência com uma promessa de aprendizado valioso.",
+   "tags": [
+    "Aprendizado",
+    "Inovação",
+    "Engajamento"
+   ]
+  },
+  {
+   "id": 23,
+   "titulo": "Tasleem Ahmad Fateh: Never Again",
+   "slots": {
+    "Prática Tradicional": "Escrever um currículo",
+    "Resultado Negativo": "Ninguém se importa com minhas qualificações"
+   },
+   "exemplo": "Cansei de escrever currículos. Toda vez que faço isso, percebo que ninguém se importa com minhas qualificações.",
+   "chars": 118,
+   "porque_funciona": "Ao desafiar uma prática amplamente aceita, essa estrutura chama a atenção e sugere uma solução alternativa, atraindo leitores insatisfeitos com o status quo.",
+   "tags": [
+    "Provocativo",
+    "Mudança",
+    "Reflexão"
+   ]
+  },
+  {
+   "id": 24,
+   "titulo": "Charles Miller: It’s Not About X, It’s About Y",
+   "slots": {
+    "Crença Comum": "Escrever não é sobre gramática e ortografia",
+    "Propósito Mais Profundo": "É sobre transferir energia e ideias para outra pessoa"
+   },
+   "exemplo": "Escrever não é sobre gramática e ortografia. É sobre transferir energia e ideias para outra pessoa.",
+   "chars": 108,
+   "porque_funciona": "Desafia crenças comuns e apresenta um significado mais profundo, incentivando o público a reconsiderar suas suposições.",
+   "tags": [
+    "Reflexão",
+    "Profundidade",
+    "Provocativo"
+   ]
+  },
+  {
+   "id": 25,
+   "titulo": "Leila Hormozi: I Just Knew",
+   "slots": {
+    "Resultado Negativo Dramático": "Eu ia perder milhões de dólares",
+    "Evento Disparador": "No momento em que ouvi ele dizer isso"
+   },
+   "exemplo": "Eu sabia que ia perder milhões de dólares no momento em que ouvi ele dizer isso.",
+   "chars": 88,
+   "porque_funciona": "O tom dramático e direto capta a atenção, enquanto a revelação do evento crítico gera suspense e curiosidade sobre o desfecho.",
+   "tags": [
+    "Dramático",
+    "Suspense",
+    "Curiosidade"
+   ]
+  },
+  {
+   "id": 26,
+   "titulo": "Taylin John Simmonds: Hard-Won Lessons",
+   "slots": {
+    "Investimento Significativo": "7000 horas, 4 anos e 300 livros",
+    "Lições": "11 lições"
+   },
+   "exemplo": "Levei 7000 horas, 4 anos e 300 livros para aprender essas 11 lições.",
+   "chars": 73,
+   "porque_funciona": "Esse formato enfatiza o esforço extraordinário necessário para adquirir conhecimento ou habilidades, criando expectativa sobre as lições valiosas.",
+   "tags": [
+    "Esforço",
+    "Credibilidade",
+    "Curiosidade"
+   ]
+  },
+  {
+   "id": 27,
+   "titulo": "Chase Dimond: How To (Really) Do It",
+   "slots": {
+    "Profissionais da Indústria": "Todos",
+    "Ferramenta Popular": "ChatGPT",
+    "Pequeno Percentual": "Apenas 0,01% sabem usá-lo corretamente",
+    "Dicas": "5 prompts que você pode usar para aumentar 10x os resultados de redação de e-mails"
+   },
+   "exemplo": "Todos conhecem o ChatGPT, mas apenas 0,01% sabem usá-lo corretamente. Aqui estão 5 prompts que você pode usar para aumentar 10x os resultados de redação de e-mails.",
+   "chars": 183,
+   "porque_funciona": "Esse modelo usa autoridade e exclusividade para capturar atenção, prometendo dicas práticas e aplicáveis que podem oferecer uma vantagem significativa.",
+   "tags": [
+    "Autoridade",
+    "Praticidade",
+    "Exclusividade"
+   ]
+  },
+  {
+   "id": 28,
+   "titulo": "Dr. Christian Poensgen: A Superior Method",
+   "slots": {
+    "Crença Comum": "Listas de tarefas",
+    "Consequência Negativa": "Matam sua produtividade",
+    "Método Notável": "O método 'Harvard'",
+    "Figuras Renomadas": "Bill Gates e Elon Musk"
+   },
+   "exemplo": "Listas de tarefas matam sua produtividade. Aqui está o método 'Harvard' que Bill Gates e Elon Musk usam para ser mais produtivos.",
+   "chars": 133,
+   "porque_funciona": "Desafia uma prática convencional e introduz uma solução usada por figuras renomadas, atraindo leitores com uma promessa de maior eficácia e inovação.",
+   "tags": [
+    "Inovação",
+    "Produtividade",
+    "Autoridade"
+   ]
+  },
+  {
+   "id": 29,
+   "titulo": "Kieran Flanagan: My Takeaways",
+   "slots": {
+    "Empresa/Organização": "Zapier",
+    "Aprendizados": "3 aprendizados que adicionei ao meu swipe file durante minha jornada na Zapier"
+   },
+   "exemplo": "Tive uma ótima experiência trabalhando na Zapier. Aqui estão 3 aprendizados que adicionei ao meu swipe file durante minha jornada.",
+   "chars": 143,
+   "porque_funciona": "Essa estrutura é ideal para reflexões após uma experiência significativa, destacando lições aprendidas que podem ser úteis ou inspiradoras para outros.",
+   "tags": [
+    "Reflexão",
+    "Aprendizado",
+    "Inspiração"
+   ]
+  },
+  {
+   "id": 30,
+   "titulo": "Codie A. Sanchez: Impactful Advice",
+   "slots": {
+    "Hábito Incomum": "Acordar às 5:45 da manhã",
+    "Impacto Alto": "resolve 99,9% dos problemas diários",
+    "Hábitos Adicionais": "12 outros hábitos absurdamente simples para mudar sua vida"
+   },
+   "exemplo": "Acordar às 5:45 da manhã resolve 99,9% dos problemas diários. Aqui estão 12 outros hábitos absurdamente simples para mudar sua vida.",
+   "chars": 150,
+   "porque_funciona": "Essa estrutura atrai leitores ao apresentar uma solução simples e poderosa para problemas cotidianos, seguida de dicas práticas que reforçam o valor do conteúdo.",
+   "tags": [
+    "Praticidade",
+    "Soluções Simples",
+    "Engajamento"
+   ]
+  },
+  {
+   "id": 31,
+   "titulo": "Nicolas Cole: Simple Steps",
+   "slots": {
+    "Passos": "5 passos extremamente simples",
+    "Resultado Impressionante": "escrever um livro de 60.000 palavras em 30 dias",
+    "Obstáculo Comum": "mesmo que você nunca tenha escrito um livro antes",
+    "Contexto": "Levei 4 anos para escrever meu primeiro livro"
+   },
+   "exemplo": "5 passos extremamente simples para escrever um livro de 60.000 palavras em 30 dias — mesmo que você nunca tenha escrito um livro antes. Para contexto: levei 4 anos para escrever meu primeiro livro.",
+   "chars": 195,
+   "porque_funciona": "Esse gancho combina uma promessa ambiciosa com um contexto que humaniza o autor, tornando o objetivo mais acessível e inspirador para os leitores.",
+   "tags": [
+    "Praticidade",
+    "Motivação",
+    "Aprendizado"
+   ]
+  },
+  {
+   "id": 32,
+   "titulo": "Amanda Natividad: Industry Issues",
+   "slots": {
+    "Indústria/Profissão": "marketing",
+    "Problema Específico": "As plataformas estão monopolizando o tráfego",
+    "Estatística Impactante": "Dois terços das buscas no Google terminam sem clique"
+   },
+   "exemplo": "3 grandes problemas que estamos enfrentando no marketing hoje: As plataformas estão monopolizando o tráfego → Dois terços das buscas no Google terminam sem clique.",
+   "chars": 172,
+   "porque_funciona": "Essa estrutura destaca desafios significativos na indústria, usando estatísticas ou fatos impactantes para capturar a atenção e estimular a curiosidade do leitor.",
+   "tags": [
+    "Estatísticas",
+    "Desafios da Indústria",
+    "Curiosidade"
+   ]
+  },
+  {
+   "id": 33,
+   "titulo": "Jess Cook: Enlightening Enquiry",
+   "slots": {
+    "Perguntas": "6 perguntas",
+    "Resultado Desejado": "você tem uma estratégia de conteúdo",
+    "Primeira Pergunta": "Para quem você está criando conteúdo? (Público)"
+   },
+   "exemplo": "Se você pode responder a essas 6 perguntas, você tem uma estratégia de conteúdo. Para quem você está criando conteúdo? (Público)",
+   "chars": 137,
+   "porque_funciona": "Essa estrutura convida o leitor a refletir sobre questões importantes que levam a um resultado desejado, criando engajamento ao fornecer clareza e orientação.",
+   "tags": [
+    "Reflexão",
+    "Clareza",
+    "Engajamento"
+   ]
+  },
+  {
+   "id": 34,
+   "titulo": "Matt Barker: Time-Saving Process",
+   "slots": {
+    "Economia de Tempo": "10 meses",
+    "Habilidade": "LinkedIn",
+    "Processo": "processo de escrita em 3 etapas",
+    "Métrica Impressionante": "Escrevi mais de 5.000 posts usando isso"
+   },
+   "exemplo": "Para economizar 10 meses aprendendo LinkedIn, aqui está meu processo de escrita em 3 etapas (Escrevi mais de 5.000 posts usando isso).",
+   "chars": 132,
+   "porque_funciona": "Essa estrutura oferece uma solução eficiente para economizar tempo enquanto alcança resultados impressionantes, criando urgência e incentivando o leitor a explorar o método compartilhado.",
+   "tags": [
+    "Eficiência",
+    "Urgência",
+    "Praticidade"
+   ]
+  },
+  {
+   "id": 35,
+   "titulo": "Jay Acunzo: X is a Euphemism for Y",
+   "slots": {
+    "Declaração Comum": "Estamos contratando um Head de Marketing",
+    "Realidade Cínica": "Queremos que você faça o trabalho de um CMO pelo salário de um gerente"
+   },
+   "exemplo": "\"Estamos contratando um Head de Marketing\" geralmente significa \"Queremos que você faça o trabalho de um CMO pelo salário de um gerente.\"",
+   "chars": 136,
+   "porque_funciona": "Essa estrutura utiliza humor ou sarcasmo para desafiar expectativas e revelar uma verdade subjacente, gerando um efeito de identificação ou reflexão crítica.",
+   "tags": [
+    "Humor",
+    "Sarcasmo",
+    "Reflexão"
+   ]
+  },
+  {
+   "id": 36,
+   "titulo": "Dan Koe: Choose or Be Chosen",
+   "slots": {
+    "Ação Específica": "crie uma rotina",
+    "Resultado Desejável": "você será forçado a adotar uma"
+   },
+   "exemplo": "Se você não criar uma rotina, não espere ter uma. Se você não agir, será forçado a reagir.",
+   "chars": 84,
+   "porque_funciona": "Esse modelo usa repetição para enfatizar a importância de agir de forma proativa, criando urgência e impacto emocional.",
+   "tags": [
+    "Proatividade",
+    "Urgência",
+    "Impacto"
+   ]
+  },
+  {
+   "id": 37,
+   "titulo": "Alex Cattoni: You Need to Read This (Today)",
+   "slots": {
+    "Objetivo Desejado": "começar no freelancing",
+    "Passos": "a única coisa que você precisa fazer HOJE"
+   },
+   "exemplo": "Aqui está o motivo pelo qual você ainda não começou no freelancing (e a única coisa que você precisa fazer HOJE para começar):",
+   "chars": 118,
+   "porque_funciona": "Esse formato cativa o leitor ao abordar um problema comum e oferecer soluções práticas e imediatas, criando valor e urgência.",
+   "tags": [
+    "Praticidade",
+    "Urgência",
+    "Solução"
+   ]
+  },
+  {
+   "id": 38,
+   "titulo": "CJ Haughey: Advice from the Sidelines",
+   "slots": {
+    "Campo ou Habilidade": "marketing",
+    "Grupo Inesperado": "não especialistas em marketing",
+    "Período ou Resultados": "6+ anos de experiência no campo"
+   },
+   "exemplo": "Ninguém conhece marketing melhor do que não especialistas em marketing. Tenho mais de 6 anos no jogo. Aqui está quem realmente entende de marketing:",
+   "chars": 152,
+   "porque_funciona": "Essa estrutura desafia suposições comuns e destaca uma perspectiva única, gerando interesse e curiosidade.",
+   "tags": [
+    "Perspectiva Única",
+    "Curiosidade",
+    "Provocativo"
+   ]
+  },
+  {
+   "id": 39,
+   "titulo": "Zach Wilson: Life Learnings",
+   "slots": {
+    "Idade Ideal": "29",
+    "Diferença": "+1",
+    "Lições": "29+1 coisas que aprendi"
+   },
+   "exemplo": "Hoje completo 29+1 anos. Enquanto reflito sobre envelhecer com humor, aqui estão 30 lições que aprendi no caminho para o sucesso:",
+   "chars": 136,
+   "porque_funciona": "Esse formato combina humor e nostalgia para destacar lições valiosas, tornando a mensagem mais envolvente e pessoal.",
+   "tags": [
+    "Humor",
+    "Nostalgia",
+    "Lições"
+   ]
+  },
+  {
+   "id": 40,
+   "titulo": "Rory Flynn: Demystifying Terms",
+   "slots": {
+    "Termo Complexo": "(--s 750) ou (--ar 3:2)?",
+    "Tópico": "Parâmetros do Midjourney"
+   },
+   "exemplo": "O que significa (--s 750) ou (--ar 3:2)? Não se preocupe, você não está sozinho. Os parâmetros do Midjourney podem ser confusos.",
+   "chars": 116,
+   "porque_funciona": "Esse modelo atrai leitores ao abordar tópicos complexos com empatia e clareza, estabelecendo autoridade e acessibilidade.",
+   "tags": [
+    "Autoridade",
+    "Clareza",
+    "Empatia"
+   ]
+  },
+  {
+   "id": 41,
+   "titulo": "Sara Stella Lattanzio: So Much for Semantics",
+   "slots": {
+    "Conceitos": [
+     "Estratégia de conteúdo",
+     "Plano de conteúdo",
+     "Calendário de conteúdo"
+    ],
+    "Equívoco Comum": "Eles são praticamente a mesma coisa"
+   },
+   "exemplo": "\"Estratégia de conteúdo\", \"plano de conteúdo\" ou \"calendário de conteúdo\"? Muitas pessoas acham que são praticamente a mesma coisa. Então, qual é a diferença?",
+   "chars": 157,
+   "porque_funciona": "Essa estrutura aborda equívocos comuns e gera curiosidade, prometendo esclarecer diferenças sutis mas importantes, o que é valioso para o leitor.",
+   "tags": [
+    "Clareza",
+    "Curiosidade",
+    "Esclarecimento"
+   ]
+  },
+  {
+   "id": 42,
+   "titulo": "Liz Willits: The Nonconformist",
+   "slots": {
+    "Conselho Comum": "Não use emojis no LinkedIn. Não é profissional.",
+    "Ação Contraditória": "Me: 😈"
+   },
+   "exemplo": "\"Não use emojis no LinkedIn. Não é profissional.\" Me: 😈",
+   "chars": 58,
+   "porque_funciona": "Essa estrutura desafia normas convencionais de maneira direta e visual, gerando humor e autenticidade.",
+   "tags": [
+    "Humor",
+    "Autenticidade",
+    "Desafiar Normas"
+   ]
+  },
+  {
+   "id": 43,
+   "titulo": "Neal O’Grady: Humbled and Honoured",
+   "slots": {
+    "Conquista": "Fechamos nossa rodada Série A de $0MM liderada pela Nobody Ventures.",
+    "Agradecimento": "Quero agradecer à academia, minha mãe, minhas botas e meus cadarços."
+   },
+   "exemplo": "Fechamos nossa rodada Série A de $0MM liderada pela Nobody Ventures. Quero agradecer à academia, minha mãe, minhas botas e meus cadarços.",
+   "chars": 136,
+   "porque_funciona": "Essa estrutura brinca com clichês de anúncios grandiosos, utilizando humor autodepreciativo para gerar simpatia e engajamento.",
+   "tags": [
+    "Humor",
+    "Clichês",
+    "Engajamento"
+   ]
+  },
+  {
+   "id": 44,
+   "titulo": "Benjamin Watkins: My Honest Answer",
+   "slots": {
+    "Meta Modesta": "obter de 5 a 7 curtidas nos seus posts do LinkedIn",
+    "Rotina Inesperada": "acordar às 4:30 da manhã, tomar café e assistir a um nascer do sol de tirar lágrimas"
+   },
+   "exemplo": "\"Benjamin, como você consegue de 5 a 7 curtidas nos seus posts do LinkedIn?\" Eu acordo às 4:30 da manhã, tomo café e assisto a um nascer do sol de tirar lágrimas.",
+   "chars": 162,
+   "porque_funciona": "Esse gancho utiliza um tom de humor sutil para conectar-se com a audiência e destacar a ironia de pequenas vitórias.",
+   "tags": [
+    "Humor",
+    "Conexão",
+    "Ironia"
+   ]
+  },
+  {
+   "id": 45,
+   "titulo": "Matt Barker: Bizarre Backstory",
+   "slots": {
+    "Evento Engraçado": "vomitei no carpete do meu amigo",
+    "Decisão Significativa": "decidi ser redator freelancer"
+   },
+   "exemplo": "15 de abril de 2018: vomitei no carpete do meu amigo. Em 16 de abril de 2018, decidi ser redator freelancer. Aqui está minha história de origem.",
+   "chars": 145,
+   "porque_funciona": "Esse formato conecta humor com um momento transformador, criando uma narrativa única e memorável.",
+   "tags": [
+    "Humor",
+    "Transformação",
+    "Narrativa"
+   ]
+  },
+  {
+   "id": 46,
+   "titulo": "Mark A: Just As You Thought",
+   "slots": {
+    "Hábito Iniciado": "comecei a acordar às 4:30 da manhã",
+    "Resultado": "Fiquei cansado o dia todo."
+   },
+   "exemplo": "O que aconteceu quando comecei a acordar às 4:30 da manhã? Fiquei cansado o dia todo.",
+   "chars": 85,
+   "porque_funciona": "Essa estrutura desmonta expectativas com uma revelação mundana, criando humor e autenticidade.",
+   "tags": [
+    "Humor",
+    "Autenticidade",
+    "Expectativas"
+   ]
+  },
+  {
+   "id": 47,
+   "titulo": "Grace Hall: Absurd Comparison",
+   "slots": {
+    "Concorrente": "faz isso por £5 por 1000 palavras",
+    "Comparação Absurda": "um cara que socaria um idoso por um pacote de batatas fritas"
+   },
+   "exemplo": "\"Concorrentes podem fazer isso por £5 por 1000 palavras.\" Sim, e eu posso encontrar um cara que socaria um idoso por um pacote de batatas fritas. Isso não significa qualidade.",
+   "chars": 162,
+   "porque_funciona": "Esse gancho utiliza comparações absurdas para destacar a falta de qualidade associada a opções mais baratas, misturando humor e assertividade.",
+   "tags": [
+    "Humor",
+    "Comparação",
+    "Qualidade"
+   ]
+  },
+  {
+   "id": 48,
+   "titulo": "Katelyn Bourgoin: Ironic Realisation",
+   "slots": {
+    "Categoria de Especialistas": "gurus de produtividade",
+    "Descrição": "jovens, autônomos, solteiros e sem filhos",
+    "Reação": "rir"
+   },
+   "exemplo": "Quando você percebe que a maioria dos 'gurus de produtividade' são jovens, autônomos, solteiros e sem filhos... você ri.",
+   "chars": 123,
+   "porque_funciona": "Esse modelo provoca reflexão irônica, destacando contradições no discurso de especialistas, gerando humor e identificação.",
+   "tags": [
+    "Humor",
+    "Ironia",
+    "Reflexão"
+   ]
+  },
+  {
+   "id": 49,
+   "titulo": "Shoaib Ahmed: Meaningful Achievement",
+   "slots": {
+    "Marco Atual": "40k seguidores",
+    "Marco Anterior": "30k seguidores",
+    "Razão para a Diferença": "Aumentei meu esforço com o conteúdo"
+   },
+   "exemplo": "Alcancei 40k seguidores recentemente. Quando alcancei 30k, não me importei muito. Mas desta vez é diferente porque aumentei meu esforço com o conteúdo.",
+   "chars": 154,
+   "porque_funciona": "Essa estrutura conecta marcos passados com conquistas atuais, destacando o esforço ou mudança significativa, o que cria relevância e autenticidade.",
+   "tags": [
+    "Esforço",
+    "Autenticidade",
+    "Crescimento"
+   ]
+  },
+  {
+   "id": 50,
+   "titulo": "Nikolett Jaksa: Proven Strategy",
+   "slots": {
+    "Resultado Desejado": "dobrei minhas impressões",
+    "Resultado Adicional": "dobrei meus seguidores também",
+    "Estratégia": "estratégia por trás disso"
+   },
+   "exemplo": "Dobrei minhas impressões em apenas 2 semanas. Também dobrei meus seguidores. Aqui está a estratégia por trás disso.",
+   "chars": 117,
+   "porque_funciona": "Esse gancho reforça autoridade ao compartilhar resultados concretos, criando curiosidade com a promessa de estratégia.",
+   "tags": [
+    "Autoridade",
+    "Resultados",
+    "Curiosidade"
+   ]
+  },
+  {
+   "id": 51,
+   "titulo": "Timothy Armoo: Winning Insights",
+   "slots": {
+    "Idade de Início": "21",
+    "Idade Posterior": "27",
+    "Marco": "vendi minha empresa e me tornei multimilionário",
+    "Lições": "21 lições difíceis que aprendi no caminho"
+   },
+   "exemplo": "Aos 21, comecei minha jornada. Aos 27, vendi minha empresa e me tornei multimilionário. Aqui estão 21 lições difíceis que aprendi no caminho.",
+   "chars": 145,
+   "porque_funciona": "Essa estrutura utiliza uma linha do tempo de sucesso, criando uma narrativa aspiracional e educacional.",
+   "tags": [
+    "Aspiração",
+    "Educação",
+    "Lições"
+   ]
+  },
+  {
+   "id": 52,
+   "titulo": "Ben Francis: Surprising Success Story",
+   "slots": {
+    "Empresa": "Gymshark",
+    "Ação Inicial": "comprei o domínio por £3,50",
+    "Marco": "evoluiu para o que é hoje"
+   },
+   "exemplo": "Ao começar a Gymshark, não tinha grandes aspirações. Não pensei muito: comprei o domínio por £3,50. Hoje, a empresa evoluiu para o que é hoje.",
+   "chars": 139,
+   "porque_funciona": "Essa estrutura minimiza expectativas iniciais para amplificar a magnitude do sucesso alcançado, gerando surpresa e admiração.",
+   "tags": [
+    "Surpresa",
+    "Admiração",
+    "Crescimento"
+   ]
+  },
+  {
+   "id": 53,
+   "titulo": "Codie A. Sanchez: Big News",
+   "slots": {
+    "Anúncio": "O MAIOR INVESTIMENTO DA MINHA CARREIRA",
+    "Conquista": "me tornei co-proprietária da ResiBrands",
+    "Descrição": "a franquia de serviços comerciais que mais cresce"
+   },
+   "exemplo": "NOTÍCIA GRANDE: O MAIOR INVESTIMENTO DA MINHA CARREIRA. Acabei de me tornar co-proprietária da ResiBrands, a franquia de serviços comerciais que mais cresce.",
+   "chars": 152,
+   "porque_funciona": "Esse gancho é direto e cria empolgação com um tom de exclusividade e magnitude.",
+   "tags": [
+    "Exclusividade",
+    "Empolgação",
+    "Magnitude"
+   ]
+  },
+  {
+   "id": 54,
+   "titulo": "Ali Abdaal: Project Reveal",
+   "slots": {
+    "Comunidade": "amigos",
+    "Duração": "3 anos",
+    "Projeto": "um projeto no qual tenho trabalhado todos os dias"
+   },
+   "exemplo": "Bom dia, amigos. Estou empolgado para finalmente compartilhar isso. É algo em que trabalhei por 3 anos todos os dias.",
+   "chars": 114,
+   "porque_funciona": "Essa estrutura cria expectativa e pessoalidade, incentivando engajamento emocional com a audiência.",
+   "tags": [
+    "Expectativa",
+    "Pessoalidade",
+    "Engajamento"
+   ]
+  },
+  {
+   "id": 55,
+   "titulo": "Harry Dry: Repurposed Triumph",
+   "slots": {
+    "Entidade": "Vogue",
+    "Conquista": "alcançou 5M de visualizações com uma entrevista de 3 anos atrás",
+    "Evento": "lançamento do filme Barbie",
+    "Transformação": "Greta Gerwig se tornou um dos nomes mais comentados do momento"
+   },
+   "exemplo": "Como a Vogue alcançou 5M de visualizações com uma entrevista de 3 anos atrás? Desde o lançamento do filme Barbie, Greta Gerwig se tornou um dos nomes mais comentados do momento.",
+   "chars": 181,
+   "porque_funciona": "Esse gancho combina relevância cultural com storytelling estratégico para atrair atenção e engajamento.",
+   "tags": [
+    "Relevância Cultural",
+    "Storytelling",
+    "Engajamento"
+   ]
+  },
+  {
+   "id": 56,
+   "titulo": "Dakota Robertson: You're Bad (But It’s Not Your Fault)",
+   "slots": {
+    "Habilidade": "escrita",
+    "Fator Externo": "a escola falhou com você",
+    "Benefício": "corrija isso e será 10x melhor"
+   },
+   "exemplo": "Sua escrita é ruim porque a escola falhou com você. Siga estes 3 passos para corrigir isso e será 10x melhor.",
+   "chars": 120,
+   "porque_funciona": "Essa estrutura utiliza um tom provocativo ao atribuir a culpa a fatores externos, despertando interesse imediato. Ao prometer uma solução direta e eficaz, aumenta o engajamento.",
+   "tags": [
+    "Provocativo",
+    "Solução",
+    "Engajamento",
+    "Dor",
+    "Polêmica"
+   ]
+  },
+  {
+   "id": 57,
+   "titulo": "Yurii Veremchuk: Stop This! Seriously, Who Do You Think You Are?",
+   "slots": {
+    "Ação": "cold email",
+    "Prática Comum": "Oi, meu nome é...",
+    "Indivíduo": "Eminem",
+    "Razão": "há uma assinatura nos seus e-mails"
+   },
+   "exemplo": "Nunca comece seu cold email com 'Oi, meu nome é...'. Você não é o Eminem. Além disso, há uma assinatura nos seus e-mails.",
+   "chars": 116,
+   "porque_funciona": "Esse gancho combina humor e clareza ao criticar uma prática comum, educando enquanto diverte a audiência.",
+   "tags": [
+    "Humor",
+    "Clareza",
+    "Crítica",
+    "Educação",
+    "Polêmica"
+   ]
+  },
+  {
+   "id": 58,
+   "titulo": "Emma Cownley: You’re Not Fooling Anyone",
+   "slots": {
+    "Termo Provocativo": "basic bitch",
+    "Tópico": "brand copy",
+    "Abordagem Comum": "cobrindo o básico",
+    "Consequência Negativa": "esperar que ninguém olhe mais de perto"
+   },
+   "exemplo": "Você está sendo uma 'basic bitch' com seu brand copy? Só cobrindo o básico e esperando que ninguém olhe mais de perto?",
+   "chars": 119,
+   "porque_funciona": "Esse formato atrevido e provocador capta a atenção ao desafiar diretamente a audiência, incentivando uma autorreflexão.",
+   "tags": [
+    "Provocativo",
+    "Reflexão",
+    "Desafio",
+    "Polêmica"
+   ]
+  },
+  {
+   "id": 59,
+   "titulo": "Tarana Kasana: Listen, You Need This…",
+   "slots": {
+    "Audiência Alvo": "fundadores",
+    "Elemento Crítico": "uma audiência",
+    "Razão Superficial": "não apenas porque é legal"
+   },
+   "exemplo": "Fundadores: vocês precisam de uma audiência. E não apenas porque é legal.",
+   "chars": 69,
+   "porque_funciona": "Esse gancho é direto e autoritário, reforçando a importância de um elemento essencial, ao mesmo tempo que desconstrói ideias superficiais.",
+   "tags": [
+    "Autoridade",
+    "Esclarecimento",
+    "Direto",
+    "Polêmica"
+   ]
+  },
+  {
+   "id": 60,
+   "titulo": "Mark Ritson: It’s Becoming More Popular To…",
+   "slots": {
+    "Indústria": "mídia social",
+    "Comportamento": "experimentar o ChatGPT e demonstrar resultados ruins",
+    "Resultado Medíocre": "concluir que IA é ruim",
+    "Crença Equivocada": "manter ferramentas do século 20"
+   },
+   "exemplo": "Há uma tendência crescente na mídia social de experimentar o ChatGPT, demonstrar resultados ruins e concluir que IA é ruim. Melhor ficar com ferramentas do século 20, né?",
+   "chars": 182,
+   "porque_funciona": "Este gancho é eficaz ao destacar tendências emergentes, introduzindo nuances sobre equívocos comuns.",
+   "tags": [
+    "Tendências",
+    "Equívocos",
+    "Crítica",
+    "Polêmica"
+   ]
+  },
+  {
+   "id": 61,
+   "titulo": "Alex Hormozi: That’s Not What’s Stopping You",
+   "slots": {
+    "Conhecimento/Ação": "o que fazer para alcançar seus objetivos",
+    "Crença Limitante": "falta de informação"
+   },
+   "exemplo": "A maioria das pessoas sabe exatamente o que fazer para alcançar seus objetivos. O problema não é a falta de informação.",
+   "chars": 102,
+   "porque_funciona": "Com uma abordagem perspicaz, esse gancho desafia suposições, provocando a audiência a refletir sobre suas próprias barreiras.",
+   "tags": [
+    "Reflexão",
+    "Suposição",
+    "Perspicaz",
+    "Polêmica"
+   ]
+  },
+  {
+   "id": 62,
+   "titulo": "Emma Stratton: Stop Doing That! It’s Self-Sabotage",
+   "slots": {
+    "Comportamento Errado": "espionar sites de concorrentes",
+    "Ações Relacionadas": "ler suas mensagens",
+    "Ação Seguinte": "tentar imitá-las",
+    "Resultados Negativos": "desempoderador e te coloca no lugar de 'não suficiente'"
+   },
+   "exemplo": "Pare de espionar sites de concorrentes, ler suas mensagens e tentar imitá-las. Isso é desempoderador e te coloca no lugar de 'não suficiente'.",
+   "chars": 138,
+   "porque_funciona": "Esse gancho educa e desafia ao abordar comportamentos contraproducentes, oferecendo um tom motivador e construtivo.",
+   "tags": [
+    "Educação",
+    "Desafio",
+    "Motivação",
+    "Polêmica"
+   ]
+  },
+  {
+   "id": 63,
+   "titulo": "Dickie Bush: Hitting The Proverbial Wall",
+   "slots": {
+    "Desafio": "criar um hábito diário de escrita",
+    "Esforço": "mais de 1.000 horas",
+    "Rotinas": "estudando as rotinas de escrita de escritores lendários"
+   },
+   "exemplo": "Lutei com o hábito diário de escrita por anos. Então passei mais de 1.000 horas estudando as rotinas de escrita de escritores lendários.",
+   "chars": 131,
+   "porque_funciona": "Esse gancho conecta a vulnerabilidade de falhar ao esforço contínuo para aprender com fontes respeitadas. Ele cria autoridade ao apresentar resultados derivados de aprendizado aprofundado, gerando empatia e credibilidade.",
+   "tags": [
+    "Empatia",
+    "Credibilidade",
+    "Aprendizado",
+    "Dor"
+   ]
+  },
+  {
+   "id": 64,
+   "titulo": "Audrey Chia: Sticking With It",
+   "slots": {
+    "Resultado Desejado": "postar consistentemente no LinkedIn",
+    "Solução": "ferramenta de IA",
+    "Tempo Economizado": "5 horas por semana"
+   },
+   "exemplo": "Está difícil postar consistentemente no LinkedIn? Essa ferramenta de IA me economiza 5 horas por semana.",
+   "chars": 96,
+   "porque_funciona": "Essa estrutura explora uma dor comum e fornece uma solução clara e atraente. O tom prático e direto aumenta o desejo de descobrir a ferramenta e criar engajamento imediato.",
+   "tags": [
+    "Praticidade",
+    "Solução",
+    "Engajamento",
+    "Dor"
+   ]
+  },
+  {
+   "id": 65,
+   "titulo": "Dan Martell: Overcoming Barriers To Success",
+   "slots": {
+    "Marco 1": "$300K/ano",
+    "Habilidade/Ação": "aprender a delegar",
+    "Marco 2": "$2M/ano",
+    "Habilidade Avançada": "dominar o trabalho através de outros"
+   },
+   "exemplo": "Chegou no teto de $300K/ano? Aprenda a delegar. Travado em $2M/ano? Domine o trabalho através de outros.",
+   "chars": 98,
+   "porque_funciona": "Este gancho utiliza marcos financeiros aspiracionais para identificar desafios específicos e oferece soluções progressivas. A estrutura promove autoridade e incentiva a ação, enquanto mantém clareza e concisão.",
+   "tags": [
+    "Autoridade",
+    "Clareza",
+    "Soluções",
+    "Dor"
+   ]
+  },
+  {
+   "id": 66,
+   "titulo": "Leila Hormozi: The Real Crusher",
+   "slots": {
+    "Traço Importante": "foco",
+    "Recurso Procurado": "recursos",
+    "Resultado": "mata mais sonhos do que a falta de recursos"
+   },
+   "exemplo": "A falta de foco mata mais sonhos do que a falta de recursos jamais matará.",
+   "chars": 72,
+   "porque_funciona": "Esse gancho enfatiza a importância de um traço fundamental, contrastando-o com algo que frequentemente é considerado essencial. Isso desafia percepções comuns e cria um impacto emocional.",
+   "tags": [
+    "Impacto",
+    "Reflexão",
+    "Percepções",
+    "Dor"
+   ]
+  },
+  {
+   "id": 67,
+   "titulo": "Ethan Golding: It's Hard, But Needs Must",
+   "slots": {
+    "Ação/Tarefa": "compartilhar no LinkedIn",
+    "Resultado Desejado": "crescer uma marca e conquistar clientes"
+   },
+   "exemplo": "Às vezes, eu luto para compartilhar no LinkedIn. Mas é crucial para crescer uma marca e conquistar clientes.",
+   "chars": 112,
+   "porque_funciona": "Essa estrutura humaniza o autor ao admitir uma dificuldade, enquanto reforça a necessidade dessa ação para atingir metas, gerando empatia e identificação.",
+   "tags": [
+    "Empatia",
+    "Identificação",
+    "Autenticidade",
+    "Dor"
+   ]
+  },
+  {
+   "id": 68,
+   "titulo": "Dan Koe: You Can’t Achieve X Without Y",
+   "slots": {
+    "Trabalho/Tarefa": "escrever",
+    "Aspecto": "tornar seus interesses interessantes para outras pessoas"
+   },
+   "exemplo": "Seu trabalho de escrita não é eficaz porque você não sabe como tornar seus interesses interessantes para outras pessoas.",
+   "chars": 106,
+   "porque_funciona": "Esse gancho aponta uma falha comum e oferece uma solução implícita, criando curiosidade e incentivando o público a buscar melhorias.",
+   "tags": [
+    "Curiosidade",
+    "Soluções",
+    "Melhorias",
+    "Dor"
+   ]
+  },
+  {
+   "id": 69,
+   "titulo": "Diandra Escobar: A Harsh Reality",
+   "slots": {
+    "Tarefa/Processo": "escrever posts de blog de alta qualidade",
+    "Duração": "semanas",
+    "Tarefa Única": "um único post de blog"
+   },
+   "exemplo": "Escrever posts de blog de alta qualidade pode levar semanas. Muitas pessoas gastam semanas em um único post de blog.",
+   "chars": 109,
+   "porque_funciona": "Essa estrutura destaca uma dificuldade prática e comum, criando ressonância e abrindo espaço para introduzir soluções ou dicas.",
+   "tags": [
+    "Ressonância",
+    "Dificuldade",
+    "Praticidade",
+    "Dor"
+   ]
+  },
+  {
+   "id": 70,
+   "titulo": "Jasmin Alic: Started From The Bottom…",
+   "slots": {
+    "Estado Desafiador": "ser invisível",
+    "Período de Tempo": "3 anos atrás",
+    "Ponto de Partida": "0 seguidores e $0 do LinkedIn"
+   },
+   "exemplo": "Eu lembro de ser invisível. Há 3 anos, eu tinha 0 seguidores e $0 do LinkedIn.",
+   "chars": 84,
+   "porque_funciona": "Esse gancho cria uma narrativa de superação, conectando o público com uma história de crescimento inspiradora e aspiracional.",
+   "tags": [
+    "Superação",
+    "Aspiração",
+    "Crescimento",
+    "Dor"
+   ]
+  },
+  {
+   "id": 71,
+   "titulo": "Kieran Flanagan: A Disrupting Trend",
+   "slots": {
+    "Grande Mudança/Tendência": "IA vai saturar todos os canais de marketing digital",
+    "Área Específica": "marketing digital",
+    "Grupo/Profissão": "profissionais de marketing que continuam prosperando"
+   },
+   "exemplo": "A IA vai saturar todos os canais de marketing digital. Aqui está o que profissionais de marketing estão fazendo para continuar prosperando.",
+   "chars": 132,
+   "porque_funciona": "Esse gancho destaca uma transformação iminente, criando urgência e curiosidade ao introduzir soluções específicas para o público-alvo, mantendo-o engajado.",
+   "tags": [
+    "Urgência",
+    "Curiosidade",
+    "Transformação",
+    "Dor"
+   ]
+  },
+  {
+   "id": 72,
+   "titulo": "Natalie Marcotullio: Why [Common Approach] Doesn’t Work",
+   "slots": {
+    "Ação/Abordagem/Ferramenta": "CTA 'Book a Demo ou Free Trial'",
+    "Motivo Subótimo": "muito avançado no funil para prospectos casuais",
+    "Contexto": "rolagem casual no LinkedIn ou Google",
+    "Consequências Negativas": "CTR mais baixo, CR mais baixo e CAC mais alto"
+   },
+   "exemplo": "O CTA 'Book a Demo ou Free Trial' não funciona. Na rolagem casual no LinkedIn, ele resulta em CTR mais baixo, CR mais baixo e CAC mais alto.",
+   "chars": 153,
+   "porque_funciona": "Essa estrutura combina crítica a práticas comuns com análise de consequências práticas, educando e engajando o público para considerar alternativas mais eficazes.",
+   "tags": [
+    "Crítica",
+    "Educação",
+    "Engajamento",
+    "Dor"
+   ]
+  },
+  {
+   "id": 73,
+   "titulo": "Jasmin Alic: A Rude Awakening",
+   "slots": {
+    "Ação Padrão": "orçei $18.000 para um rebranding",
+    "Reação": "eles RIRAM da oferta",
+    "Reação Emocional": "eu fiquei HUMILHADO"
+   },
+   "exemplo": "Uma vez orçei $18.000 para um rebranding. Eles RIRAM da oferta. Eu fiquei HUMILHADO. Aqui está como tudo se desenrolou.",
+   "chars": 133,
+   "porque_funciona": "Essa estrutura se baseia em vulnerabilidade e um momento de rejeição, que conecta emocionalmente o público. Cria curiosidade sobre a resolução e lições aprendidas.",
+   "tags": [
+    "Vulnerabilidade",
+    "Rejeição",
+    "Lições",
+    "Choque"
+   ]
+  },
+  {
+   "id": 74,
+   "titulo": "Reno Perry: An Unconventional Practice",
+   "slots": {
+    "Título/Função": "CEO da Zappos, Tony Hsieh",
+    "Prática": "oferecia $2.000 aos novos contratados para saírem da empresa",
+    "Propósito/Efeito": "ajudava a eliminar pessoas que não eram adequadas"
+   },
+   "exemplo": "O CEO da Zappos, Tony Hsieh, costumava oferecer $2.000 aos novos contratados para saírem da empresa. Altamente incomum, mas ajudava a eliminar pessoas que não eram adequadas.",
+   "chars": 184,
+   "porque_funciona": "Esse gancho explora práticas atípicas de líderes ou empresas famosas, gerando interesse por sua natureza incomum e funcionalidade.",
+   "tags": [
+    "Incomum",
+    "Funcionalidade",
+    "Liderança",
+    "Choque"
+   ]
+  },
+  {
+   "id": 75,
+   "titulo": "Sara Dalsfelt: Shocking? Yes, But Effective",
+   "slots": {
+    "Pessoa": "meu chefe",
+    "Ação": "me perseguiu até o meu emprego atual",
+    "Resultado": "Foi GENIAL!"
+   },
+   "exemplo": "Meu chefe me perseguiu até o meu emprego atual. Foi GENIAL!",
+   "chars": 70,
+   "porque_funciona": "Esse gancho combina surpresa e humor ao narrar um evento inesperado que teve resultados positivos, tornando a história memorável e divertida.",
+   "tags": [
+    "Surpresa",
+    "Humor",
+    "Resultado Positivo",
+    "Choque"
+   ]
+  },
+  {
+   "id": 76,
+   "titulo": "Amelia Sordell: Going Against The Grain",
+   "slots": {
+    "Ação Polêmica": "cancelei TODOS os benefícios dos funcionários",
+    "Explicação": "Eles eram um total desperdício de dinheiro"
+   },
+   "exemplo": "Eu cancelei TODOS os benefícios dos funcionários. Eles eram um total desperdício de dinheiro.",
+   "chars": 92,
+   "porque_funciona": "Esse gancho utiliza uma abordagem direta e controversa para atrair atenção imediata, convidando o público a explorar as justificativas por trás da ação ousada.",
+   "tags": [
+    "Controvérsia",
+    "Ação Ousada",
+    "Direto",
+    "Choque"
+   ]
+  },
+  {
+   "id": 77,
+   "titulo": "Henneke Duistermaat: Well, This Happened",
+   "slots": {
+    "Declaração Ousada": "Passei a noite passada na prisão",
+    "Evento/Contexto": "Era a última noite das nossas férias. Cela 110."
+   },
+   "exemplo": "Passei a noite passada na prisão. Era a última noite das nossas férias. Cela 110.",
+   "chars": 85,
+   "porque_funciona": "Esse gancho cria um senso de choque e curiosidade ao introduzir um evento inesperado, deixando o público ansioso para entender o contexto completo.",
+   "tags": [
+    "Curiosidade",
+    "Evento Inesperado",
+    "Narrativa",
+    "Choque"
+   ]
+  },
+  {
+   "id": 78,
+   "titulo": "Ash Rathod: I Did A Bad Thing",
+   "slots": {
+    "Ação Enganosa": "menti para um cliente",
+    "Expansão": "vendi algo que ele não precisava",
+    "Pior Parte": "Mas isso não foi o pior"
+   },
+   "exemplo": "Menti para um cliente. Vendi algo que ele não precisava. Mas isso não foi o pior.",
+   "chars": 88,
+   "porque_funciona": "Esse gancho é envolvente porque apresenta uma admissão de culpa, intrigando o público para descobrir a reviravolta ou a verdadeira moral da história.",
+   "tags": [
+    "Admissão",
+    "Intriga",
+    "Moral",
+    "Choque"
+   ]
+  },
+  {
+   "id": 79,
+   "titulo": "Dina Town: An Early Win",
+   "slots": {
+    "Oportunidade de Alto Valor": "um projeto de $20K",
+    "Prazo": "um mês",
+    "Área/Função": "tornando-se redatora"
+   },
+   "exemplo": "Consegui um projeto de $20K em apenas um mês após me tornar redatora.",
+   "chars": 78,
+   "porque_funciona": "Esse gancho combina um começo impressionante com insights estratégicos, criando autoridade e curiosidade no público interessado em replicar o sucesso.",
+   "tags": [
+    "Autoridade",
+    "Estratégia",
+    "Sucesso",
+    "Choque"
+   ]
+  }
+ ]
+}
