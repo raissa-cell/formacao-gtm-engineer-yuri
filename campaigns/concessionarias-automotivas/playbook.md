@@ -7,10 +7,13 @@ Documento mestre da campanha. Conteúdo, ads e outbound devem seguir as definiç
 | Campo | Definição |
 |---|---|
 | **Empresa** | Grupos ou redes brasileiras com concessionárias autorizadas organizadas por marca/bandeira e quatro ou mais unidades; podem representar várias montadoras |
-| **Sinal técnico/comportamental de fit** | Ads ativos, entrada de novos leads pelo WhatsApp, volume comercial relevante e estrutura para assumir oportunidades qualificadas |
-| **Pessoa (decisor)** | Diretor comercial, de marketing, de operações ou executivo; gerentes/coordenadores de Comercial, CRM/BDC e Performance como champions |
+| **Gates públicos** | Concessionária autorizada, operação por bandeira e quatro ou mais unidades comerciais ativas |
+| **Sinais públicos de prioridade** | Ads detectados, WhatsApp comercial visível, estrutura comercial e persona prioritária localizadas |
+| **Validação na discovery** | Volume de novos leads no WhatsApp, investimento em mídia, processo, equipe e dor operacional |
+| **Pessoa (decisor)** | Proprietário/presidente, CEO, diretor comercial, marketing, operações ou negócios/digital; gerências de Comercial, CRM/BDC, vendas digitais, central de leads e Performance como champions |
 | **Dor comum** | Organizar o primeiro atendimento, a qualificação, o acompanhamento e o direcionamento do lead ao time correto |
-| **Quem fica de fora** | Revendas multimarcas independentes sem bandeira autorizada; redes com menos de quatro unidades; empresas sem Ads ou WhatsApp comercial; contatos sem responsabilidade sobre vendas, demanda, atendimento ou CRM |
+| **Quem fica de fora antes da call** | Revendas multimarcas independentes sem bandeira autorizada e redes com menos de quatro unidades comerciais, quando comprovado |
+| **Pessoa inadequada** | Contato sem responsabilidade ou influência sobre vendas, marketing, CRM, atendimento comercial, operações ou orçamento; procurar outra pessoa sem eliminar a empresa |
 | **Lista de negativação** | A definir |
 
 Definição canônica do ICP: [`../../playbook/icp-patagon-ai.md`](../../playbook/icp-patagon-ai.md). Fontes da campanha: `outbound/leads.md` e `fontes.md`.
@@ -25,7 +28,7 @@ Definição canônica do ICP: [`../../playbook/icp-patagon-ai.md`](../../playboo
 
 ### Regra de personalização
 
-1. Priorizar fatos da empresa diretamente ligados ao pitch: bandeira atendida, número de unidades, campanhas ativas, expansão, entrada pelo WhatsApp e estrutura comercial.
+1. Priorizar fatos da empresa diretamente ligados ao pitch: bandeira atendida, número de unidades, campanhas ativas, expansão, WhatsApp comercial visível e estrutura comercial.
 2. Relacionar o fato à responsabilidade real do cargo.
 3. Tratar qualquer dor como hipótese ou pergunta, nunca como problema confirmado.
 4. Não usar faculdade, localização ou elogio genérico quando não houver ponte comercial direta.
@@ -65,15 +68,17 @@ Voz: `brand/voice-outbound.md`.
 | 3 | Pesquisa de fatos oficiais das empresas | 3 → 3 | `fontes.md` |
 | 4 | Loop de redator + revisor, máximo de três rodadas | 3 → 3 aprovados | `outbound/email-sequence.md` |
 
+Para novas listas, descobrir empresas por Google e Google Maps; confirmar unidades no site ou localizador da montadora. Encontrar pessoas por LinkedIn, Instagram, site e imprensa, registrando sempre a fonte do cargo.
+
 ## 6. Leads de exemplo e mensagens
 
-> **Atenção:** os três contatos abaixo foram usados no exercício da aula antes da definição atual do ICP. Pertencer a um grupo que representa várias montadoras não os elimina: é preciso confirmar que o grupo opera concessionárias autorizadas por bandeira e validar Ads, entrada e volume de novos leads no WhatsApp. Até essa verificação, são exemplos de copy e pesquisa — não uma lista aprovada para disparo.
+> **Atenção:** os três contatos abaixo foram usados no exercício da aula antes da definição atual do ICP. Pertencer a um grupo que representa várias montadoras não os elimina: antes de priorizar, é preciso confirmar os gates estruturais e pesquisar Ads e WhatsApp comercial público. Entrada e volume reais de novos leads no WhatsApp serão validados na discovery.
 
 | Lead | Cargo / empresa | Gancho aprovado | Mensagem |
 |---|---|---|---|
 | Fabio Calligari | Diretor Executivo, Grupo Líder | Mais de 100 unidades, 11 marcas e quatro estados | `outbound/email-sequence.md` |
 | Lindomar Oliveira | Coordenador Comercial, Grupo Saga | Mais de 110 lojas, 19 marcas e jornadas de veículos, consórcio, seguros e serviços | `outbound/email-sequence.md` |
-| Sandro Toledo | Diretor Comercial, GAC Navesa | Operação multimarcas e mais de 25 anos com CRM e ciclo completo de vendas | `outbound/email-sequence.md` |
+| Sandro Toledo | Diretor Comercial, GAC Navesa | Grupo multibandeira, com operação GAC, e mais de 25 anos com CRM e ciclo completo de vendas | `outbound/email-sequence.md` |
 
 Checar antes do disparo: e-mail válido, consentimentos aplicáveis e variáveis `empresa` e `primeiro nome`. Nenhuma mensagem foi enviada neste exercício.
 

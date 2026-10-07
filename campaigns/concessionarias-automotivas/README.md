@@ -6,8 +6,10 @@ Campanha de outbound da Patagon AI para lideranças comerciais e executivas de g
 
 - **Empresas:** grupos ou redes com concessionárias autorizadas organizadas por bandeira/marca e quatro ou mais unidades; o grupo pode representar várias montadoras.
 - **Decisores:** direção comercial, marketing, operações ou executiva; gerências e coordenações podem atuar como champions.
-- **Sinais obrigatórios:** Ads ativos, novos leads entrando pelo WhatsApp, volume comercial relevante e time capaz de assumir as oportunidades qualificadas.
-- **Fora do ICP:** revendas multimarcas independentes sem bandeira autorizada, redes com menos de quatro unidades, operações sem mídia paga ou sem entrada comercial pelo WhatsApp.
+- **Gates públicos:** concessionária autorizada, operação por bandeira e quatro ou mais unidades comerciais ativas.
+- **Sinais públicos de prioridade:** Ads detectados, WhatsApp comercial visível, estrutura comercial e persona prioritária localizadas.
+- **Validação na discovery:** volume de novos leads no WhatsApp, investimento em mídia, processo, equipe e dor operacional.
+- **Fora do ICP antes da call:** revenda multimarcas independente sem bandeira autorizada ou rede com menos de quatro unidades comerciais, quando comprovado.
 
 Definição completa, campos e fontes: [`../../playbook/icp-patagon-ai.md`](../../playbook/icp-patagon-ai.md).
 

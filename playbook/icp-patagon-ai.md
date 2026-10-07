@@ -1,54 +1,129 @@
-# ICP da Patagon AI
+# ICP e personas da Patagon AI
 
-Documento de referência para pesquisa, enriquecimento, qualificação e campanhas. A classificação deve ser feita primeiro no nível da **empresa** e depois no nível da **pessoa**.
+Documento de referência para pesquisa, enriquecimento, qualificação e campanhas. A classificação acontece primeiro no nível da **empresa** e depois no nível da **pessoa**.
 
 ## 1. Posicionamento usado na qualificação
 
 A Patagon AI atende, qualifica e acompanha novos leads pelo WhatsApp, preservando o contexto da conversa até o momento certo de envolver o time comercial.
 
-O melhor fit não é uma empresa que apenas possui WhatsApp. É uma operação que:
+O melhor fit é uma operação que:
 
 - gera demanda por mídia paga;
 - recebe novos leads comerciais pelo WhatsApp;
 - precisa responder, qualificar, acompanhar e distribuir esse volume;
 - possui estrutura humana para assumir as oportunidades qualificadas.
 
-## 2. ICP primário — grupos de concessionárias autorizadas
+## 2. Princípio de pesquisa: público não é discovery
+
+O ICP possui duas etapas independentes:
+
+1. **Fit público de prospecção:** usa apenas informações que podem ser encontradas antes da abordagem.
+2. **Fit validado em discovery:** confirma volume, investimento, processo, equipe e dor diretamente com o prospect.
+
+Na pesquisa, usar somente estes estados:
+
+- `sim`: existe evidência pública;
+- `nao`: existe evidência pública que nega o critério;
+- `nao_verificado`: a informação não foi localizada.
+
+`nao_verificado` nunca deve ser convertido automaticamente em `nao`. Um anúncio, uma landing page ou um número de WhatsApp pode não estar indexado publicamente.
+
+## 3. ICP primário — grupos de concessionárias autorizadas
 
 ### Definição
 
-Grupos ou redes com concessionárias autorizadas organizadas por marca/bandeira, com **quatro ou mais unidades** no grupo, aquisição ativa por Ads e volume recorrente de novos leads entrando pelo WhatsApp.
+Grupos ou redes com concessionárias autorizadas organizadas por marca/bandeira e **quatro ou mais unidades comerciais ativas** no grupo.
 
-O grupo pode representar várias montadoras. O que caracteriza o fit é operar concessionárias oficiais e jornadas comerciais próprias para cada marca — não funcionar como uma revenda independente que mistura veículos de várias marcas no mesmo modelo de loja. Na personalização, a abordagem pode partir do grupo e usar uma bandeira, região ou operação específica como gancho.
+O grupo pode representar várias montadoras. O que caracteriza o fit é operar concessionárias oficiais e jornadas próprias para cada marca — não funcionar como uma revenda independente que mistura veículos de várias marcas no mesmo modelo de loja.
 
-### Critérios da empresa
+### Filtros públicos para montar a lista
 
-| Critério | Campo | Regra | Fonte preferencial |
+| Critério verificável | Campo | Regra | Fonte |
 |---|---|---|---|
-| Segmento | `segmento` | Concessionária/rede autorizada automotiva | Site oficial, LinkedIn da empresa, página da montadora |
-| Modelo de operação | `modelo_operacao` | `concessionarias_autorizadas_por_marca` | Site do grupo, páginas das unidades e localizador oficial da montadora |
-| Marcas trabalhadas | `marcas_representadas` | Uma ou mais montadoras identificadas | Site e redes oficiais |
-| Número de unidades | `unidades_ativas` | **Maior ou igual a 4** | Localizador oficial, site da rede, páginas das unidades |
-| Ads ativos | `ads_ativos` | `sim` | Meta Ad Library, Google Ads Transparency Center, landing pages de campanha |
-| Entrada comercial no WhatsApp | `whatsapp_novos_leads` | `sim` | CTA do site/landing page, botão de campanha ou teste manual do fluxo |
-| Volume de novos leads | `leads_novos_whatsapp_mes` | Acima do corte comercial da Patagon | CRM, Nuvia, WhatsApp Business, plataforma de Ads ou informação declarada pelo prospect |
-| Estrutura para assumir oportunidades | `estrutura_comercial` | Time de vendas, BDC, pré-vendas ou atendimento comercial identificável | LinkedIn, vagas, organograma ou informação declarada |
+| É concessionária autorizada? | `concessionaria_autorizada` | `sim/nao/nao_verificado` | Localizador da montadora, site do grupo |
+| A operação é organizada por bandeira? | `operacao_por_bandeira` | `sim/nao/nao_verificado` | Site, página da unidade, Instagram oficial |
+| Possui pelo menos quatro unidades comerciais? | `unidades_comerciais_ativas` | Número inteiro ou `nao_verificado`; gate `>=4` quando confirmado | Site, Google Maps, Google, localizador da montadora |
+| Foram localizados anúncios ativos? | `ads_ativos_detectados` | `sim/nao_verificado` | Meta Ad Library, Google Ads Transparency, landing pages |
+| Foi localizado WhatsApp em contexto comercial? | `whatsapp_comercial_publico` | `sim/nao_verificado` | Site, oferta, landing page, Instagram, Google Business |
+| Foi localizada estrutura comercial? | `estrutura_comercial_publica` | `sim/nao_verificado` | LinkedIn, Instagram, vagas, site, imprensa |
+| Foi encontrada uma persona prioritária? | `persona_prioritaria_encontrada` | `sim/nao_verificado` | LinkedIn, Instagram, Google, site, imprensa |
 
-**Importante:** anúncio ativo confirma investimento em mídia, mas não confirma o valor investido. Da mesma forma, um botão de WhatsApp confirma o canal, mas não o volume. Quando o dado exato não for público, registrar como `nao_verificado` e validar na descoberta.
+Gates estruturais para entrar na lista:
 
-### ICP pessoa
+- `concessionaria_autorizada = sim`;
+- `operacao_por_bandeira = sim`;
+- `unidades_comerciais_ativas >= 4`.
 
-| Papel | Cargos prioritários | Senioridade / área | Papel na compra |
-|---|---|---|---|
-| Decisor econômico | Diretor Comercial, Diretor de Marketing, Diretor de Operações, Head Comercial, Head de Marketing/Growth, CEO ou proprietário da rede | Diretoria/C-level; Vendas, Marketing ou Operações | Decide, aprova orçamento e assina |
-| Champion | Gerente Comercial, Gerente de CRM/BDC, Gerente de Marketing/Performance, Coordenador Comercial | Gerência/coordenação; Vendas, CRM ou Marketing | Sente a dor, constrói o caso e influencia |
-| Usuário | Líder de BDC/pré-vendas, SDR, atendimento comercial, vendedores e gestores de loja | Operação/gerência | Opera ou recebe os leads qualificados |
+Ads, WhatsApp público, estrutura comercial e persona encontrada aumentam a prioridade, mas sua ausência pública não elimina a conta.
 
-Campos obrigatórios da pessoa: `cargo`, `senioridade`, `area`, `papel_na_compra`, `tempo_no_cargo_meses` e `atividade_publica_relevante`.
+### Como pesquisar a empresa
 
-Sinais úteis de timing: entrada recente no cargo, expansão de unidades, lançamento de uma marca/modelo, contratação para CRM/BDC/performance, campanha ativa de test-drive ou menções públicas a atendimento, conversão e velocidade de resposta.
+- **Google:** pesquisar grupo, marcas representadas, cidades, expansão e páginas das unidades.
+- **Google Maps:** descobrir endereços e unidades. Confirmar depois no site ou localizador da montadora para não contar oficina, peças, seminovos ou endereço duplicado como nova unidade comercial.
+- **Site da montadora:** confirmar autorização e vínculo por bandeira.
+- **Site e Instagram do grupo/unidade:** confirmar marcas, ofertas, WhatsApp, campanhas, inaugurações e estrutura comercial.
+- **Meta e Google:** detectar mídia ativa. Anúncio não encontrado significa `nao_verificado`, não ausência comprovada de Ads.
 
-### Hipóteses de dor para pesquisar — não afirmar sem evidência
+Um botão de WhatsApp prova a existência pública do canal, mas não prova volume nem como ele é usado.
+
+### Persona automotiva
+
+| Papel estimado | Cargos prioritários | Prioridade |
+|---|---|---|
+| Decisor econômico | Proprietário, sócio, presidente, CEO, diretor executivo, diretor comercial, diretor de marketing, diretor de operações, diretor de negócios/digital, head comercial/marketing/growth | 1 |
+| Champion | Gerente comercial, gerente geral/regional, gerente ou coordenador de CRM/BDC, vendas digitais/e-commerce, marketing/performance, relacionamento/central de leads, coordenador comercial | 2 |
+| Usuário/influenciador | Líder de BDC/central de atendimento, pré-vendas, gestor de loja, equipe de CRM, consultores e vendedores | 3 |
+
+#### Onde encontrar as pessoas
+
+- **LinkedIn:** melhor para diretorias, heads e funções corporativas.
+- **Instagram:** relevante no automotivo para proprietários, diretores, gerentes gerais, comerciais e gestores de loja. Usar bio, marcações, eventos, premiações e inaugurações.
+- **Site oficial:** páginas institucionais, “quem somos”, imprensa e diretoria.
+- **Google e imprensa local/setorial:** nomeações, entrevistas, expansão e eventos.
+- **Montadoras, associações e premiações:** confirmação adicional de vínculo e cargo.
+
+Um perfil no Instagram pode revelar a pessoa, mas cargo e vínculo devem ser confirmados na bio profissional, em publicação institucional ou em uma segunda fonte.
+
+#### Campos da pessoa
+
+Obrigatórios para prospecção:
+
+```text
+nome_contato
+cargo_exato
+empresa
+unidade_ou_regiao
+area
+url_perfil
+canal_fonte
+fonte_do_cargo
+data_verificacao
+papel_compra_estimado
+confianca_papel_compra
+```
+
+Opcionais para timing e personalização:
+
+```text
+tempo_no_cargo_meses
+atividade_publica_relevante
+```
+
+O papel na compra é uma estimativa antes da call. Não tratá-lo como fato confirmado.
+
+### Confirmar na discovery
+
+- entrada de novos leads comerciais pelo WhatsApp e volume mensal;
+- origem e percentual de leads vindos de Ads;
+- investimento mensal em mídia;
+- tempo de primeira resposta;
+- distribuição por unidade ou vendedor;
+- processo de qualificação e follow-up;
+- capacidade do time para assumir oportunidades;
+- CRM, ferramentas e integrações;
+- gargalo e impacto real na operação.
+
+### Hipóteses de dor — não afirmar sem evidência
 
 - demora no primeiro atendimento após o lead de Ads;
 - distribuição manual entre unidades ou vendedores;
@@ -56,138 +131,187 @@ Sinais úteis de timing: entrada recente no cargo, expansão de unidades, lança
 - perda de contexto e follow-up entre WhatsApp, CRM e equipe comercial;
 - capacidade do time não acompanhar picos de campanha.
 
-### Desqualificadores
+### Desqualificadores da empresa
 
-- revenda multimarcas independente, sem operação autorizada organizada por bandeira;
-- menos de quatro unidades na rede/operação abordada;
-- ausência de aquisição paga ativa;
-- WhatsApp usado apenas para suporte ou pós-venda, sem entrada de novos leads;
-- baixo volume ou volume ainda não validado para justificar automação;
-- ausência de equipe comercial para assumir as oportunidades;
-- contato sem responsabilidade sobre demanda, atendimento, CRM, vendas ou orçamento.
+**Antes da call, somente quando comprovado:**
 
-## 3. ICP secundário — plataformas B2B e SaaS com aquisição assistida
+- não é concessionária autorizada;
+- é revenda multimarcas independente, sem operação autorizada por bandeira;
+- possui menos de quatro unidades comerciais ativas;
+- o vínculo com o grupo ou com a bandeira foi comprovadamente negado.
+
+**Após a discovery:**
+
+- não recebe volume relevante de novos leads comerciais pelo WhatsApp;
+- não investe em aquisição paga;
+- não possui equipe para assumir oportunidades qualificadas;
+- o volume não justifica automação;
+- não existe um problema de atendimento, qualificação, acompanhamento ou distribuição que a Patagon resolva;
+- não há prioridade, orçamento ou capacidade operacional.
+
+## 4. ICP secundário — plataformas B2B e SaaS com aquisição assistida
 
 ### Definição
 
 Há dois subperfis válidos:
 
-1. **Plataformas B2B de alto volume para PMEs**, marketplaces ou ecossistemas de tecnologia que precisam adquirir, cadastrar, ativar ou qualificar muitos estabelecimentos parceiros — como restaurantes, lojas e prestadores.
-2. **SaaS B2B ou B2C high ticket**, com venda assistida, novos leads entrando pelo WhatsApp, time de SDR/pré-vendas e investimento mensal em Ads superior a **R$ 10 mil**.
+1. **Plataformas B2B de alto volume para PMEs:** marketplaces ou ecossistemas de tecnologia que precisam adquirir, cadastrar, ativar ou qualificar muitos estabelecimentos parceiros, como restaurantes, lojas e prestadores.
+2. **SaaS B2B ou B2C high ticket:** venda assistida, fluxo de entrada comercial e time de SDR/pré-vendas, com investimento mensal em Ads superior a **R$ 10 mil**.
 
-Nos dois casos, o fit da Patagon depende de existir uma jornada comercial ou de aquisição de parceiros com conversa, qualificação e acompanhamento. Uma plataforma puramente self-service, sem etapa conversacional relevante, não entra apenas por ter grande volume.
+Nos dois casos precisa existir uma jornada comercial ou de aquisição de parceiros com conversa, qualificação e acompanhamento. Uma plataforma puramente self-service, sem etapa conversacional relevante, não entra apenas por ter grande volume.
 
-### Critérios da empresa
+### Filtros públicos para montar a lista
 
-| Critério | Campo | Regra | Fonte preferencial |
+| Critério verificável | Campo | Regra pública | Fonte |
 |---|---|---|---|
-| Segmento | `segmento` | `plataforma_b2b_pmes`, `marketplace_b2b`, `saas_b2b` ou `saas_b2c` | Site, página de produto, LinkedIn da empresa |
-| Público atendido | `publico_cliente` | PMEs/parceiros em escala ou compradores de solução high ticket | Site, cases e páginas de cadastro |
-| Modelo comercial | `modelo_venda` | Aquisição/ativação assistida, demo, diagnóstico ou consultoria | Site, formulário, página de preços e fluxo comercial |
-| Ticket | `ticket_medio` | Obrigatório para o subperfil SaaS high ticket; não é gate isolado para plataforma B2B de volume | Página de preços, proposta pública ou informação declarada |
-| Entrada pelo WhatsApp | `whatsapp_novos_leads` | `sim` | Site, landing page, anúncio ou teste manual do fluxo |
-| Estrutura de aquisição | `possui_sdr` | SDR, pré-vendas, aquisição/ativação de parceiros ou time equivalente | LinkedIn, vagas, página do time ou informação declarada |
-| Investimento em Ads | `investimento_ads_mes` | **Maior que R$ 10.000/mês** para SaaS; em plataformas, validar mídia e volume da jornada pesquisada | Conta de Ads, agência, relatório ou informação declarada pelo prospect |
-| Ads ativos — proxy | `ads_ativos` | `sim` | Meta Ad Library, Google Ads Transparency Center e landing pages |
+| Qual é o segmento? | `segmento` | `saas_b2b`, `saas_b2c` ou `plataforma_b2b_pmes` | Site, LinkedIn |
+| O segmento pertence ao recorte? | `segmento_elegivel` | `sim/nao/nao_verificado` | Site, LinkedIn |
+| Atende PMEs ou parceiros em escala? | `publico_pme_parceiros` | `sim/nao/nao_verificado` | Site, cases, página de produto |
+| Há evidência pública de high ticket? | `perfil_high_ticket_publico` | `sim/nao/nao_verificado` | Preços, oferta, cases e fluxo de vendas |
+| Existe venda ou ativação assistida visível? | `venda_assistida_visivel` | `sim/nao/nao_verificado` | Demo, diagnóstico, consultor, “fale com vendas”, onboarding |
+| Foi localizado WhatsApp comercial? | `whatsapp_comercial_publico` | `sim/nao_verificado` | Site, landing page, anúncio, Instagram |
+| Foi localizado SDR ou time equivalente? | `time_aquisicao_publico` | `sim/nao_verificado` | LinkedIn, vagas, site |
+| Foram localizados Ads ativos? | `ads_ativos_detectados` | `sim/nao_verificado` | Meta Ad Library, Google Ads Transparency, landing pages |
+| Foi encontrada persona prioritária? | `persona_prioritaria_encontrada` | `sim/nao_verificado` | LinkedIn, site, Google, imprensa |
 
-O valor de mídia e o ticket precisam de fonte direta. Bibliotecas públicas de anúncios servem como sinal de atividade, não como comprovação de investimento superior a R$ 10 mil.
+Para plataformas como iFood, “time equivalente” pode ser aquisição, ativação, onboarding ou vendas para parceiros. Não exigir literalmente o título SDR.
 
-### ICP pessoa
+Não são dados públicos confiáveis e devem ir para discovery:
 
-| Papel | Cargos prioritários | Papel na compra |
-|---|---|---|
-| Decisor econômico | CRO, VP/Head/Diretor de Vendas, Growth, Marketing, Aquisição de Parceiros ou Operações; COO ou CEO/fundador | Decide, aprova orçamento e assina |
-| Champion | Gerente de SDR/Pré-vendas, RevOps, Sales Ops, Growth/Performance, CRM, Aquisição ou Ativação de Parceiros | Sente a dor, avalia e influencia |
-| Usuário | SDRs, BDRs, inside sales, consultores e equipes de onboarding/ativação de parceiros | Opera ou recebe as oportunidades qualificadas |
+- investimento superior a R$ 10 mil/mês;
+- volume mensal de novos leads;
+- `ticket_medio_confirmado` quando não há preço público;
+- uso efetivo do WhatsApp na jornada;
+- tamanho e capacidade reais do time.
 
-### Desqualificadores
+### Persona de plataformas e SaaS
 
-- produto low ticket ou venda self-service sem volume e sem etapa conversacional relevante;
-- ausência de SDR/pré-vendas ou de time equivalente de aquisição/ativação de parceiros;
-- WhatsApp usado somente para suporte;
-- investimento comprovado de Ads igual ou inferior a R$ 10 mil/mês;
-- falta de volume de novos leads;
-- negócio de serviço ou e-commerce classificado incorretamente como SaaS.
+| Papel estimado | Cargos prioritários |
+|---|---|
+| Decisor econômico | CRO, VP/Head/Diretor de Vendas, Growth, Marketing, Aquisição de Parceiros ou Operações; COO, CEO ou fundador |
+| Champion | Gerente de SDR/Pré-vendas, RevOps, Sales Ops, Growth/Performance, CRM, Aquisição, Onboarding ou Ativação de Parceiros |
+| Usuário/influenciador | SDR, BDR, inside sales, consultores e equipes de onboarding/ativação de parceiros |
 
-## 4. Regra de classificação
+LinkedIn, página do time, vagas, eventos, entrevistas e imprensa são as fontes prioritárias. Aplicam-se os mesmos campos obrigatórios e opcionais definidos para a persona automotiva.
 
-### A — prioridade imediata
+### Desqualificadores da empresa
 
-Todos os critérios obrigatórios da empresa foram confirmados por fonte, existe decisor ou champion aderente e o volume de leads foi validado.
+**Antes da call, somente quando comprovado:**
 
-### B — bom fit, requer descoberta
+- não é SaaS nem plataforma elegível;
+- possui venda comprovadamente low ticket e puramente self-service;
+- é negócio de serviço ou e-commerce classificado incorretamente como SaaS/plataforma.
 
-Os critérios públicos centrais foram confirmados, mas volume, ticket ou investimento ainda dependem de validação direta. Há proxies fortes, nunca números inventados.
+**Após a discovery:**
 
-### C — hipótese
+- não recebe volume relevante de novos leads comerciais pelo WhatsApp;
+- no subperfil SaaS, não investe mais de R$ 10 mil/mês em Ads;
+- não possui venda assistida nem equipe para assumir oportunidades;
+- o volume não justifica automação;
+- não existe problema aderente à Patagon;
+- não há prioridade, orçamento ou capacidade operacional.
 
-Há aderência parcial, porém faltam dois ou mais dados essenciais. Enriquecer antes de personalizar ou abordar.
+## 5. Pessoa inadequada não elimina a empresa
 
-### Fora do ICP
+Marcar a pessoa como `nao_prioritaria` e continuar procurando outro contato quando:
 
-Falha em um critério estrutural: segmento/modelo inadequado, menos de quatro unidades no ICP automotivo, ausência de SDR ou time equivalente no ICP secundário, ausência de entrada comercial pelo WhatsApp ou outro desqualificador.
+- não possui responsabilidade ou influência sobre vendas, marketing, CRM, atendimento comercial, operações ou orçamento;
+- o vínculo ou cargo está desatualizado;
+- atua em área sem relação com a jornada de leads;
+- é apenas usuário operacional quando o objetivo é falar com champion ou decisor.
 
-## 5. Campos mínimos para a base
+## 6. Classificação em duas etapas
+
+### `status_prospeccao`
+
+- **P1:** gates estruturais confirmados, Ads, WhatsApp comercial, estrutura comercial e persona prioritária detectados.
+- **P2:** gates estruturais confirmados, mas um ou mais sinais públicos de prioridade ainda não foram localizados.
+- **P3:** conta aparentemente aderente, porém exige enriquecimento dos gates estruturais.
+- **Não priorizar:** falhou em critério estrutural confirmado.
+
+### `status_discovery`
+
+- **A:** volume, aquisição, WhatsApp, equipe e dor confirmados.
+- **B:** bom fit, mas falta confirmar um critério econômico ou operacional.
+- **C:** aderência parcial ou timing fraco.
+- **Fora:** falhou em um gate confirmado na conversa.
+
+## 7. Campos mínimos para a base
 
 ```text
 empresa
 site
 linkedin_empresa
+instagram_empresa
+google_maps_url
 icp_tipo
 segmento
-modelo_operacao
+segmento_elegivel
+concessionaria_autorizada
+operacao_por_bandeira
 marcas_representadas
-unidades_ativas
-modelo_venda
-ticket_medio
-ads_ativos
-investimento_ads_mes
-whatsapp_novos_leads
-leads_novos_whatsapp_mes
-possui_sdr
-estrutura_comercial
+unidades_comerciais_ativas
+publico_pme_parceiros
+perfil_high_ticket_publico
+venda_assistida_visivel
+ads_ativos_detectados
+whatsapp_comercial_publico
+estrutura_comercial_publica
+time_aquisicao_publico
+persona_prioritaria_encontrada
 nome_contato
-linkedin_contato
-cargo
-senioridade
+cargo_exato
+empresa_contato
+unidade_ou_regiao
 area
-papel_na_compra
+url_perfil
+canal_fonte
+fonte_do_cargo
+papel_compra_estimado
+confianca_papel_compra
 tempo_no_cargo_meses
 atividade_publica_relevante
-classificacao_icp
-fonte_por_criterio
+status_prospeccao
+status_discovery
+whatsapp_novos_leads_confirmado
+leads_novos_whatsapp_mes
+investimento_ads_mes_confirmado
+ticket_medio_confirmado
+equipe_assumir_oportunidades
+dor_patagon_confirmada
+fonte_segmento
+fonte_concessionaria_autorizada
+fonte_operacao_bandeira
+fonte_unidades
+fonte_ads
+fonte_whatsapp
+fonte_estrutura_comercial
+fonte_persona
 data_verificacao
-confianca
 proxima_acao
 ```
 
-Valores desconhecidos devem ser registrados como `nao_verificado`, nunca preenchidos por suposição. Cada critério deve guardar a URL ou a origem do dado e a data da verificação.
+Cada critério deve guardar a URL/origem e a data da verificação. Valores desconhecidos ficam como `nao_verificado`.
 
-## 6. Ordem operacional
+Em empresas sem estrutura regional, como alguns SaaS, `unidade_ou_regiao` pode receber `nao_aplicavel`.
 
-1. Qualificar a empresa pelos critérios obrigatórios.
-2. Registrar campo, fonte, data e nível de confiança.
-3. Encontrar decisor, champion e possíveis usuários.
-4. Buscar um fato verificável da empresa e uma responsabilidade real do cargo.
-5. Formular a dor como hipótese quando ela não estiver explicitamente confirmada.
-6. Só então criar lista, mensagem ou campanha.
+## 8. Ordem operacional
 
-O script atual `automations/leads/triagem_icp.py` classifica pessoas por palavras-chave de cargo. Ele não substitui esta qualificação de conta e não deve, sozinho, decidir se uma empresa pertence ao ICP da Patagon.
+1. Descobrir empresas por Google, Google Maps, LinkedIn, Instagram e listas setoriais.
+2. Confirmar os gates estruturais com fonte oficial.
+3. Registrar os sinais públicos de prioridade.
+4. Encontrar decisor e champion nos canais adequados ao segmento.
+5. Registrar cargo, fonte e confiança do papel estimado.
+6. Criar a abordagem com um fato verificável da empresa e uma responsabilidade real do cargo.
+7. Validar os critérios internos na discovery e atribuir `status_discovery`.
 
-## 7. Pontos ainda a definir com dados reais
+O script `automations/leads/triagem_icp.py` classifica pessoas por palavras-chave de cargo. Ele não substitui a qualificação de conta e não deve, sozinho, decidir se uma empresa pertence ao ICP da Patagon.
 
-- corte mínimo de `leads_novos_whatsapp_mes` para concessionárias e SaaS;
-- valor mínimo de ticket para considerar o SaaS high ticket;
-- janela de validade de cada fonte;
-- meta de conversão e capacidade máxima de atendimento por segmento.
+## 9. Contas-âncora
 
-Esses cortes devem ser definidos a partir dos clientes que mais convertem, permanecem e extraem valor da Patagon — não por uma estimativa sem histórico.
-
-## 8. Contas-âncora para calibrar a pesquisa
-
-| Conta | O que ela ensina sobre o ICP | O que ainda precisa ser validado antes da abordagem |
+| Conta | O que ela ensina | O que precisa ser validado |
 |---|---|---|
-| [Grupo Navesa](https://www.navesa.com.br/) | Grupo com 12 lojas e operações autorizadas separadas por marcas como Ford, Renault, Peugeot, Citroën, GWM e GAC. Confirma que um grupo pode ser multimarca no portfólio e ainda pertencer ao ICP. | Ads ativos, volume de novos leads no WhatsApp, estrutura de distribuição e qual bandeira/região oferece o melhor gancho. |
-| [iFood para Parceiros](https://parceiros.ifood.com.br/) | Plataforma B2B de aquisição em escala, voltada principalmente a restaurantes e outros pequenos e médios estabelecimentos. Confirma o subperfil de plataforma para PMEs. | Existência de entrada comercial pelo WhatsApp, atuação de SDR/aquisição assistida, mídia da jornada de parceiros e ponto em que uma conversa automatizada agrega valor. |
+| [Grupo Navesa](https://www.navesa.com.br/) | Grupo com 12 lojas e operações autorizadas separadas por marcas. Confirma que um grupo pode representar várias montadoras e ainda pertencer ao ICP. | Ads, entrada e volume de novos leads no WhatsApp, estrutura de distribuição e melhor bandeira/região para a abordagem. |
+| [iFood para Parceiros](https://parceiros.ifood.com.br/) | Plataforma B2B de aquisição em escala voltada principalmente a restaurantes e outros pequenos e médios estabelecimentos. | WhatsApp na aquisição, time responsável, mídia da jornada de parceiros e ponto de valor para automação conversacional. |
 
-Conta-âncora descreve o **tipo de operação desejado**; não significa aprovação automática. Os gates continuam sendo verificados por campo e fonte.
+Conta-âncora descreve o tipo de operação desejado; não significa aprovação automática.
