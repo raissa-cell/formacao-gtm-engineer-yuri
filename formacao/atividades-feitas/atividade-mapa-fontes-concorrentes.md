@@ -19,7 +19,8 @@ Transformar o ICP de concessionárias da Patagon AI em um fluxo de pesquisa repr
 6. Registro das páginas oficiais de clientes/cases e das páginas no LinkedIn.
 7. Coleta no Apify de 81 posts e cálculo do maior engajamento observado em um recorte auditável.
 8. Raspagem ao vivo no Firecrawl das três páginas oficiais de clientes/cases, com saída estruturada em JSON.
-9. Preservação das fontes históricas dos três leads da atividade anterior.
+9. Contagem piloto de anúncios ativos de Grupo Saga, Ford Navesa e Grupo Líder com o Actor oficial da Meta Ad Library no Apify.
+10. Preservação das fontes históricas dos três leads da atividade anterior.
 
 ## Arquivos produzidos
 
@@ -52,6 +53,7 @@ São concorrentes funcionais; o mapeamento não afirma equivalência total com a
 - Reposts de terceiros foram excluídos da escolha final.
 - Firecrawl: `firecrawl_scrape` nas páginas oficiais de Blip, Zenvia e Botmaker, com `maxAge: 0` e schema JSON para clientes, casos de uso, métricas e evidências de WhatsApp/vendas.
 - Resultado Firecrawl: três respostas `HTTP 200`.
+- Ads: Apify `apify/facebook-ads-scraper`, com `onlyTotal: true` e `activeStatus: active`; retornou 18 anúncios para Grupo Saga, 16 para Ford Navesa e zero na página corporativa do Grupo Líder.
 
 O documento registra “maior engajamento observado no recorte”, não “maior post de todos os tempos”.
 
@@ -63,6 +65,7 @@ O documento registra “maior engajamento observado no recorte”, não “maior
 - As três páginas de clientes/cases pertencem aos domínios oficiais dos concorrentes.
 - As três páginas foram efetivamente raspadas pelo Firecrawl e retornaram conteúdo estruturado.
 - Os posts apontam para as páginas oficiais de cada empresa no LinkedIn.
+- O zero de anúncios na página corporativa do Grupo Líder foi mantido como `nao_verificado`, pois bandeiras e unidades podem anunciar por outras páginas.
 
 ## Próximo passo
 

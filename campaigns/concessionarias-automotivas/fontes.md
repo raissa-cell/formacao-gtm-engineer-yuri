@@ -8,7 +8,7 @@ Consultado em 07/10/2026. Este arquivo operacionaliza os critérios de [`filtros
 |---|---|---|---|---|---|
 | 1 | **Site oficial do grupo e das unidades**, partindo dos [localizadores das montadoras](../../playbook/mapeamento-marcas-automotivas.md) | Bandeiras, unidades, cidades, WhatsApp, ofertas, landing pages e sinais de estrutura | Firecrawl `map` para localizar páginas; `scrape`/`crawl` para conteúdo e links; revisão manual de contagem | Baixo a médio | Melhor combinação de critérios e fonte oficial; sites com JavaScript ou franquias em domínios separados exigem conferência |
 | 2 | **Google Search e Google Maps** | Descoberta de grupos/unidades, endereços, site, telefone/WhatsApp, avaliações e nomes ligados à empresa | Apify Google Maps Scraper para escala; Google Search e revisão manual para deduplicar | Baixo | Alta cobertura, mas Maps não comprova autorização nem deve contar oficina/peças/seminovos automaticamente |
-| 3 | **Meta Ad Library e Google Ads Transparency** | Anúncios, criativos, ofertas, destinos e atividade recente de mídia | Manual na [Meta Ad Library](https://www.facebook.com/ads/library/) e no [Google Ads Transparency Center](https://adstransparency.google.com/); registrar URL/print e data | Médio | Prova anúncio localizado, não orçamento; ausência fica `nao_verificado` |
+| 3 | **Meta Ad Library e Google Ads Transparency** | Anúncios, criativos, ofertas, destinos e atividade recente de mídia | Apify `apify/facebook-ads-scraper` com `onlyTotal: true` para contagem; revisão na [Meta Ad Library](https://www.facebook.com/ads/library/) e no [Google Ads Transparency Center](https://adstransparency.google.com/) | Baixo a médio | Prova anúncio localizado, não orçamento; ausência na página consultada fica `nao_verificado` |
 | 4 | **LinkedIn da empresa e das pessoas**, incluindo vagas | Estrutura comercial, cargos, vínculo, senioridade, atividade e temas públicos | Apify para company/employees/posts; busca e revisão manual para confirmar o perfil correto | Médio | Forte para diretorias e áreas corporativas; papel de compra continua sendo estimativa |
 | 5 | **Instagram oficial do grupo/unidade e de lideranças** | Ofertas, inaugurações, eventos, marcações, WhatsApp e pessoas visíveis na operação | Apify Instagram Scraper para posts públicos; revisão manual de bio, marcações e data | Médio | Muito útil no automotivo; cargo/vínculo de pessoa exige bio profissional, publicação institucional ou segunda fonte |
 
@@ -38,10 +38,25 @@ As fontes aparecem em ordem de preferência. “Manual” significa que o result
 1. Descobrir empresas e unidades por localizador de marca, Google Search e Google Maps.
 2. Rastrear o domínio oficial no Firecrawl e extrair páginas de lojas, marcas, ofertas e contato.
 3. Deduplicar unidades por endereço e confirmar autorização/bandeira.
-4. Consultar bibliotecas de anúncios e registrar somente evidências localizadas.
+4. Contar anúncios ativos com o Actor oficial do Apify e revisar as páginas/bandeiras na biblioteca de anúncios.
 5. Encontrar decisor e champion no LinkedIn; complementar com Instagram, site e imprensa.
 6. Salvar valor, URL, fonte e data para cada campo.
 7. Classificar conta em P1/P2/P3 e pessoa em T1/T2/T3.
+
+## Contagem piloto de anúncios ativos
+
+Coleta executada em 07/10/2026 com o Actor oficial [`apify/facebook-ads-scraper`](https://apify.com/apify/facebook-ads-scraper), usando `onlyTotal: true` e `activeStatus: active`.
+
+| Conta | Página consultada | Anúncios ativos retornados | Classificação do sinal | Observação |
+|---|---|---:|---|---|
+| Grupo Saga | [Grupo Saga no Facebook](https://www.facebook.com/gruposagaoficial/) | 18 | `ads_ativos_detectados = sim` | Contagem da página oficial consultada; campanhas de bandeiras/unidades podem existir separadamente |
+| Grupo Navesa | [Ford Navesa no Facebook](https://www.facebook.com/CurtaNavesa/) | 16 | `ads_ativos_detectados = sim` | Resultado da página Ford Navesa, não soma automaticamente GWM, GAC ou outras bandeiras do grupo |
+| Grupo Líder | [Grupo Líder no Facebook](https://www.facebook.com/grupoliderof/) | 0 | `ads_ativos_detectados = nao_verificado` | Zero na página corporativa não prova ausência de Ads nas páginas das concessionárias, marcas ou regiões |
+
+- Execução Apify: `NAmgmJT4dAnmInSNb`.
+- Dataset: `7uq7t0mkduHE2um5w`.
+- A contagem é uma fotografia da consulta e pode mudar a qualquer momento.
+- Para qualificar o grupo completo, repetir a coleta nas páginas de cada bandeira/unidade localizada no site oficial.
 
 ## Concorrentes monitorados
 

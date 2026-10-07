@@ -26,7 +26,7 @@ Um grupo pode representar várias montadoras e continuar no ICP quando opera con
 
 | Critério | Campo | Regra pública | O que a evidência comprova | O que não comprova |
 |---|---|---|---|---|
-| Ads detectados | `ads_ativos_detectados` | `sim/nao_verificado` | Há anúncio ou landing page pública ativa | Investimento mensal, volume ou ROAS |
+| Ads detectados | `ads_ativos_detectados` | `sim/nao_verificado` | Há anúncio ou landing page pública ativa; contar na Meta com Apify `apify/facebook-ads-scraper` (`onlyTotal: true`) | Investimento mensal, volume ou ROAS |
 | WhatsApp comercial visível | `whatsapp_comercial_publico` | `sim/nao_verificado` | Existe canal em contexto de venda, oferta, test-drive ou contato comercial | Volume, SLA ou uso real para novos leads |
 | Estrutura comercial encontrada | `estrutura_comercial_publica` | `sim/nao_verificado` | Há área/cargo ligado a vendas, marketing, CRM, BDC, performance ou operações | Tamanho, capacidade ou processo do time |
 | Persona prioritária encontrada | `persona_prioritaria_encontrada` | `sim/nao_verificado` | Existe decisor ou champion atual com cargo confirmado | Autoridade final, dor ou intenção de compra |
