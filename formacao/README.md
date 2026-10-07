@@ -18,6 +18,11 @@ O material é uma síntese das aulas, não uma reprodução literal das transcri
 
 Veja também o [mapa completo dos sete módulos](modulos.md).
 
+## Atividades feitas
+
+- [ICP, personas e fontes públicas da Patagon AI](atividades-feitas/atividade-icp-personas-patagon.md) — concluída em 07/10/2026.
+- [Índice completo das atividades](atividades-feitas/README.md).
+
 ## Progresso de configuração
 
 - [x] Conta do GitHub criada.
@@ -29,6 +34,9 @@ Veja também o [mapa completo dos sete módulos](modulos.md).
 - [ ] Exercício com prompt estruturado e Template Master.
 - [ ] Skills da Aula 01 instaladas e testadas no fluxo pessoal.
 - [x] Documento de tom de voz — versão 1 criada.
+- [x] ICP primário e secundário da Patagon AI documentados.
+- [x] Mapeamento de 23 marcas automotivas e schemas de pesquisa criado.
+- [x] Personas automotivas e SaaS/plataformas mapeadas por fonte pública.
 - [ ] Documento de tom de voz revisado e aprovado pela Raissa.
 - [ ] Skill `nota-de-conexao` personalizada.
 - [ ] Loop de qualidade da `nota-de-conexao` implementado.
