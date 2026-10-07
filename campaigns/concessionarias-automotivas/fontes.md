@@ -1,30 +1,102 @@
-# Fontes dos sinais
+# Mapa de fontes e concorrentes
 
-Consultadas em 07/10/2026.
+Consultado em 07/10/2026. Este arquivo operacionaliza os critérios de [`filtros.md`](filtros.md) sem transformar ausência de evidência em desqualificação.
 
-## Grupo Líder
+## Cinco fontes priorizadas
+
+| Prioridade | Fonte pública | O que entrega | Como extrair | Esforço | Confiabilidade e limite |
+|---|---|---|---|---|---|
+| 1 | **Site oficial do grupo e das unidades**, partindo dos [localizadores das montadoras](../../playbook/mapeamento-marcas-automotivas.md) | Bandeiras, unidades, cidades, WhatsApp, ofertas, landing pages e sinais de estrutura | Firecrawl `map` para localizar páginas; `scrape`/`crawl` para conteúdo e links; revisão manual de contagem | Baixo a médio | Melhor combinação de critérios e fonte oficial; sites com JavaScript ou franquias em domínios separados exigem conferência |
+| 2 | **Google Search e Google Maps** | Descoberta de grupos/unidades, endereços, site, telefone/WhatsApp, avaliações e nomes ligados à empresa | Apify Google Maps Scraper para escala; Google Search e revisão manual para deduplicar | Baixo | Alta cobertura, mas Maps não comprova autorização nem deve contar oficina/peças/seminovos automaticamente |
+| 3 | **Meta Ad Library e Google Ads Transparency** | Anúncios, criativos, ofertas, destinos e atividade recente de mídia | Manual na [Meta Ad Library](https://www.facebook.com/ads/library/) e no [Google Ads Transparency Center](https://adstransparency.google.com/); registrar URL/print e data | Médio | Prova anúncio localizado, não orçamento; ausência fica `nao_verificado` |
+| 4 | **LinkedIn da empresa e das pessoas**, incluindo vagas | Estrutura comercial, cargos, vínculo, senioridade, atividade e temas públicos | Apify para company/employees/posts; busca e revisão manual para confirmar o perfil correto | Médio | Forte para diretorias e áreas corporativas; papel de compra continua sendo estimativa |
+| 5 | **Instagram oficial do grupo/unidade e de lideranças** | Ofertas, inaugurações, eventos, marcações, WhatsApp e pessoas visíveis na operação | Apify Instagram Scraper para posts públicos; revisão manual de bio, marcações e data | Médio | Muito útil no automotivo; cargo/vínculo de pessoa exige bio profissional, publicação institucional ou segunda fonte |
+
+### Resposta do exercício
+
+**A fonte que entrega mais critérios com menos esforço é o site oficial do grupo/unidade, iniciado pelo localizador da montadora.** Em uma única coleta é comum obter bandeira, unidades, cidades, canais comerciais, ofertas e links de campanha. O Google Maps entra antes como descoberta em escala, mas não deve ser a confirmação final dos gates.
+
+Primeira raspagem recomendada: sites oficiais das concessionárias encontradas nos localizadores das 13 marcas prioritárias, usando Firecrawl e o schema [`concessionaria-web.schema.json`](../../automations/leads/schemas/concessionaria-web.schema.json).
+
+## Melhores fontes por critério
+
+As fontes aparecem em ordem de preferência. “Manual” significa que o resultado precisa de leitura humana mesmo quando a descoberta foi automatizada.
+
+| Critério | 1ª fonte | 2ª fonte | 3ª fonte | 4ª fonte | 5ª fonte |
+|---|---|---|---|---|---|
+| `concessionaria_autorizada` | Localizador da montadora | Site da bandeira/unidade | Site do grupo | Google Search | Instagram oficial |
+| `operacao_por_bandeira` | Site da bandeira/unidade | Localizador da montadora | Site do grupo | Instagram oficial | Google Maps |
+| `unidades_comerciais_ativas` | Site/“lojas” do grupo | Localizadores das montadoras | Google Maps | Google Search | Instagram por unidade |
+| `ads_ativos_detectados` | Meta Ad Library | Google Ads Transparency | Landing pages do site | Instagram/Facebook oficial | Resultados patrocinados no Google |
+| `whatsapp_comercial_publico` | Site/landing page | Google Business/Maps | Instagram oficial | Anúncio ativo | Link de oferta/test-drive |
+| `estrutura_comercial_publica` | LinkedIn empresa/funcionários | Vagas públicas | Site/imprensa oficial | Instagram institucional | Eventos/associações do setor |
+| `persona_prioritaria_encontrada` | LinkedIn | Site/imprensa oficial | Instagram | Google Search | Eventos, montadoras e associações |
+| Cargo e vínculo da pessoa | LinkedIn atual | Publicação institucional | Site/imprensa | Instagram com evidência profissional | Evento/associação com data |
+
+## Ordem de extração
+
+1. Descobrir empresas e unidades por localizador de marca, Google Search e Google Maps.
+2. Rastrear o domínio oficial no Firecrawl e extrair páginas de lojas, marcas, ofertas e contato.
+3. Deduplicar unidades por endereço e confirmar autorização/bandeira.
+4. Consultar bibliotecas de anúncios e registrar somente evidências localizadas.
+5. Encontrar decisor e champion no LinkedIn; complementar com Instagram, site e imprensa.
+6. Salvar valor, URL, fonte e data para cada campo.
+7. Classificar conta em P1/P2/P3 e pessoa em T1/T2/T3.
+
+## Concorrentes monitorados
+
+O recorte abaixo inclui concorrentes funcionais, não necessariamente idênticos à Patagon AI. Os três oferecem automação ou agentes conversacionais com WhatsApp e jornadas de vendas/atendimento; a Patagon está sendo posicionada de forma mais específica em novos leads, qualificação, acompanhamento e handoff para o time comercial.
+
+| Concorrente | Sobreposição relevante | Página oficial de clientes/cases | Página social usada | Post de maior engajamento no recorte | Como extrair |
+|---|---|---|---|---|---|
+| **Blip** | Inteligência conversacional e IA em WhatsApp ao longo de marketing, vendas e atendimento | [Cases Blip](https://www.blip.ai/cases/) | [LinkedIn](https://www.linkedin.com/company/blipbr/) | [Blip id 2026 no ar](https://www.linkedin.com/posts/blipbr_blipid-blipid2026-conversasinteligentes-activity-7501290764522614784-VITH) — 130 reações, 1 comentário e 13 compartilhamentos; score 144 | Firecrawl na página de cases; Apify LinkedIn Company Posts nos posts |
+| **Zenvia** | Customer Cloud, IA e jornadas de venda/atendimento via canais conversacionais, incluindo WhatsApp | [Casos de sucesso](https://zenvia.com/casos-de-sucesso/) | [LinkedIn](https://www.linkedin.com/company/zenvia-inc/) | [Operação de Black Friday](https://www.linkedin.com/posts/zenvia-inc_como-bater-recordes-de-vendas-na-black-friday-activity-7512909136393744385-UQhf) — 82 reações, 17 comentários e 27 compartilhamentos; score 126 | Firecrawl na página de cases; Apify LinkedIn Company Posts nos posts |
+| **Botmaker** | Agentes de IA, bots e live chat para vendas, atendimento e processos no WhatsApp e outros canais | [Clientes e casos](https://botmaker.com/pt/nossos-clientes/todos-os-clientes/) | [LinkedIn](https://www.linkedin.com/company/botmaker/) | [Vagas em IA e operações](https://www.linkedin.com/posts/botmaker_la-ia-est%C3%A1-cambiando-la-forma-en-que-las-activity-7483514789260976128-GwjH) — 94 reações, 8 comentários e 8 compartilhamentos; score 110 | Firecrawl na página de clientes; Apify LinkedIn Company Posts nos posts |
+
+### Método do ranking de posts
+
+- Coleta: Apify `harvestapi/linkedin-company-posts` em 07/10/2026.
+- Amostra: até 30 posts por página, limitados aos últimos seis meses.
+- Itens retornados: 81.
+- Para evitar que um repost de terceiro ganhasse como se fosse conteúdo próprio, o ranking considerou apenas posts cujo autor era a própria empresa.
+- Score comparável do exercício: `reações + comentários + compartilhamentos`.
+- As métricas são uma fotografia da data de consulta e podem crescer depois.
+
+Não chamar esses resultados de “maior post de todos os tempos”. O resultado correto é **maior engajamento observado no recorte definido**.
+
+## O que observar nos concorrentes
+
+| Dimensão | Pergunta de análise |
+|---|---|
+| ICP comunicado | Falam com enterprise genérico, automotivo ou times comerciais com novos leads? |
+| Momento da jornada | Aquisição, primeiro atendimento, qualificação, venda, suporte ou pós-venda? |
+| Promessa | Receita, redução de custo, velocidade, disponibilidade ou experiência? |
+| Handoff humano | Como descrevem a passagem da IA para o time? |
+| Prova | Quais métricas e segmentos aparecem nos cases? |
+| Conteúdo | Quais formatos e temas concentram engajamento? |
+| Diferenciação Patagon | Onde uma proposta focada em lead novo + WhatsApp + qualificação + follow-up é mais clara e específica? |
+
+## Fontes históricas dos três leads da aula
+
+Estas fontes permanecem como memória do exercício anterior. Os leads precisam ser requalificados contra [`filtros.md`](filtros.md) antes de qualquer disparo.
+
+### Grupo Líder
 
 - Site institucional: <https://grupolider.com.br/>
 - Marcas e unidades: <https://grupolider.com.br/concessionarias>
 - Experiência do cliente e canais digitais: <https://blog.grupolider.com.br/experiencia-do-cliente-como-o-grupo-lider-esta-reinventando-o-atendimento/>
 
-Fatos usados: mais de 100 concessionárias, 11 marcas, quatro estados, agendamento online e consultas virtuais.
-
-## Grupo Saga
+### Grupo Saga
 
 - Site institucional: <https://www.gruposaga.com.br/>
 - Saga Geely: <https://www.geelybrasil.com.br/sagageely/quem-somos>
 - Lojas e canais de atendimento: <https://www.gruposaga.com.br/index.php/lojas>
 
-Fatos usados: mais de 110 lojas, 19 marcas, atuação em veículos, seminovos, consórcio, seguros e outros serviços, além de canais próprios de WhatsApp para Hyundai e Geely em Cuiabá.
-
-## Grupo Navesa
+### Grupo Navesa
 
 - Site institucional: <https://www.navesa.com.br/index.html>
 
-Fatos usados: mais de cinco décadas de mercado, 12 lojas, operação multimarcas, serviços integrados e unidade GAC Goiânia.
-
-## Perfis dos leads
+### Perfis dos leads
 
 - Fabio Calligari: <https://www.linkedin.com/in/fabio-calligari-2b836491/>
 - Lindomar Oliveira: <https://www.linkedin.com/in/lindomar-oliveira-29074315a/>

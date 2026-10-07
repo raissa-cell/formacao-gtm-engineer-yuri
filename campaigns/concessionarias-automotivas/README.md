@@ -20,14 +20,16 @@ A Patagon AI atende, qualifica e acompanha leads pelo WhatsApp até o momento de
 ## Arquivos principais
 
 - [`playbook.md`](playbook.md): estratégia e operação da campanha.
+- [`filtros.md`](filtros.md): gates, sinais públicos, filtros da pessoa e campos de discovery.
 - [`outbound/leads.md`](outbound/leads.md): pesquisa dos três leads e ganchos aprovados.
 - [`outbound/email-sequence.md`](outbound/email-sequence.md): loop de copy, revisão e versões finais.
-- [`fontes.md`](fontes.md): fontes usadas para confirmar os fatos.
+- [`fontes.md`](fontes.md): cinco fontes priorizadas, ordem de extração e mapa de concorrentes.
 
 ## Estado atual
 
 - Três leads pesquisados.
 - Três e-mails aprovados após três rodadas.
 - Os leads do exercício são material histórico da aula e precisam ser requalificados contra o ICP atual antes de qualquer disparo.
+- Filtros, fontes e três concorrentes funcionais estão documentados para a primeira coleta real.
 - Nenhuma mensagem enviada.
 - Ferramenta, datas e metas do primeiro ciclo: a definir.

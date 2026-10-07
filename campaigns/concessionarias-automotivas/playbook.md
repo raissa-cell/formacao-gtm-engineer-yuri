@@ -16,7 +16,7 @@ Documento mestre da campanha. Conteúdo, ads e outbound devem seguir as definiç
 | **Pessoa inadequada** | Contato sem responsabilidade ou influência sobre vendas, marketing, CRM, atendimento comercial, operações ou orçamento; procurar outra pessoa sem eliminar a empresa |
 | **Lista de negativação** | A definir |
 
-Definição canônica do ICP: [`../../playbook/icp-patagon-ai.md`](../../playbook/icp-patagon-ai.md). Fontes da campanha: `outbound/leads.md` e `fontes.md`.
+Definição canônica do ICP: [`../../playbook/icp-patagon-ai.md`](../../playbook/icp-patagon-ai.md). Filtros operacionais: [`filtros.md`](filtros.md). Fontes da campanha: `outbound/leads.md` e [`fontes.md`](fontes.md).
 
 ## 2. Estratégia
 
@@ -67,6 +67,7 @@ Voz: `brand/voice-outbound.md`.
 | 2 | Leitura dos perfis no LinkedIn | 3 → 3 | `outbound/leads.md` |
 | 3 | Pesquisa de fatos oficiais das empresas | 3 → 3 | `fontes.md` |
 | 4 | Loop de redator + revisor, máximo de três rodadas | 3 → 3 aprovados | `outbound/email-sequence.md` |
+| 5 | Mapa de fontes públicas e concorrentes funcionais | 5 fontes + 3 concorrentes | `filtros.md` e `fontes.md` |
 
 Para novas listas, descobrir empresas por Google e Google Maps; confirmar unidades no site ou localizador da montadora. Encontrar pessoas por LinkedIn, Instagram, site e imprensa, registrando sempre a fonte do cargo.
 
@@ -117,3 +118,4 @@ Checar antes do disparo: e-mail válido, consentimentos aplicáveis e variáveis
 - [ ] Confirmar os endereços de e-mail dos leads.
 - [ ] Definir ferramenta, datas, meta e lista de negativação.
 - [ ] Escrever follow-ups somente após a validação do primeiro e-mail.
+- [ ] Executar a primeira raspagem dos sites oficiais encontrados nos localizadores das marcas prioritárias.

@@ -21,6 +21,7 @@ Veja também o [mapa completo dos sete módulos](modulos.md).
 ## Atividades feitas
 
 - [ICP, personas e fontes públicas da Patagon AI](atividades-feitas/atividade-icp-personas-patagon.md) — concluída em 07/10/2026.
+- [Mapa de fontes e concorrentes](atividades-feitas/atividade-mapa-fontes-concorrentes.md) — concluída em 07/10/2026.
 - [Índice completo das atividades](atividades-feitas/README.md).
 
 ## Progresso de configuração
@@ -37,6 +38,7 @@ Veja também o [mapa completo dos sete módulos](modulos.md).
 - [x] ICP primário e secundário da Patagon AI documentados.
 - [x] Mapeamento de 23 marcas automotivas e schemas de pesquisa criado.
 - [x] Personas automotivas e SaaS/plataformas mapeadas por fonte pública.
+- [x] Filtros operacionais, cinco fontes prioritárias e concorrentes mapeados.
 - [ ] Documento de tom de voz revisado e aprovado pela Raissa.
 - [ ] Skill `nota-de-conexao` personalizada.
 - [ ] Loop de qualidade da `nota-de-conexao` implementado.
