@@ -33,6 +33,20 @@ As fontes aparecem em ordem de preferência. “Manual” significa que o result
 | `persona_prioritaria_encontrada` | LinkedIn | Site/imprensa oficial | Instagram | Google Search | Eventos, montadoras e associações |
 | Cargo e vínculo da pessoa | LinkedIn atual | Publicação institucional | Site/imprensa | Instagram com evidência profissional | Evento/associação com data |
 
+## Tráfego do site — Similarweb
+
+Usar o [Similarweb](https://www.similarweb.com/) para estimar o volume de visitas do domínio oficial e identificar tendência, canais e páginas mais acessadas quando esses dados estiverem disponíveis. Esse dado ajuda a priorizar contas com maior alcance digital e possível entrada de demanda no site.
+
+O tráfego estimado **não é quantidade de leads** e não confirma conversões nem volume de conversas no WhatsApp. Registrar domínio consultado, período, visitas estimadas, fonte e data; tratar resultado ausente ou indisponível como `nao_verificado`. Para confirmar leads e origem, usar dados internos da empresa durante discovery ou analytics compartilhado pelo prospect.
+
+| Campo sugerido | Fonte | Interpretação |
+|---|---|---|
+| `visitas_site_estimadas_mes` | Similarweb | Estimativa mensal de visitas ao domínio; guardar período e data da consulta |
+| `tendencia_trafego_site` | Similarweb | Tendência de crescimento/queda na janela disponível; sinal de alcance digital |
+| `canais_aquisicao_site` | Similarweb | Mix estimado de canais, quando disponível; pode indicar dependência de mídia paga ou busca |
+
+Esse sinal complementa Ads detectados e WhatsApp comercial público. Não substitui a confirmação de investimento em Ads, leads novos, conversão ou fluxo para WhatsApp.
+
 ## Ordem de extração
 
 1. Descobrir empresas e unidades por localizador de marca, Google Search e Google Maps.
@@ -41,9 +55,10 @@ As fontes aparecem em ordem de preferência. “Manual” significa que o result
 4. Enriquecer o mesmo domínio no Apollo para estimar colaboradores e localizar a página corporativa correta no LinkedIn.
 5. Deduplicar unidades por endereço e confirmar autorização/bandeira.
 6. Contar anúncios ativos com o Actor oficial do Apify e revisar as páginas/bandeiras na biblioteca de anúncios.
-7. Encontrar decisor e champion no LinkedIn; complementar com Instagram, site e imprensa.
-8. Salvar valor, URL, fonte e data para cada campo.
-9. Classificar conta em P1/P2/P3 e pessoa em T1/T2/T3.
+7. Consultar no Similarweb o domínio oficial para estimar tráfego mensal, tendência e canais de aquisição, quando houver cobertura.
+8. Encontrar decisor e champion no LinkedIn; complementar com Instagram, site e imprensa.
+9. Salvar valor, URL, período, fonte e data para cada campo.
+10. Classificar conta em P1/P2/P3 e pessoa em T1/T2/T3.
 
 ## Camada cadastral e de porte — Data Stone + Apollo
 

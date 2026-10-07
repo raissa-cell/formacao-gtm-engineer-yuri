@@ -24,6 +24,7 @@ Transformar o ICP de concessionárias da Patagon AI em um fluxo de pesquisa repr
 11. Inclusão da camada de enriquecimento por domínio: Data Stone para CNPJ, CNPJs ativos, sócios e candidatos a filiais; Apollo para colaboradores estimados.
 12. Enriquecimento Apollo de Grupo Saga (8.000 colaboradores estimados), Grupo Navesa (310) e Grupo Líder (850).
 13. Avaliação do Dealerbook e adoção dos localizadores oficiais das montadoras como alternativa aberta para descoberta de marcas e lojas.
+14. Inclusão do Similarweb para estimar tráfego e canais dos domínios oficiais como sinal de alcance digital, sem tratar visitas como leads.
 
 ## Arquivos produzidos
 

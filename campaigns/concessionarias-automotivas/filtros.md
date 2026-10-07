@@ -30,6 +30,8 @@ Um grupo pode representar várias montadoras e continuar no ICP quando opera con
 | WhatsApp comercial visível | `whatsapp_comercial_publico` | `sim/nao_verificado` | Existe canal em contexto de venda, oferta, test-drive ou contato comercial | Volume, SLA ou uso real para novos leads |
 | Estrutura comercial encontrada | `estrutura_comercial_publica` | `sim/nao_verificado` | Há área/cargo ligado a vendas, marketing, CRM, BDC, performance ou operações | Tamanho, capacidade ou processo do time |
 | Persona prioritária encontrada | `persona_prioritaria_encontrada` | `sim/nao_verificado` | Existe decisor ou champion atual com cargo confirmado | Autoridade final, dor ou intenção de compra |
+| Tráfego do site | `visitas_site_estimadas_mes` | Numérico ou `nao_verificado` | Estimativa de visitas do domínio oficial no Similarweb, com período e data registrados | Não comprova leads, conversões, investimento em mídia ou conversas no WhatsApp |
+| Tendência de tráfego | `tendencia_trafego_site` | `crescendo/estavel/caindo/nao_verificado` | Comparação entre períodos equivalentes no Similarweb | Não comprova crescimento de leads ou receita |
 
 ## Enriquecimento cadastral e porte
 
@@ -43,6 +45,7 @@ Estes campos apoiam deduplicação, dimensionamento e priorização, mas não su
 | CNPJs ativos | `cnpjs_ativos_total` | Data Stone | Contar somente situação cadastral ativa |
 | Sócios | `socios_total` | Data Stone | Contar pessoas/empresas únicas do quadro societário, documentando duplicidades |
 | Filiais comerciais | `filiais_comerciais_confirmadas` | Data Stone + site/localizador/Maps | CNPJ ativo sozinho não comprova unidade comercial; confirmar endereço e operação |
+| Alcance digital | `visitas_site_estimadas_mes` | Similarweb | Estimativa de visitas ao domínio; registrar janela, data e cobertura disponível. Usar como sinal de priorização, não como quantidade de leads |
 
 ### Priorização da conta
 
