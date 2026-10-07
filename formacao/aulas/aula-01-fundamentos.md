@@ -5,6 +5,11 @@
 **Tipo:** aula inaugural, com teoria e prática  
 **Fonte:** síntese de transcrição automática, revisada para corrigir termos e remover dados pessoais.
 
+## Materiais da aula
+
+- [Gravação da Aula 01](https://drive.google.com/file/d/1mfxJpr_kNJLQlW2TzWlT9CnjLoIf2aUL/view?usp=drive_link)
+- [Sumário e transcrição](https://docs.google.com/document/d/1o2uxw-_ZZ3p1Q9wdKogZZmCiVuqij2pXjtXrc7KZZfI/edit?usp=drive_link)
+
 ## Status pessoal
 
 **Situação em 07/10/2026:** os exercícios da Aula 01 ainda não foram executados. O repositório próprio e os MCPs de Nuvia, Apify e Firecrawl já foram configurados e testados, mas não contam como conclusão dos exercícios abaixo.
