@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "verified_at": "2026-10-07",
+  "country": "BR",
+  "purpose": "Descobrir grupos e unidades de concessionárias autorizadas para o ICP automotivo da Patagon AI.",
+  "rules": {
+    "count_as_commercial_unit": ["showroom", "vendas", "concessionaria_com_vendas"],
+    "do_not_count_as_separate_commercial_unit": ["oficina_isolada", "pecas", "centro_tecnico", "seminovos_no_mesmo_endereco", "endereco_duplicado"],
+    "official_confirmation_order": ["localizador_da_montadora", "site_oficial_do_grupo", "site_oficial_da_unidade", "google_business", "google_maps"],
+    "missing_result": "nao_verificado"
+  },
+  "query_templates": {
+    "official_units": [
+      "site:{official_domain} concessionária {brand} {city} {state}",
+      "site:{official_domain} concessionárias {brand} {state}",
+      "{brand} concessionária autorizada {city} {state}"
+    ],
+    "dealer_groups": [
+      "\"{brand}\" \"grupo\" concessionária {state}",
+      "\"{brand}\" \"nossas unidades\" concessionária",
+      "site:instagram.com {brand} concessionária {city}"
+    ],
+    "commercial_signals": [
+      "site:{dealer_domain} WhatsApp ofertas {brand}",
+      "site:{dealer_domain} test drive {brand}",
+      "site:{dealer_domain} fale com consultor {brand}"
+    ],
+    "people": [
+      "site:linkedin.com/in \"{dealer_group}\" \"diretor comercial\"",
+      "site:linkedin.com/in \"{dealer_group}\" (CRM OR BDC OR \"gerente comercial\")",
+      "site:instagram.com \"{dealer_group}\" (diretor OR gerente OR proprietário)"
+    ]
+  },
+  "brands": [
+    {"id":"fiat","name":"Fiat","aliases":["FIAT"],"priority":1,"official_site":"https://www.fiat.com.br/","official_domain":"fiat.com.br","locator_url":"https://www.fiat.com.br/concessionarias.html","locator_mode":"cidade_localizacao_filtros","locator_verified":true,"commercial_clues":["WhatsApp por concessionária","visite o site","agendar serviço"]},
+    {"id":"chevrolet","name":"Chevrolet","aliases":["GM","General Motors"],"priority":1,"official_site":"https://www.chevrolet.com.br/","official_domain":"chevrolet.com.br","locator_url":"https://www.chevrolet.com.br/localizar-concessionaria","locator_mode":"cidade_cep_nome_filtro_vendas","locator_verified":true,"commercial_clues":["pontos de venda","site da concessionária","vendas"]},
+    {"id":"volkswagen","name":"Volkswagen","aliases":["VW","Volks"],"priority":1,"official_site":"https://www.vw.com.br/","official_domain":"vw.com.br","locator_url":"https://www.vw.com.br/pt/busca-de-concessionarias.html","locator_mode":"cidade_cep_nome_filtros","locator_verified":true,"commercial_clues":["ponto oficial de vendas","serviços"]},
+    {"id":"toyota","name":"Toyota","aliases":["Toyota do Brasil"],"priority":1,"official_site":"https://www.toyota.com.br/","official_domain":"toyota.com.br","locator_url":"https://www.toyota.com.br/contato/localize-uma-concessionaria","locator_mode":"estado_cidade_lista","locator_verified":true,"commercial_clues":["solicitar contato","escolha a concessionária","test drive"]},
+    {"id":"honda_automoveis","name":"Honda Automóveis","aliases":["Honda","Honda Autos"],"priority":1,"official_site":"https://www.honda.com.br/automoveis/","official_domain":"honda.com.br","locator_url":"https://www.honda.com.br/automoveis/concessionarias/busca","locator_mode":"cep_cidade_estado_geolocalizacao","locator_verified":true,"commercial_clues":["tenho interesse","test drive","solicitar contato"]},
+    {"id":"hyundai","name":"Hyundai","aliases":["Hyundai Motor Brasil","HMB"],"priority":1,"official_site":"https://www.hyundai.com.br/","official_domain":"hyundai.com.br","locator_url":"https://www.hyundai.com.br/concessionarias.html","locator_mode":"localizacao_nome_cep","locator_verified":true,"commercial_clues":["test drive","ofertas","WhatsApp para contato"]},
+    {"id":"ford","name":"Ford","aliases":["Ford Brasil"],"priority":1,"official_site":"https://www.ford.com.br/","official_domain":"ford.com.br","locator_url":"https://www.ford.com.br/dealer-locator/","locator_mode":"cep_cidade_estado_filtro_vendas","locator_verified":true,"commercial_clues":["vendas","peças","serviços"]},
+    {"id":"renault","name":"Renault","aliases":["Renault do Brasil"],"priority":1,"official_site":"https://www.renault.com.br/","official_domain":"renault.com.br","locator_url":"https://www.renault.com.br/encontre-uma-concessionaria.html","locator_mode":"endereco_geolocalizacao_lista","locator_verified":true,"commercial_clues":["quero um Renault","consultor","test drive"]},
+    {"id":"nissan","name":"Nissan","aliases":["Nissan Brasil"],"priority":1,"official_site":"https://www.nissan.com.br/","official_domain":"nissan.com.br","locator_url":"https://www.nissan.com.br/encontre-uma-concessionaria.html","locator_mode":"cidade_cep_geolocalizacao","locator_verified":true,"commercial_clues":["encontre uma concessionária","test drive","ofertas"]},
+    {"id":"jeep","name":"Jeep","aliases":["Jeep Brasil"],"priority":1,"official_site":"https://www.jeep.com.br/","official_domain":"jeep.com.br","locator_url":"https://www.jeep.com.br/concessionarias.html","locator_mode":"cidade_localizacao_filtros","locator_verified":true,"commercial_clues":["concessionárias","vendas diretas","ofertas"]},
+    {"id":"byd","name":"BYD","aliases":["Build Your Dreams","BYD Auto"],"priority":1,"official_site":"https://www.byd.com/br/","official_domain":"byd.com","locator_url":"https://www.byd.com/br/find-store","locator_mode":"cep_endereco_cidade","locator_verified":true,"commercial_clues":["find store","test drive","condições comerciais"]},
+    {"id":"gwm","name":"GWM","aliases":["Great Wall Motor","Haval","Ora","Tank","Poer","Wey"],"priority":1,"official_site":"https://www.gwmmotors.com.br/pt","official_domain":"gwmmotors.com.br","locator_url":"https://www.gwmmotors.com.br/pt/concessionarias","locator_mode":"cep","locator_verified":true,"commercial_clues":["WhatsApp","test drive","concessionárias"]},
+    {"id":"caoa_chery","name":"CAOA Chery","aliases":["Chery","CAOA"],"priority":1,"official_site":"https://caoachery.com.br/","official_domain":"caoachery.com.br","locator_url":"https://caoachery.com.br/concessionarias/","locator_mode":"site_dinamico_com_fallback_google","locator_verified":false,"commercial_clues":["concessionárias","ofertas","test drive"]},
+    {"id":"ram","name":"Ram","aliases":["RAM Trucks","RAM"],"priority":2,"official_site":"https://www.ram.com.br/","official_domain":"ram.com.br","locator_url":"https://www.ram.com.br/concessionarias.html","locator_mode":"cidade_localizacao_filtros","locator_verified":true,"commercial_clues":["WhatsApp por concessionária","visite o site","vendas diretas"]},
+    {"id":"peugeot","name":"Peugeot","aliases":["Peugeot Brasil"],"priority":2,"official_site":"https://www.peugeot.com.br/","official_domain":"peugeot.com.br","locator_url":"https://carros.peugeot.com.br/servicos-e-manutencao/assistencia-e-garantia/peugeot-professional-center.html","locator_mode":"cidade_nome_cep_filtro_servico","locator_verified":true,"commercial_clues":["contato","concessionária","negocie por WhatsApp"]},
+    {"id":"citroen","name":"Citroën","aliases":["Citroen","Citroën Brasil"],"priority":2,"official_site":"https://www.citroen.com.br/","official_domain":"citroen.com.br","locator_url":"https://www.citroen.com.br/concessionarias.html","locator_mode":"cidade_localizacao","locator_verified":true,"commercial_clues":["solicite uma proposta","reserva online","concessionária"]},
+    {"id":"mitsubishi","name":"Mitsubishi Motors","aliases":["Mitsubishi","MIT"],"priority":2,"official_site":"https://www.mitsubishimotors.com.br/","official_domain":"mitsubishimotors.com.br","locator_url":"https://www.mitsubishimotors.com.br/concessionarias","locator_mode":"localizacao_rede","locator_verified":true,"commercial_clues":["rede de concessionárias","test drive","ofertas"]},
+    {"id":"kia","name":"Kia","aliases":["Kia Brasil","Kia Motors"],"priority":2,"official_site":"https://www.kia.com.br/","official_domain":"kia.com.br","locator_url":"https://www.kia.com.br/concessionarias","locator_mode":"estado_localizacao_lista_filtros","locator_verified":true,"commercial_clues":["showroom","assistência técnica","telefone"]},
+    {"id":"audi","name":"Audi","aliases":["Audi Brasil","Audi Center"],"priority":2,"official_site":"https://www.audi.com.br/","official_domain":"audi.com.br","locator_url":"https://www.audi.com.br/pt/informacoes-ao-consumidor/rede-concessionaria/","locator_mode":"rede_oficial_com_busca_no_site","locator_verified":true,"commercial_clues":["localize um concessionário","agende uma experiência","condições"]},
+    {"id":"volvo","name":"Volvo Cars","aliases":["Volvo","Volvo Car Brasil"],"priority":2,"official_site":"https://www.volvocars.com/br/","official_domain":"volvocars.com","locator_url":"https://www.volvocars.com/br/dealers/concessionarios/","locator_mode":"mapa_lista_filtro_vendas_servico","locator_verified":true,"commercial_clues":["vendas","serviço","contate-me"]},
+    {"id":"geely","name":"Geely","aliases":["Geely Auto","Geely Brasil"],"priority":2,"official_site":"https://www.geelybrasil.com.br/","official_domain":"geelybrasil.com.br","locator_url":"https://www.geelybrasil.com.br/contato","locator_mode":"formulario_com_lista_de_unidades","locator_verified":true,"commercial_clues":["selecione uma unidade","WhatsApp","modelo de interesse"]},
+    {"id":"gac","name":"GAC","aliases":["GAC Motor","GAC Brasil","Aion","Hyptec"],"priority":2,"official_site":"https://www.gacgroup.com/pt-br","official_domain":"gacgroup.com","locator_url":"https://www.gacgroup.com/pt-br","locator_mode":"menu_concessionario_com_fallback_google","locator_verified":true,"commercial_clues":["concessionário","tech drive","condições especiais"]},
+    {"id":"jac","name":"JAC Motors","aliases":["JAC","JAC Brasil"],"priority":2,"official_site":"https://www.jacmotors.com.br/","official_domain":"jacmotors.com.br","locator_url":"https://www.jacmotors.com.br/rede-credenciada/","locator_mode":"estado_cidade_tipo_lista","locator_verified":true,"commercial_clues":["concessionária","rede autorizada","corporativo frotas"]}
+  ]
+}

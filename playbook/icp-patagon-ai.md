@@ -305,6 +305,8 @@ Em empresas sem estrutura regional, como alguns SaaS, `unidade_ou_regiao` pode r
 6. Criar a abordagem com um fato verificável da empresa e uma responsabilidade real do cargo.
 7. Validar os critérios internos na discovery e atribuir `status_discovery`.
 
+Para o automotivo, usar o [mapeamento de marcas e schema de extração](mapeamento-marcas-automotivas.md) como ponto de partida da pesquisa.
+
 O script `automations/leads/triagem_icp.py` classifica pessoas por palavras-chave de cargo. Ele não substitui a qualificação de conta e não deve, sozinho, decidir se uma empresa pertence ao ICP da Patagon.
 
 ## 9. Contas-âncora

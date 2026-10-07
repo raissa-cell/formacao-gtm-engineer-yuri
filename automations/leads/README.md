@@ -1,5 +1,11 @@
 # Triagem de ICP — padrão para TODOS os leads
 
+## Pesquisa de concessionárias
+
+- `config/marcas-automotivas-br.json`: marcas, aliases, localizadores oficiais, prioridades e pistas comerciais.
+- `schemas/concessionaria-web.schema.json`: formato padronizado para registrar grupos, unidades, sinais comerciais e evidências encontradas nos sites.
+- `../../playbook/mapeamento-marcas-automotivas.md`: regras de pesquisa, contagem e deduplicação.
+
 `triagem_icp.py` é a classificação oficial de lead deste projeto. **Todo lead que entra, de qualquer post ou campanha, passa por aqui antes de virar campanha de outbound.** O ICP não é julgamento improvisado por post: é este vocabulário, calibrado com o seu mercado e revisado à mão. Ajuste as regex de `triagem_icp.py` ao SEU ICP.
 
 ## O que ele faz
