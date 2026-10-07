@@ -31,6 +31,19 @@ Um grupo pode representar várias montadoras e continuar no ICP quando opera con
 | Estrutura comercial encontrada | `estrutura_comercial_publica` | `sim/nao_verificado` | Há área/cargo ligado a vendas, marketing, CRM, BDC, performance ou operações | Tamanho, capacidade ou processo do time |
 | Persona prioritária encontrada | `persona_prioritaria_encontrada` | `sim/nao_verificado` | Existe decisor ou champion atual com cargo confirmado | Autoridade final, dor ou intenção de compra |
 
+## Enriquecimento cadastral e porte
+
+Estes campos apoiam deduplicação, dimensionamento e priorização, mas não substituem os três gates da empresa.
+
+| Critério | Campo | Fonte | Regra |
+|---|---|---|---|
+| Domínio oficial | `dominio_oficial` | Site oficial | Chave para cruzar Data Stone e Apollo |
+| Colaboradores estimados | `colaboradores_estimados` | Apollo | Inteiro estimado; sempre guardar a data da consulta |
+| CNPJ raiz | `cnpj_raiz` | Data Stone | Matriz associada ao domínio oficial |
+| CNPJs ativos | `cnpjs_ativos_total` | Data Stone | Contar somente situação cadastral ativa |
+| Sócios | `socios_total` | Data Stone | Contar pessoas/empresas únicas do quadro societário, documentando duplicidades |
+| Filiais comerciais | `filiais_comerciais_confirmadas` | Data Stone + site/localizador/Maps | CNPJ ativo sozinho não comprova unidade comercial; confirmar endereço e operação |
+
 ### Priorização da conta
 
 - **P1:** os três gates estão confirmados e os quatro sinais públicos foram encontrados.

@@ -21,6 +21,9 @@ Transformar o ICP de concessionárias da Patagon AI em um fluxo de pesquisa repr
 8. Raspagem ao vivo no Firecrawl das três páginas oficiais de clientes/cases, com saída estruturada em JSON.
 9. Contagem piloto de anúncios ativos de Grupo Saga, Ford Navesa e Grupo Líder com o Actor oficial da Meta Ad Library no Apify.
 10. Preservação das fontes históricas dos três leads da atividade anterior.
+11. Inclusão da camada de enriquecimento por domínio: Data Stone para CNPJ, CNPJs ativos, sócios e candidatos a filiais; Apollo para colaboradores estimados.
+12. Enriquecimento Apollo de Grupo Saga (8.000 colaboradores estimados), Grupo Navesa (310) e Grupo Líder (850).
+13. Avaliação do Dealerbook e adoção dos localizadores oficiais das montadoras como alternativa aberta para descoberta de marcas e lojas.
 
 ## Arquivos produzidos
 
@@ -54,6 +57,8 @@ São concorrentes funcionais; o mapeamento não afirma equivalência total com a
 - Firecrawl: `firecrawl_scrape` nas páginas oficiais de Blip, Zenvia e Botmaker, com `maxAge: 0` e schema JSON para clientes, casos de uso, métricas e evidências de WhatsApp/vendas.
 - Resultado Firecrawl: três respostas `HTTP 200`.
 - Ads: Apify `apify/facebook-ads-scraper`, com `onlyTotal: true` e `activeStatus: active`; retornou 18 anúncios para Grupo Saga, 16 para Ford Navesa e zero na página corporativa do Grupo Líder.
+- Apollo: enriquecimento canônico pelos domínios `gruposaga.com.br`, `navesa.com.br` e `grupolider.com.br`, com porte estimado de 8.000, 310 e 850 colaboradores, respectivamente.
+- Data Stone: fluxo definido como domínio → empresa raiz → CNPJs vinculados → CNPJs ativos → sócios; a coleta ficou pendente de autenticação na plataforma.
 
 O documento registra “maior engajamento observado no recorte”, não “maior post de todos os tempos”.
 
@@ -66,9 +71,11 @@ O documento registra “maior engajamento observado no recorte”, não “maior
 - As três páginas foram efetivamente raspadas pelo Firecrawl e retornaram conteúdo estruturado.
 - Os posts apontam para as páginas oficiais de cada empresa no LinkedIn.
 - O zero de anúncios na página corporativa do Grupo Líder foi mantido como `nao_verificado`, pois bandeiras e unidades podem anunciar por outras páginas.
+- CNPJ ativo foi separado de unidade comercial: cada filial precisa ser confirmada por endereço e operação no site, localizador da montadora ou Google Maps.
+- Colaboradores do Apollo foram registrados como estimativa, não como número oficial de vínculos.
 
 ## Próximo passo
 
-Executar a primeira coleta real de concessionárias a partir dos localizadores das marcas prioritárias, raspar os sites oficiais com Firecrawl e preencher os campos do schema de concessionárias.
+Autenticar a conta do Data Stone e completar, para os três domínios piloto, `cnpj_raiz`, `cnpjs_ativos_total` e `socios_total`; depois confirmar quais CNPJs ativos correspondem a unidades comerciais.
 
 Nenhuma mensagem foi enviada e nenhum contato foi enriquecido nesta atividade.

@@ -37,11 +37,42 @@ As fontes aparecem em ordem de preferência. “Manual” significa que o result
 
 1. Descobrir empresas e unidades por localizador de marca, Google Search e Google Maps.
 2. Rastrear o domínio oficial no Firecrawl e extrair páginas de lojas, marcas, ofertas e contato.
-3. Deduplicar unidades por endereço e confirmar autorização/bandeira.
-4. Contar anúncios ativos com o Actor oficial do Apify e revisar as páginas/bandeiras na biblioteca de anúncios.
-5. Encontrar decisor e champion no LinkedIn; complementar com Instagram, site e imprensa.
-6. Salvar valor, URL, fonte e data para cada campo.
-7. Classificar conta em P1/P2/P3 e pessoa em T1/T2/T3.
+3. Usar o domínio oficial no Data Stone para localizar a empresa raiz, contar CNPJs ativos e sócios; validar filiais pela situação cadastral, sem presumir que todo CNPJ seja uma unidade comercial.
+4. Enriquecer o mesmo domínio no Apollo para estimar colaboradores e localizar a página corporativa correta no LinkedIn.
+5. Deduplicar unidades por endereço e confirmar autorização/bandeira.
+6. Contar anúncios ativos com o Actor oficial do Apify e revisar as páginas/bandeiras na biblioteca de anúncios.
+7. Encontrar decisor e champion no LinkedIn; complementar com Instagram, site e imprensa.
+8. Salvar valor, URL, fonte e data para cada campo.
+9. Classificar conta em P1/P2/P3 e pessoa em T1/T2/T3.
+
+## Camada cadastral e de porte — Data Stone + Apollo
+
+O domínio oficial é a chave de entrada comum. No Data Stone, o fluxo esperado é **domínio → empresa raiz → CNPJs vinculados → somente situação cadastral ativa**. No Apollo, o domínio retorna o porte estimado da organização. As fontes não são intercambiáveis: Apollo estima colaboradores; Data Stone/Receita sustenta CNPJ, filiais e quadro societário.
+
+| Campo | Fonte principal | Regra de preenchimento |
+|---|---|---|
+| `dominio_oficial` | Site oficial | Domínio canônico, sem caminho e sem parâmetros |
+| `colaboradores_estimados` | Apollo | Registrar o número e marcar como estimativa, com data da consulta |
+| `cnpj_raiz` | Data Stone | CNPJ da matriz/empresa raiz localizada pelo domínio |
+| `cnpjs_ativos_total` | Data Stone | Contar apenas registros cuja situação cadastral esteja ativa |
+| `socios_total` | Data Stone | Contar sócios únicos vinculados ao CNPJ raiz; registrar a regra usada quando houver duplicidade |
+| `filiais_comerciais_confirmadas` | Data Stone + site/localizador/Maps | Um CNPJ ativo é candidato a filial; só vira unidade comercial após confirmação de endereço e operação |
+
+### Enriquecimento piloto por domínio
+
+Consulta executada no Apollo em 07/10/2026. O enriquecimento canônico consumiu um crédito por empresa encontrada. A consulta no Data Stone está pendente porque a sessão abriu na tela de login e o conector não está disponível neste ambiente; os campos correspondentes permanecem `nao_verificado` até a autenticação.
+
+| Empresa | Domínio | Colaboradores estimados (Apollo) | Total de sócios (Data Stone) | CNPJs ativos (Data Stone) |
+|---|---|---:|---:|---:|
+| Grupo Saga | `gruposaga.com.br` | 8.000 | `nao_verificado` | `nao_verificado` |
+| Grupo Navesa | `navesa.com.br` | 310 | `nao_verificado` | `nao_verificado` |
+| Grupo Líder | `grupolider.com.br` | 850 | `nao_verificado` | `nao_verificado` |
+
+Os números do Apollo representam porte estimado da organização no domínio, não folha de pagamento nem soma oficial de vínculos trabalhistas.
+
+## Dealerbook e alternativa aberta para marcas
+
+O Dealerbook foi avaliado, mas não é uma base aberta para extração: exige cadastro e limita recursos por plano; o “mapa com lojas” aparece nos planos de negócio. Para coleta reproduzível, priorizar os localizadores oficiais das montadoras. Testes com as páginas da Toyota e da CAOA Chery retornaram concessionária, cidade, UF, endereço e site, mantendo a marca conhecida pela fonte de origem.
 
 ## Contagem piloto de anúncios ativos
 
