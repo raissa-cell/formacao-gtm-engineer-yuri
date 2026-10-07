@@ -6,6 +6,8 @@ Ao fim dos 7 encontros, o motor da sua empresa está gerando leads. Cada módulo
 
 ## Dia 01 · Fundamentos
 
+**Documentação da aula:** [Aula 01 — Fundamentos, skills e loops](aulas/aula-01-fundamentos.md)
+
 **Card:** ICP, Claude Code como sistema operacional e a estrutura do seu projeto.
 **Modal:** A base de tudo
 
