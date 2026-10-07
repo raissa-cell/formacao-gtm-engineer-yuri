@@ -18,7 +18,8 @@ Transformar o ICP de concessionárias da Patagon AI em um fluxo de pesquisa repr
 5. Pesquisa de Blip, Zenvia e Botmaker como concorrentes funcionais.
 6. Registro das páginas oficiais de clientes/cases e das páginas no LinkedIn.
 7. Coleta no Apify de 81 posts e cálculo do maior engajamento observado em um recorte auditável.
-8. Preservação das fontes históricas dos três leads da atividade anterior.
+8. Raspagem ao vivo no Firecrawl das três páginas oficiais de clientes/cases, com saída estruturada em JSON.
+9. Preservação das fontes históricas dos três leads da atividade anterior.
 
 ## Arquivos produzidos
 
@@ -43,12 +44,14 @@ São concorrentes funcionais; o mapeamento não afirma equivalência total com a
 
 ## Método de conteúdo
 
-- Ferramenta: Apify `harvestapi/linkedin-company-posts`.
+- Apify: `harvestapi/linkedin-company-posts`.
 - Janela: últimos seis meses.
 - Limite: até 30 posts por página oficial.
 - Total coletado: 81 posts.
 - Ranking: reações + comentários + compartilhamentos.
 - Reposts de terceiros foram excluídos da escolha final.
+- Firecrawl: `firecrawl_scrape` nas páginas oficiais de Blip, Zenvia e Botmaker, com `maxAge: 0` e schema JSON para clientes, casos de uso, métricas e evidências de WhatsApp/vendas.
+- Resultado Firecrawl: três respostas `HTTP 200`.
 
 O documento registra “maior engajamento observado no recorte”, não “maior post de todos os tempos”.
 
@@ -58,6 +61,7 @@ O documento registra “maior engajamento observado no recorte”, não “maior
 - Dados internos — volume, investimento, processo, equipe e dor — não foram promovidos a filtros públicos.
 - A ausência de anúncio ou WhatsApp público permanece `nao_verificado`.
 - As três páginas de clientes/cases pertencem aos domínios oficiais dos concorrentes.
+- As três páginas foram efetivamente raspadas pelo Firecrawl e retornaram conteúdo estruturado.
 - Os posts apontam para as páginas oficiais de cada empresa no LinkedIn.
 
 ## Próximo passo

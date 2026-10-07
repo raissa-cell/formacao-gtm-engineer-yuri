@@ -53,11 +53,24 @@ O recorte abaixo inclui concorrentes funcionais, não necessariamente idênticos
 | **Zenvia** | Customer Cloud, IA e jornadas de venda/atendimento via canais conversacionais, incluindo WhatsApp | [Casos de sucesso](https://zenvia.com/casos-de-sucesso/) | [LinkedIn](https://www.linkedin.com/company/zenvia-inc/) | [Operação de Black Friday](https://www.linkedin.com/posts/zenvia-inc_como-bater-recordes-de-vendas-na-black-friday-activity-7512909136393744385-UQhf) — 82 reações, 17 comentários e 27 compartilhamentos; score 126 | Firecrawl na página de cases; Apify LinkedIn Company Posts nos posts |
 | **Botmaker** | Agentes de IA, bots e live chat para vendas, atendimento e processos no WhatsApp e outros canais | [Clientes e casos](https://botmaker.com/pt/nossos-clientes/todos-os-clientes/) | [LinkedIn](https://www.linkedin.com/company/botmaker/) | [Vagas em IA e operações](https://www.linkedin.com/posts/botmaker_la-ia-est%C3%A1-cambiando-la-forma-en-que-las-activity-7483514789260976128-GwjH) — 94 reações, 8 comentários e 8 compartilhamentos; score 110 | Firecrawl na página de clientes; Apify LinkedIn Company Posts nos posts |
 
+### Evidências extraídas com Firecrawl
+
+As três páginas oficiais foram raspadas ao vivo em 07/10/2026 com `firecrawl_scrape`, `maxAge: 0` e saída estruturada em JSON. As informações abaixo vieram do conteúdo das páginas, não de snippets de busca.
+
+| Concorrente | Casos extraídos da página oficial | Evidência de WhatsApp, vendas ou leads | Status da coleta |
+|---|---|---|---|
+| **Blip** | Stellantis, Banco Arbi, Claro Chile, Energisa e Leroy Merlin, entre outros | Stellantis usa WhatsApp em suporte técnico; Banco Arbi escalou venda de consignado no canal; Claro Chile aparece com venda remota e acompanhamento via WhatsApp | `HTTP 200`; scrape `01a11893-e5ac-702b-a097-b004951a8a2e` |
+| **Zenvia** | Agro Amazônia, Le Creuset, Light, Smart Fluency, Mamba Digital e Cartão de TODOS, entre outros | Smart Fluency aparece com faturamento dobrado usando WhatsApp e chatbot; Cartão de TODOS com aumento de 26% na conversão via chamadas de voz no WhatsApp | `HTTP 200`; scrape `01a11893-e6b1-73c3-9c7c-1f006d250338` |
+| **Botmaker** | Payless, Alicerce, Tenda, Ford, Boti e Viacerta, entre outros | Tenda aparece com aumento de 13% nas vendas mensais; 70% dos leads da Ford são atendidos pelo bot sem intervenção humana | `HTTP 200`; scrape `01a11893-e6ab-72c9-8070-172ed77b575f` |
+
+Essas evidências ajudam a comparar linguagem, prova e caso de uso. Não demonstram que a solução, implantação ou ICP de cada concorrente seja igual ao da Patagon AI.
+
 ### Método do ranking de posts
 
 - Coleta: Apify `harvestapi/linkedin-company-posts` em 07/10/2026.
 - Amostra: até 30 posts por página, limitados aos últimos seis meses.
 - Itens retornados: 81.
+- Execução Apify: `beQc3ua6q8fIxc2XG`; dataset: `vTelji4UXE78vSshg`.
 - Para evitar que um repost de terceiro ganhasse como se fosse conteúdo próprio, o ranking considerou apenas posts cujo autor era a própria empresa.
 - Score comparável do exercício: `reações + comentários + compartilhamentos`.
 - As métricas são uma fotografia da data de consulta e podem crescer depois.
