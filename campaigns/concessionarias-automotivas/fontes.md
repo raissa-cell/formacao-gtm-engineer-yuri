@@ -6,15 +6,17 @@ Consultadas em 07/10/2026.
 
 - Site institucional: <https://grupolider.com.br/>
 - Marcas e unidades: <https://grupolider.com.br/concessionarias>
+- Experiência do cliente e canais digitais: <https://blog.grupolider.com.br/experiencia-do-cliente-como-o-grupo-lider-esta-reinventando-o-atendimento/>
 
-Fatos usados: mais de 100 concessionárias, 11 marcas e quatro estados.
+Fatos usados: mais de 100 concessionárias, 11 marcas, quatro estados, agendamento online e consultas virtuais.
 
 ## Grupo Saga
 
 - Site institucional: <https://www.gruposaga.com.br/>
 - Saga Geely: <https://www.geelybrasil.com.br/sagageely/quem-somos>
+- Lojas e canais de atendimento: <https://www.gruposaga.com.br/index.php/lojas>
 
-Fatos usados: mais de 110 lojas, 19 marcas e atuação em veículos, seminovos, consórcio, seguros e outros serviços.
+Fatos usados: mais de 110 lojas, 19 marcas, atuação em veículos, seminovos, consórcio, seguros e outros serviços, além de canais próprios de WhatsApp para Hyundai e Geely em Cuiabá.
 
 ## Grupo Navesa
 

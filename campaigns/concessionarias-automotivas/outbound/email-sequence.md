@@ -116,3 +116,61 @@ Exercício realizado com dois papéis separados: redator e revisor. Cada mensage
 Os três e-mails passaram nos cinco critérios e no requisito adicional de usar um gancho de empresa + cargo diretamente relevante ao pitch, sem transformar escala ou operação multimarcas em problema confirmado.
 
 Nenhuma mensagem foi enviada.
+
+## Versão recomendada — pesquisa aprofundada
+
+Após a terceira rodada, foi feita uma pesquisa adicional sobre as empresas. Esta passa a ser a versão recomendada: combina fato da empresa, contexto do cargo e uma menção curta à Patagon AI.
+
+### Fabio Calligari — Grupo Líder
+
+**Assunto A:** Do lead à unidade certa
+
+**Assunto B:** Primeiro atendimento no Grupo Líder
+
+> Fabio,
+>
+> Vi que o Grupo Líder reúne mais de 100 concessionárias, 11 marcas e uma jornada digital que já inclui agendamento online e consultas virtuais. Numa estrutura assim, o lead pode chegar por marcas, cidades e intenções bem diferentes.
+>
+> A Patagon AI entra nesse primeiro contato pelo WhatsApp: entende o contexto, qualifica a demanda e envolve o time comercial quando faz sentido.
+>
+> Como vocês definem hoje para qual unidade e equipe cada conversa deve seguir?
+>
+> Raissa
+
+**Por que funciona:** usa escala e maturidade digital da empresa, conecta com a responsabilidade executiva e pergunta sobre roteamento sem afirmar que existe falha.
+
+### Lindomar Oliveira — Grupo Saga
+
+**Assunto A:** Visibilidade do primeiro contato
+
+**Assunto B:** Follow-up entre marcas no Grupo Saga
+
+> Lindomar,
+>
+> Vi que você chegou à coordenação comercial do Grupo Saga depois de uma trajetória que passou por varejo, crédito, compras e 18 anos de representação comercial. Em Cuiabá, o grupo já opera marcas como Hyundai e Geely com canais próprios de WhatsApp.
+>
+> A Patagon AI ajuda a manter o contexto desde a primeira conversa, qualificar o interesse e envolver o vendedor no momento certo.
+>
+> Como vocês dão visibilidade ao primeiro atendimento e ao follow-up entre operações tão diferentes?
+>
+> Raissa
+
+**Por que funciona:** relaciona a trajetória operacional do lead a um fato local da empresa e explora um desafio provável da coordenação sem tratá-lo como problema confirmado.
+
+### Sandro Toledo — GAC Navesa
+
+**Assunto A:** Qualificação antes do vendedor
+
+**Assunto B:** Primeiro atendimento na GAC Navesa
+
+> Sandro,
+>
+> Vi que você lidera o comercial da GAC Navesa e construiu sua trajetória olhando para CRM, KPIs, turnaround e o ciclo completo de vendas. Por isso, fiquei curiosa sobre como vocês leem o início desse funil.
+>
+> A Patagon AI atua antes da passagem para o vendedor: conversa pelo WhatsApp, identifica a intenção e qualifica o lead.
+>
+> Quais sinais vocês usam hoje para decidir que um lead da GAC está pronto para o time comercial?
+>
+> Raissa
+
+**Por que funciona:** conversa com a linguagem profissional do Sandro, conecta a Patagon ao ponto do funil mais próximo de sua experiência e termina com uma pergunta útil sobre critérios de qualificação.
