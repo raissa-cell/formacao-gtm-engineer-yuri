@@ -14,6 +14,7 @@
 ## Estrutura
 | Pasta | O que vai aqui |
 |---|---|
+| `playbook.md` | documento mestre: ICP, estratégia, canais, sequência, leads de exemplo, data de início e resultados |
 | `conteudo/` | posts, carrosséis e o material rico, no formato `AAAA-MM/<nome-do-post>/` |
 | `ads/creative/` | criativos e copy de anúncios |
 | `outbound/` | listas tratadas, sequências de DM/e-mail, mensagens |
