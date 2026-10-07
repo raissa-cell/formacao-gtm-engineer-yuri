@@ -28,7 +28,8 @@ Veja também o [mapa completo dos sete módulos](modulos.md).
 - [ ] Exercício de linha de base da nota de conexão.
 - [ ] Exercício com prompt estruturado e Template Master.
 - [ ] Skills da Aula 01 instaladas e testadas no fluxo pessoal.
-- [ ] Documento de tom de voz concluído.
+- [x] Documento de tom de voz — versão 1 criada.
+- [ ] Documento de tom de voz revisado e aprovado pela Raissa.
 - [ ] Skill `nota-de-conexao` personalizada.
 - [ ] Loop de qualidade da `nota-de-conexao` implementado.
 

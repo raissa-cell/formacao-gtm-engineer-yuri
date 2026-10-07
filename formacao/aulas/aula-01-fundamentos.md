@@ -15,7 +15,8 @@
 - [ ] Exercício 4 — instalar e testar as skills da aula.
 - [ ] Exercício 5 — criar a skill `nota-de-conexao`.
 - [ ] Exercício 6 — transformar a skill em loop.
-- [ ] Tarefa principal — concluir o documento de tom de voz.
+- [x] Tarefa principal — versão 1 do documento de tom de voz criada.
+- [ ] Revisar e aprovar o documento de tom de voz com exemplos reais.
 
 ## Objetivo da aula
 
@@ -262,7 +263,7 @@ Demais tarefas:
 - Repositório próprio criado e publicado no GitHub.
 - MCPs de Nuvia, Apify e Firecrawl configurados e testados.
 - Documentação evolutiva da formação iniciada.
-- Todos os exercícios práticos da Aula 01 ainda estão pendentes.
+- A versão 1 do documento de tom de voz foi criada; os demais exercícios práticos continuam pendentes.
 
 ## Próxima aula
 
