@@ -6,26 +6,26 @@ Documento mestre da campanha. Conteúdo, ads e outbound devem seguir as definiç
 
 | Campo | Definição |
 |---|---|
-| **Empresa** | Grupos brasileiros de concessionárias com múltiplas unidades, marcas ou jornadas comerciais |
-| **Sinal técnico/comportamental de fit** | Operação distribuída entre lojas/marcas e atendimento de leads por canais digitais, especialmente WhatsApp |
-| **Pessoa (decisor)** | Diretor executivo, diretor comercial ou coordenador comercial |
+| **Empresa** | Redes ou operações brasileiras de concessionárias autorizadas focadas em uma marca/bandeira, com quatro ou mais unidades |
+| **Sinal técnico/comportamental de fit** | Ads ativos, entrada de novos leads pelo WhatsApp, volume comercial relevante e estrutura para assumir oportunidades qualificadas |
+| **Pessoa (decisor)** | Diretor comercial, de marketing, de operações ou executivo; gerentes/coordenadores de Comercial, CRM/BDC e Performance como champions |
 | **Dor comum** | Organizar o primeiro atendimento, a qualificação, o acompanhamento e o direcionamento do lead ao time correto |
-| **Quem fica de fora** | Empresas sem operação ativa; lojas isoladas sem estrutura comercial; contatos sem responsabilidade sobre vendas, atendimento ou CRM |
+| **Quem fica de fora** | Multimarcas independentes; redes com menos de quatro unidades; empresas sem Ads ou WhatsApp comercial; contatos sem responsabilidade sobre vendas, demanda, atendimento ou CRM |
 | **Lista de negativação** | A definir |
 
-Fonte de verdade da base: `outbound/leads.md` e `fontes.md`.
+Definição canônica do ICP: [`../../playbook/icp-patagon-ai.md`](../../playbook/icp-patagon-ai.md). Fontes da campanha: `outbound/leads.md` e `fontes.md`.
 
 ## 2. Estratégia
 
 - **Oferta:** a Patagon AI atende, qualifica e acompanha leads pelo WhatsApp até o momento de envolver o time comercial.
 - **Ímã:** a definir.
-- **Ideia da campanha:** abrir a conversa a partir de um fato verificável da empresa e de uma responsabilidade real do cargo, conectando escala, marcas, unidades ou jornada comercial ao processo de atendimento.
+- **Ideia da campanha:** abrir a conversa a partir de um fato verificável da empresa e de uma responsabilidade real do cargo, conectando escala de unidades, aquisição paga e fluxo comercial no WhatsApp ao processo de atendimento.
 - **Objetivo (60-90 dias):** a definir.
 - **Métrica norte:** reuniões qualificadas agendadas.
 
 ### Regra de personalização
 
-1. Priorizar fatos da empresa diretamente ligados ao pitch: unidades, marcas, expansão, jornadas, canais e operação comercial.
+1. Priorizar fatos da empresa diretamente ligados ao pitch: bandeira atendida, número de unidades, campanhas ativas, expansão, entrada pelo WhatsApp e estrutura comercial.
 2. Relacionar o fato à responsabilidade real do cargo.
 3. Tratar qualquer dor como hipótese ou pergunta, nunca como problema confirmado.
 4. Não usar faculdade, localização ou elogio genérico quando não houver ponte comercial direta.
@@ -67,6 +67,8 @@ Voz: `brand/voice-outbound.md`.
 
 ## 6. Leads de exemplo e mensagens
 
+> **Atenção:** os três contatos abaixo foram usados no exercício da aula antes da definição atual do ICP. Como pertencem a grupos multimarcas, são exemplos de copy e pesquisa — não uma lista aprovada para disparo. Para entrarem na campanha atual, a operação precisa ser requalificada no nível de uma bandeira/rede específica e cumprir todos os critérios obrigatórios.
+
 | Lead | Cargo / empresa | Gancho aprovado | Mensagem |
 |---|---|---|---|
 | Fabio Calligari | Diretor Executivo, Grupo Líder | Mais de 100 unidades, 11 marcas e quatro estados | `outbound/email-sequence.md` |
@@ -104,6 +106,7 @@ Checar antes do disparo: e-mail válido, consentimentos aplicáveis e variáveis
 ## 9. Pendente
 
 - [ ] Validar a oferta e os três modelos com a turma.
+- [ ] Requalificar os três leads históricos contra o ICP atual antes de qualquer disparo.
 - [ ] Confirmar os endereços de e-mail dos leads.
 - [ ] Definir ferramenta, datas, meta e lista de negativação.
 - [ ] Escrever follow-ups somente após a validação do primeiro e-mail.

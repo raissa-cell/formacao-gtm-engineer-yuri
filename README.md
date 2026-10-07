@@ -72,7 +72,7 @@ O `/setup` entrevista você, preenche `brand/` com a sua voz e o seu visual, tro
 | [`brand/`](brand) | Templates de voz, voz de outbound, background, design | Preencher UMA vez; toda skill de copy lê daqui |
 | [`campaigns/`](campaigns) | `_template/` e um exemplo real anonimizado | Uma pasta por público-alvo |
 | [`automations/`](automations) | comment-to-dm, leads, publishing, content-curation, keepalive, runtime | Rodar o motor de sinal → DM → score |
-| [`playbook/`](playbook) | 3 pilares, comment-gate, lições aprendidas, workflow, experimentos | Antes de automatizar e ao planejar |
+| [`playbook/`](playbook) | ICP da Patagon, 3 pilares, comment-gate, lições aprendidas, workflow e experimentos | Antes de automatizar e ao planejar |
 | [`formacao/`](formacao) | Diário das aulas e mapa dos 7 módulos | Acompanhar a formação e revisar os exercícios |
 | [`.claude/skills/`](.claude/skills) | 25 skills | A IA carrega sozinha pela descrição |
 | [`.claude/agents/`](.claude/agents) | `sdr-qualificador`, `auditor-de-copy` | Qualificar leads e auditar copy |
