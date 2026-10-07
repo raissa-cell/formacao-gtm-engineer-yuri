@@ -1,0 +1,164 @@
+{
+  "version": "1.0.0",
+  "verified_at": "2026-10-07",
+  "purpose": "Encontrar e priorizar pessoas públicas nas contas aderentes ao ICP da Patagon AI.",
+  "states": ["sim", "nao", "nao_verificado", "nao_aplicavel"],
+  "source_questions": {
+    "linkedin": {
+      "answers": ["quem ocupa o cargo", "empresa atual", "senioridade", "tempo aproximado no cargo", "atividade profissional pública"],
+      "strength": "alta_para_vinculo_e_cargo",
+      "caution": "perfil pode estar desatualizado"
+    },
+    "instagram": {
+      "answers": ["quem aparece ligado à operação", "proprietários e gestores locais", "eventos", "inaugurações", "marcações da empresa"],
+      "strength": "alta_para_descoberta_automotiva",
+      "caution": "cargo e vínculo exigem bio profissional, publicação institucional ou segunda fonte"
+    },
+    "google": {
+      "answers": ["nomeações", "entrevistas", "eventos", "premiações", "menções do cargo", "fala pública sobre problemas"],
+      "strength": "media_a_alta_conforme_fonte",
+      "caution": "conferir data e origem da publicação"
+    },
+    "company_site": {
+      "answers": ["liderança oficial", "vínculo", "escopo", "unidade ou região", "canais públicos"],
+      "strength": "alta",
+      "caution": "páginas institucionais podem não ser atualizadas rapidamente"
+    },
+    "press_events_associations": {
+      "answers": ["vínculo e cargo em data específica", "responsabilidade declarada", "expansão", "tema de interesse"],
+      "strength": "alta_quando_datada_e_oficial",
+      "caution": "não assumir que o cargo continua atual sem confirmação"
+    },
+    "reddit_reviews_comments": {
+      "answers": ["como o mercado descreve a dor", "objeções", "linguagem usada em voz alta"],
+      "strength": "pesquisa_de_mercado",
+      "caution": "não usar para atribuir dor, opinião ou intenção de compra a uma pessoa específica"
+    },
+    "competitors_customers": {
+      "answers": ["categoria de solução comprada", "casos de uso", "alternativas consideradas"],
+      "strength": "pesquisa_de_categoria",
+      "caution": "não prova compra, intenção ou prioridade da pessoa pesquisada"
+    }
+  },
+  "qualification_rules": {
+    "target_person_required": [
+      "current_employment_confirmed=sim",
+      "title_exact_found=sim",
+      "eligible_area=sim",
+      "role_estimated in [decision_maker, champion]",
+      "source_url present",
+      "verified_at present"
+    ],
+    "instagram_only_rule": "Se a descoberta começar no Instagram, confirmar cargo e vínculo em bio profissional, publicação institucional ou segunda fonte.",
+    "missing_result": "nao_verificado",
+    "do_not_infer": ["dor individual", "orçamento", "autoridade final", "meta", "processo interno", "intenção de compra"]
+  },
+  "status_persona": {
+    "T1": "Vínculo e cargo confirmados; decisor ou champion; escopo aderente; fonte forte.",
+    "T2": "Vínculo e cargo confirmados; papel de compra ou escopo ainda estimado.",
+    "T3": "Nome promissor, mas vínculo, cargo ou escopo precisa de segunda fonte.",
+    "nao_prioritaria": "Cargo atual confirmado, porém sem relação ou influência sobre a jornada de leads.",
+    "desatualizada": "Vínculo ou cargo deixou de ser atual."
+  },
+  "segments": {
+    "automotive": {
+      "decision_makers": [
+        "proprietário",
+        "sócio",
+        "presidente",
+        "CEO",
+        "diretor executivo",
+        "diretor comercial",
+        "diretor de marketing",
+        "diretor de operações",
+        "diretor de negócios",
+        "diretor digital",
+        "head comercial",
+        "head de marketing",
+        "head de growth"
+      ],
+      "champions": [
+        "gerente comercial",
+        "gerente geral",
+        "gerente regional",
+        "gerente de CRM",
+        "coordenador de CRM",
+        "gerente de BDC",
+        "coordenador de BDC",
+        "gerente de vendas digitais",
+        "gerente de e-commerce",
+        "gerente de marketing",
+        "gerente de performance",
+        "gerente de relacionamento",
+        "gerente de central de leads",
+        "coordenador comercial"
+      ],
+      "users_influencers": [
+        "líder de BDC",
+        "líder de central de atendimento",
+        "pré-vendas",
+        "gestor de loja",
+        "analista de CRM",
+        "consultor de vendas",
+        "vendedor"
+      ],
+      "non_priority_areas": ["RH", "financeiro sem escopo comercial", "jurídico", "peças", "oficina", "pós-venda sem escopo de novos leads"],
+      "preferred_sources": ["linkedin", "instagram", "company_site", "google", "press_events_associations"]
+    },
+    "saas_platform": {
+      "decision_makers": [
+        "CRO",
+        "VP de vendas",
+        "diretor de vendas",
+        "head de vendas",
+        "diretor comercial",
+        "head comercial",
+        "CMO",
+        "VP de marketing",
+        "diretor de marketing",
+        "head de growth",
+        "diretor de aquisição de parceiros",
+        "head de aquisição de parceiros",
+        "diretor de operações",
+        "COO",
+        "CEO",
+        "fundador"
+      ],
+      "champions": [
+        "gerente de SDR",
+        "gerente de pré-vendas",
+        "head de SDR",
+        "RevOps",
+        "Sales Ops",
+        "gerente de growth",
+        "gerente de performance",
+        "gerente de CRM",
+        "gerente de aquisição de parceiros",
+        "gerente de onboarding",
+        "gerente de ativação de parceiros",
+        "gerente de vendas SMB",
+        "gerente de operações comerciais"
+      ],
+      "users_influencers": ["SDR", "BDR", "inside sales", "consultor comercial", "onboarding de parceiros", "ativação de parceiros"],
+      "non_priority_areas": ["engenharia sem escopo GTM", "produto sem escopo de aquisição", "RH", "jurídico", "suporte sem escopo comercial"],
+      "preferred_sources": ["linkedin", "company_site", "google", "press_events_associations"]
+    }
+  },
+  "query_templates": {
+    "linkedin_google": [
+      "site:linkedin.com/in \"{company}\" \"{title}\"",
+      "site:linkedin.com/in \"{company}\" ({title_1} OR {title_2})",
+      "site:linkedin.com/in \"{brand_or_unit}\" (CRM OR BDC OR comercial OR marketing)"
+    ],
+    "instagram_google": [
+      "site:instagram.com \"{company}\" (diretor OR gerente OR proprietário)",
+      "site:instagram.com \"{brand_or_unit}\" (inauguração OR premiação OR equipe)",
+      "site:instagram.com \"{person_name}\" \"{company}\""
+    ],
+    "site_and_press": [
+      "site:{company_domain} (diretoria OR equipe OR liderança OR imprensa)",
+      "\"{person_name}\" \"{company}\" (diretor OR gerente OR head)",
+      "\"{company}\" (nomeia OR anuncia OR inaugura) (diretor OR gerente OR head)"
+    ]
+  }
+}

@@ -70,6 +70,8 @@ Voz: `brand/voice-outbound.md`.
 
 Para novas listas, descobrir empresas por Google e Google Maps; confirmar unidades no site ou localizador da montadora. Encontrar pessoas por LinkedIn, Instagram, site e imprensa, registrando sempre a fonte do cargo.
 
+Classificar cada pessoa como T1, T2, T3, não prioritária ou desatualizada conforme o [`mapeamento de personas`](../../playbook/mapeamento-personas.md). Descobertas feitas no Instagram precisam de confirmação do cargo e vínculo em bio profissional, publicação institucional ou segunda fonte.
+
 ## 6. Leads de exemplo e mensagens
 
 > **Atenção:** os três contatos abaixo foram usados no exercício da aula antes da definição atual do ICP. Pertencer a um grupo que representa várias montadoras não os elimina: antes de priorizar, é preciso confirmar os gates estruturais e pesquisar Ads e WhatsApp comercial público. Entrada e volume reais de novos leads no WhatsApp serão validados na discovery.

@@ -6,6 +6,12 @@
 - `schemas/concessionaria-web.schema.json`: formato padronizado para registrar grupos, unidades, sinais comerciais e evidências encontradas nos sites.
 - `../../playbook/mapeamento-marcas-automotivas.md`: regras de pesquisa, contagem e deduplicação.
 
+## Pesquisa de pessoas
+
+- `config/personas-patagon.json`: cargos por segmento, perguntas por fonte, consultas e regras de prioridade.
+- `schemas/persona-publica.schema.json`: formato para registrar vínculo, cargo, escopo, papel estimado e evidências.
+- `../../playbook/mapeamento-personas.md`: método completo para LinkedIn, Instagram, Google, sites, imprensa e fontes de linguagem de mercado.
+
 `triagem_icp.py` é a classificação oficial de lead deste projeto. **Todo lead que entra, de qualquer post ou campanha, passa por aqui antes de virar campanha de outbound.** O ICP não é julgamento improvisado por post: é este vocabulário, calibrado com o seu mercado e revisado à mão. Ajuste as regex de `triagem_icp.py` ao SEU ICP.
 
 ## O que ele faz

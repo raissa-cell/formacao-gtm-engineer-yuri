@@ -111,6 +111,8 @@ atividade_publica_relevante
 
 O papel na compra é uma estimativa antes da call. Não tratá-lo como fato confirmado.
 
+O método completo de pesquisa, confirmação e priorização está no [mapeamento de personas](mapeamento-personas.md).
+
 ### Confirmar na discovery
 
 - entrada de novos leads comerciais pelo WhatsApp e volume mensal;
@@ -193,6 +195,8 @@ Não são dados públicos confiáveis e devem ir para discovery:
 | Usuário/influenciador | SDR, BDR, inside sales, consultores e equipes de onboarding/ativação de parceiros |
 
 LinkedIn, página do time, vagas, eventos, entrevistas e imprensa são as fontes prioritárias. Aplicam-se os mesmos campos obrigatórios e opcionais definidos para a persona automotiva.
+
+Consultar também o [mapeamento de personas](mapeamento-personas.md) para cargos normalizados, consultas e evidência mínima.
 
 ### Desqualificadores da empresa
 
