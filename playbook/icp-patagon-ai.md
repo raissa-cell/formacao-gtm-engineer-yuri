@@ -13,21 +13,21 @@ O melhor fit não é uma empresa que apenas possui WhatsApp. É uma operação q
 - precisa responder, qualificar, acompanhar e distribuir esse volume;
 - possui estrutura humana para assumir as oportunidades qualificadas.
 
-## 2. ICP primário — concessionárias de marca
+## 2. ICP primário — grupos de concessionárias autorizadas
 
 ### Definição
 
-Redes ou operações de concessionárias autorizadas focadas em uma marca/bandeira, com **quatro ou mais unidades**, aquisição ativa por Ads e volume recorrente de novos leads entrando pelo WhatsApp.
+Grupos ou redes com concessionárias autorizadas organizadas por marca/bandeira, com **quatro ou mais unidades** no grupo, aquisição ativa por Ads e volume recorrente de novos leads entrando pelo WhatsApp.
 
-Um grupo pode representar várias marcas, mas a conta só entra neste ICP quando a operação pesquisada e a abordagem estiverem recortadas para uma bandeira/rede específica. Lojas multimarcas independentes e abordagens genéricas a conglomerados multimarcas ficam de fora.
+O grupo pode representar várias montadoras. O que caracteriza o fit é operar concessionárias oficiais e jornadas comerciais próprias para cada marca — não funcionar como uma revenda independente que mistura veículos de várias marcas no mesmo modelo de loja. Na personalização, a abordagem pode partir do grupo e usar uma bandeira, região ou operação específica como gancho.
 
 ### Critérios da empresa
 
 | Critério | Campo | Regra | Fonte preferencial |
 |---|---|---|---|
 | Segmento | `segmento` | Concessionária/rede autorizada automotiva | Site oficial, LinkedIn da empresa, página da montadora |
-| Modelo de operação | `modelo_operacao` | `marca_focada` | Site da rede, páginas das unidades e localizador oficial da marca |
-| Marca trabalhada | `marca_principal` | Marca/bandeira identificada | Site e redes oficiais |
+| Modelo de operação | `modelo_operacao` | `concessionarias_autorizadas_por_marca` | Site do grupo, páginas das unidades e localizador oficial da montadora |
+| Marcas trabalhadas | `marcas_representadas` | Uma ou mais montadoras identificadas | Site e redes oficiais |
 | Número de unidades | `unidades_ativas` | **Maior ou igual a 4** | Localizador oficial, site da rede, páginas das unidades |
 | Ads ativos | `ads_ativos` | `sim` | Meta Ad Library, Google Ads Transparency Center, landing pages de campanha |
 | Entrada comercial no WhatsApp | `whatsapp_novos_leads` | `sim` | CTA do site/landing page, botão de campanha ou teste manual do fluxo |
@@ -58,7 +58,7 @@ Sinais úteis de timing: entrada recente no cargo, expansão de unidades, lança
 
 ### Desqualificadores
 
-- loja multimarcas independente;
+- revenda multimarcas independente, sem operação autorizada organizada por bandeira;
 - menos de quatro unidades na rede/operação abordada;
 - ausência de aquisição paga ativa;
 - WhatsApp usado apenas para suporte ou pós-venda, sem entrada de novos leads;
@@ -66,22 +66,28 @@ Sinais úteis de timing: entrada recente no cargo, expansão de unidades, lança
 - ausência de equipe comercial para assumir as oportunidades;
 - contato sem responsabilidade sobre demanda, atendimento, CRM, vendas ou orçamento.
 
-## 3. ICP secundário — SaaS high ticket
+## 3. ICP secundário — plataformas B2B e SaaS com aquisição assistida
 
 ### Definição
 
-Empresas SaaS B2B ou B2C de venda assistida e ticket alto, com novos leads entrando pelo WhatsApp, time de SDR/pré-vendas e investimento mensal em Ads superior a **R$ 10 mil**.
+Há dois subperfis válidos:
+
+1. **Plataformas B2B de alto volume para PMEs**, marketplaces ou ecossistemas de tecnologia que precisam adquirir, cadastrar, ativar ou qualificar muitos estabelecimentos parceiros — como restaurantes, lojas e prestadores.
+2. **SaaS B2B ou B2C high ticket**, com venda assistida, novos leads entrando pelo WhatsApp, time de SDR/pré-vendas e investimento mensal em Ads superior a **R$ 10 mil**.
+
+Nos dois casos, o fit da Patagon depende de existir uma jornada comercial ou de aquisição de parceiros com conversa, qualificação e acompanhamento. Uma plataforma puramente self-service, sem etapa conversacional relevante, não entra apenas por ter grande volume.
 
 ### Critérios da empresa
 
 | Critério | Campo | Regra | Fonte preferencial |
 |---|---|---|---|
-| Segmento | `segmento` | `saas_b2b` ou `saas_b2c` | Site, página de produto, LinkedIn da empresa |
-| Modelo comercial | `modelo_venda` | Venda assistida, demo, diagnóstico ou consultoria | Site, formulário, página de preços e fluxo comercial |
-| Ticket | `ticket_medio` | High ticket conforme corte comercial da Patagon | Página de preços, proposta pública ou informação declarada |
+| Segmento | `segmento` | `plataforma_b2b_pmes`, `marketplace_b2b`, `saas_b2b` ou `saas_b2c` | Site, página de produto, LinkedIn da empresa |
+| Público atendido | `publico_cliente` | PMEs/parceiros em escala ou compradores de solução high ticket | Site, cases e páginas de cadastro |
+| Modelo comercial | `modelo_venda` | Aquisição/ativação assistida, demo, diagnóstico ou consultoria | Site, formulário, página de preços e fluxo comercial |
+| Ticket | `ticket_medio` | Obrigatório para o subperfil SaaS high ticket; não é gate isolado para plataforma B2B de volume | Página de preços, proposta pública ou informação declarada |
 | Entrada pelo WhatsApp | `whatsapp_novos_leads` | `sim` | Site, landing page, anúncio ou teste manual do fluxo |
-| Time de pré-vendas | `possui_sdr` | `sim` | LinkedIn, vagas, página do time ou informação declarada |
-| Investimento em Ads | `investimento_ads_mes` | **Maior que R$ 10.000/mês** | Conta de Ads, agência, relatório ou informação declarada pelo prospect |
+| Estrutura de aquisição | `possui_sdr` | SDR, pré-vendas, aquisição/ativação de parceiros ou time equivalente | LinkedIn, vagas, página do time ou informação declarada |
+| Investimento em Ads | `investimento_ads_mes` | **Maior que R$ 10.000/mês** para SaaS; em plataformas, validar mídia e volume da jornada pesquisada | Conta de Ads, agência, relatório ou informação declarada pelo prospect |
 | Ads ativos — proxy | `ads_ativos` | `sim` | Meta Ad Library, Google Ads Transparency Center e landing pages |
 
 O valor de mídia e o ticket precisam de fonte direta. Bibliotecas públicas de anúncios servem como sinal de atividade, não como comprovação de investimento superior a R$ 10 mil.
@@ -90,14 +96,14 @@ O valor de mídia e o ticket precisam de fonte direta. Bibliotecas públicas de 
 
 | Papel | Cargos prioritários | Papel na compra |
 |---|---|---|
-| Decisor econômico | CRO, VP/Head/Diretor de Vendas, Head/Diretor de Growth ou Marketing, COO, CEO/fundador | Decide, aprova orçamento e assina |
-| Champion | Gerente de SDR/Pré-vendas, RevOps, Sales Ops, Gerente de Growth/Performance, CRM | Sente a dor, avalia e influencia |
-| Usuário | SDRs, BDRs, inside sales e atendimento comercial | Opera ou recebe as oportunidades qualificadas |
+| Decisor econômico | CRO, VP/Head/Diretor de Vendas, Growth, Marketing, Aquisição de Parceiros ou Operações; COO ou CEO/fundador | Decide, aprova orçamento e assina |
+| Champion | Gerente de SDR/Pré-vendas, RevOps, Sales Ops, Growth/Performance, CRM, Aquisição ou Ativação de Parceiros | Sente a dor, avalia e influencia |
+| Usuário | SDRs, BDRs, inside sales, consultores e equipes de onboarding/ativação de parceiros | Opera ou recebe as oportunidades qualificadas |
 
 ### Desqualificadores
 
-- produto low ticket ou venda essencialmente self-service;
-- ausência de SDR/pré-vendas;
+- produto low ticket ou venda self-service sem volume e sem etapa conversacional relevante;
+- ausência de SDR/pré-vendas ou de time equivalente de aquisição/ativação de parceiros;
 - WhatsApp usado somente para suporte;
 - investimento comprovado de Ads igual ou inferior a R$ 10 mil/mês;
 - falta de volume de novos leads;
@@ -119,7 +125,7 @@ Há aderência parcial, porém faltam dois ou mais dados essenciais. Enriquecer 
 
 ### Fora do ICP
 
-Falha em um critério estrutural: segmento/modelo inadequado, menos de quatro unidades no ICP automotivo, ausência de SDR no SaaS, ausência de entrada comercial pelo WhatsApp ou outro desqualificador.
+Falha em um critério estrutural: segmento/modelo inadequado, menos de quatro unidades no ICP automotivo, ausência de SDR ou time equivalente no ICP secundário, ausência de entrada comercial pelo WhatsApp ou outro desqualificador.
 
 ## 5. Campos mínimos para a base
 
@@ -130,7 +136,7 @@ linkedin_empresa
 icp_tipo
 segmento
 modelo_operacao
-marca_principal
+marcas_representadas
 unidades_ativas
 modelo_venda
 ticket_medio
@@ -176,3 +182,12 @@ O script atual `automations/leads/triagem_icp.py` classifica pessoas por palavra
 - meta de conversão e capacidade máxima de atendimento por segmento.
 
 Esses cortes devem ser definidos a partir dos clientes que mais convertem, permanecem e extraem valor da Patagon — não por uma estimativa sem histórico.
+
+## 8. Contas-âncora para calibrar a pesquisa
+
+| Conta | O que ela ensina sobre o ICP | O que ainda precisa ser validado antes da abordagem |
+|---|---|---|
+| [Grupo Navesa](https://www.navesa.com.br/) | Grupo com 12 lojas e operações autorizadas separadas por marcas como Ford, Renault, Peugeot, Citroën, GWM e GAC. Confirma que um grupo pode ser multimarca no portfólio e ainda pertencer ao ICP. | Ads ativos, volume de novos leads no WhatsApp, estrutura de distribuição e qual bandeira/região oferece o melhor gancho. |
+| [iFood para Parceiros](https://parceiros.ifood.com.br/) | Plataforma B2B de aquisição em escala, voltada principalmente a restaurantes e outros pequenos e médios estabelecimentos. Confirma o subperfil de plataforma para PMEs. | Existência de entrada comercial pelo WhatsApp, atuação de SDR/aquisição assistida, mídia da jornada de parceiros e ponto em que uma conversa automatizada agrega valor. |
+
+Conta-âncora descreve o **tipo de operação desejado**; não significa aprovação automática. Os gates continuam sendo verificados por campo e fonte.

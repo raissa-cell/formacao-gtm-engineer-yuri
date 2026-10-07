@@ -1,13 +1,13 @@
 # Campanha: concessionárias automotivas
 
-Campanha de outbound da Patagon AI para lideranças comerciais e executivas de redes de concessionárias focadas em uma marca, com quatro ou mais unidades.
+Campanha de outbound da Patagon AI para lideranças comerciais e executivas de grupos com concessionárias autorizadas organizadas por marca, com quatro ou mais unidades.
 
 ## ICP
 
-- **Empresas:** redes ou operações de concessionárias autorizadas focadas em uma bandeira/marca, com quatro ou mais unidades.
+- **Empresas:** grupos ou redes com concessionárias autorizadas organizadas por bandeira/marca e quatro ou mais unidades; o grupo pode representar várias montadoras.
 - **Decisores:** direção comercial, marketing, operações ou executiva; gerências e coordenações podem atuar como champions.
 - **Sinais obrigatórios:** Ads ativos, novos leads entrando pelo WhatsApp, volume comercial relevante e time capaz de assumir as oportunidades qualificadas.
-- **Fora do ICP:** lojas multimarcas independentes, redes com menos de quatro unidades, operações sem mídia paga ou sem entrada comercial pelo WhatsApp.
+- **Fora do ICP:** revendas multimarcas independentes sem bandeira autorizada, redes com menos de quatro unidades, operações sem mídia paga ou sem entrada comercial pelo WhatsApp.
 
 Definição completa, campos e fontes: [`../../playbook/icp-patagon-ai.md`](../../playbook/icp-patagon-ai.md).
 

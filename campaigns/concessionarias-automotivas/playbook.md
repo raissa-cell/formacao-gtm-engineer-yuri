@@ -6,11 +6,11 @@ Documento mestre da campanha. Conteúdo, ads e outbound devem seguir as definiç
 
 | Campo | Definição |
 |---|---|
-| **Empresa** | Redes ou operações brasileiras de concessionárias autorizadas focadas em uma marca/bandeira, com quatro ou mais unidades |
+| **Empresa** | Grupos ou redes brasileiras com concessionárias autorizadas organizadas por marca/bandeira e quatro ou mais unidades; podem representar várias montadoras |
 | **Sinal técnico/comportamental de fit** | Ads ativos, entrada de novos leads pelo WhatsApp, volume comercial relevante e estrutura para assumir oportunidades qualificadas |
 | **Pessoa (decisor)** | Diretor comercial, de marketing, de operações ou executivo; gerentes/coordenadores de Comercial, CRM/BDC e Performance como champions |
 | **Dor comum** | Organizar o primeiro atendimento, a qualificação, o acompanhamento e o direcionamento do lead ao time correto |
-| **Quem fica de fora** | Multimarcas independentes; redes com menos de quatro unidades; empresas sem Ads ou WhatsApp comercial; contatos sem responsabilidade sobre vendas, demanda, atendimento ou CRM |
+| **Quem fica de fora** | Revendas multimarcas independentes sem bandeira autorizada; redes com menos de quatro unidades; empresas sem Ads ou WhatsApp comercial; contatos sem responsabilidade sobre vendas, demanda, atendimento ou CRM |
 | **Lista de negativação** | A definir |
 
 Definição canônica do ICP: [`../../playbook/icp-patagon-ai.md`](../../playbook/icp-patagon-ai.md). Fontes da campanha: `outbound/leads.md` e `fontes.md`.
@@ -67,7 +67,7 @@ Voz: `brand/voice-outbound.md`.
 
 ## 6. Leads de exemplo e mensagens
 
-> **Atenção:** os três contatos abaixo foram usados no exercício da aula antes da definição atual do ICP. Como pertencem a grupos multimarcas, são exemplos de copy e pesquisa — não uma lista aprovada para disparo. Para entrarem na campanha atual, a operação precisa ser requalificada no nível de uma bandeira/rede específica e cumprir todos os critérios obrigatórios.
+> **Atenção:** os três contatos abaixo foram usados no exercício da aula antes da definição atual do ICP. Pertencer a um grupo que representa várias montadoras não os elimina: é preciso confirmar que o grupo opera concessionárias autorizadas por bandeira e validar Ads, entrada e volume de novos leads no WhatsApp. Até essa verificação, são exemplos de copy e pesquisa — não uma lista aprovada para disparo.
 
 | Lead | Cargo / empresa | Gancho aprovado | Mensagem |
 |---|---|---|---|
