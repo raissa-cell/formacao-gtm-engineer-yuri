@@ -25,6 +25,9 @@ Veja também o [mapa completo dos sete módulos](modulos.md).
 - [x] MCP da Nuvia conectado e testado.
 - [x] MCP da Apify conectado e testado.
 - [x] MCP do Firecrawl conectado e testado.
+- [ ] Exercício de linha de base da nota de conexão.
+- [ ] Exercício com prompt estruturado e Template Master.
+- [ ] Skills da Aula 01 instaladas e testadas no fluxo pessoal.
 - [ ] Documento de tom de voz concluído.
 - [ ] Skill `nota-de-conexao` personalizada.
 - [ ] Loop de qualidade da `nota-de-conexao` implementado.
@@ -41,4 +44,3 @@ Cada página de aula deve registrar:
 6. tarefas para casa;
 7. decisões, dúvidas e aprendizados;
 8. próximos passos.
-

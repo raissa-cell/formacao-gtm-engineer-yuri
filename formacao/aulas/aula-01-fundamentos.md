@@ -5,6 +5,18 @@
 **Tipo:** aula inaugural, com teoria e prática  
 **Fonte:** síntese de transcrição automática, revisada para corrigir termos e remover dados pessoais.
 
+## Status pessoal
+
+**Situação em 07/10/2026:** os exercícios da Aula 01 ainda não foram executados. O repositório próprio e os MCPs de Nuvia, Apify e Firecrawl já foram configurados e testados, mas não contam como conclusão dos exercícios abaixo.
+
+- [ ] Exercício 1 — linha de base.
+- [ ] Exercício 2 — prompt estruturado.
+- [ ] Exercício 3 — Template Master.
+- [ ] Exercício 4 — instalar e testar as skills da aula.
+- [ ] Exercício 5 — criar a skill `nota-de-conexao`.
+- [ ] Exercício 6 — transformar a skill em loop.
+- [ ] Tarefa principal — concluir o documento de tom de voz.
+
 ## Objetivo da aula
 
 Apresentar o papel do GTM Engineer, explicar a arquitetura básica de uma máquina de GTM operada por IA e conduzir a turma da execução de um prompt isolado até a criação de uma skill reutilizável e de um loop de melhoria.
@@ -220,7 +232,7 @@ Todo loop precisa de um ponto de parada explícito. Exemplo: no máximo três ou
 
 As ferramentas são meios, não o objetivo final. A arquitetura do processo deve continuar compreensível mesmo que uma ferramenta seja substituída.
 
-## Entregáveis da Aula 01
+## Entregáveis previstos da Aula 01
 
 - repositório próprio da formação criado;
 - linha de base da nota de conexão;
@@ -250,9 +262,8 @@ Demais tarefas:
 - Repositório próprio criado e publicado no GitHub.
 - MCPs de Nuvia, Apify e Firecrawl configurados e testados.
 - Documentação evolutiva da formação iniciada.
-- Documento de tom de voz, skill personalizada e loop ainda pendentes.
+- Todos os exercícios práticos da Aula 01 ainda estão pendentes.
 
 ## Próxima aula
 
 A Aula 02 entra em sourcing: definição operacional do ICP, conexão de ferramentas via MCP e geração da primeira lista real de leads.
-
