@@ -40,7 +40,7 @@ playbook/               Conhecimento operacional.
 
 formacao/modulos.md     Mapa dos 7 módulos da formação e quais skills cada um usa.
 
-.claude/skills/         24 skills (ver mapa abaixo). Carregam pela descrição; puxe a certa proativamente.
+.claude/skills/         25 skills (ver mapa abaixo). Carregam pela descrição; puxe a certa proativamente.
 .claude/agents/         Subagents: sdr-qualificador, auditor-de-copy. Crie novos aqui.
 .claude/commands/       /setup (onboarding).
 ```
@@ -61,6 +61,7 @@ formacao/modulos.md     Mapa dos 7 módulos da formação e quais skills cada um
 | Sequência de e-mail | `email-sequence` |
 | E-mail que acompanha proposta | `proposal-followup-email` |
 | Empresas brasileiras via CNPJ | `cnpj-investigation` |
+| Lookalike de empresas (clusters + filtros + lista) | `company-lookalike` |
 | Escrita na Nuvia (lista, contato, campanha) | `nuvia-crm` |
 | Criar / testar agentes da Nuvia | `agent-prompt-builder` / `agent-tester` |
 | Aplicar/checar a voz da marca | `brand-voice-enforcement` · `guideline-generation` |

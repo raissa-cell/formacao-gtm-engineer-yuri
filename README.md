@@ -15,7 +15,7 @@ Conteúdo, ads e outbound como um único sistema. Skills, agentes e automações
 
 Um repositório para ser **clonado e transformado em seu**. Ele já traz:
 
-- **24 skills** de Claude Code (estratégia, copy, outbound, CRM, agentes)
+- **25 skills** de Claude Code (estratégia, copy, outbound, CRM, agentes)
 - **Automações** prontas: comment-to-dm, triagem de ICP, publicação, curadoria
 - **Templates de marca** (voz, design, background) que as skills leem antes de escrever
 - **Estrutura de campanha** por público-alvo
@@ -74,7 +74,7 @@ O `/setup` entrevista você, preenche `brand/` com a sua voz e o seu visual, tro
 | [`automations/`](automations) | comment-to-dm, leads, publishing, content-curation, keepalive, runtime | Rodar o motor de sinal → DM → score |
 | [`playbook/`](playbook) | 3 pilares, comment-gate, lições aprendidas, workflow, experimentos | Antes de automatizar e ao planejar |
 | [`formacao/`](formacao) | Mapa dos 7 módulos | Acompanhar a formação |
-| [`.claude/skills/`](.claude/skills) | 24 skills | A IA carrega sozinha pela descrição |
+| [`.claude/skills/`](.claude/skills) | 25 skills | A IA carrega sozinha pela descrição |
 | [`.claude/agents/`](.claude/agents) | `sdr-qualificador`, `auditor-de-copy` | Qualificar leads e auditar copy |
 | [`.claude/commands/`](.claude/commands) | `/setup` | Onboarding |
 
@@ -92,6 +92,7 @@ O `/setup` entrevista você, preenche `brand/` com a sua voz e o seu visual, tro
 | Mensagem 1:1 (DM, e-mail, WhatsApp) | `outbound-personalization` |
 | Sequência de e-mail | `email-sequence` · `proposal-followup-email` |
 | Empresas BR por CNPJ | `cnpj-investigation` |
+| Lookalike de empresas | `company-lookalike` |
 | Escrever na Nuvia | `nuvia-crm` |
 | Agentes de qualificação | `agent-prompt-builder` · `agent-tester` |
 | Voz da marca | `brand-voice-enforcement` · `guideline-generation` |
