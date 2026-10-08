@@ -25,6 +25,7 @@ Transformar o ICP de concessionárias da Patagon AI em um fluxo de pesquisa repr
 12. Enriquecimento Apollo de Grupo Saga (8.000 colaboradores estimados), Grupo Navesa (310) e Grupo Líder (850).
 13. Avaliação do Dealerbook e adoção dos localizadores oficiais das montadoras como alternativa aberta para descoberta de marcas e lojas.
 14. Inclusão do Similarweb para estimar tráfego e canais dos domínios oficiais como sinal de alcance digital, sem tratar visitas como leads.
+15. Varredura com Firecrawl das páginas de contato de Saga, Navesa e Líder para links de WhatsApp, widgets e JSON-LD; encontrados `AutomotiveBusiness` na Saga, `Organization` no Líder e nenhum schema detectado na página da Navesa. Nenhum link direto de WhatsApp apareceu nas três páginas inspecionadas.
 
 ## Arquivos produzidos
 

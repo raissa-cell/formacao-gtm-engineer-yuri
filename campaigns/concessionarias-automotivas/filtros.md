@@ -27,7 +27,8 @@ Um grupo pode representar várias montadoras e continuar no ICP quando opera con
 | Critério | Campo | Regra pública | O que a evidência comprova | O que não comprova |
 |---|---|---|---|---|
 | Ads detectados | `ads_ativos_detectados` | `sim/nao_verificado` | Há anúncio ou landing page pública ativa; contar na Meta com Apify `apify/facebook-ads-scraper` (`onlyTotal: true`) | Investimento mensal, volume ou ROAS |
-| WhatsApp comercial visível | `whatsapp_comercial_publico` | `sim/nao_verificado` | Existe canal em contexto de venda, oferta, test-drive ou contato comercial | Volume, SLA ou uso real para novos leads |
+| WhatsApp comercial visível | `whatsapp_comercial_publico` | `sim/nao_verificado` | Link `wa.me`, `api.whatsapp.com`, `whatsapp.com/send`, deep link, botão/widget funcional em contexto de venda, oferta ou test-drive; guardar URL e página | Volume, SLA ou uso real para novos leads; telefone/schema sozinho não comprova WhatsApp |
+| Schema de contato no site | `schema_contato_site` | Tipos JSON-LD e campos detectados, ou `nao_verificado` | Inspecionar `Organization`/`AutomotiveBusiness` e `contactPoint`, `telephone`, `url`, `sameAs`; usar Firecrawl em HTML e links | Schema não comprova que o número possui WhatsApp nem que recebe leads comerciais |
 | Estrutura comercial encontrada | `estrutura_comercial_publica` | `sim/nao_verificado` | Há área/cargo ligado a vendas, marketing, CRM, BDC, performance ou operações | Tamanho, capacidade ou processo do time |
 | Persona prioritária encontrada | `persona_prioritaria_encontrada` | `sim/nao_verificado` | Existe decisor ou champion atual com cargo confirmado | Autoridade final, dor ou intenção de compra |
 | Tráfego do site | `visitas_site_estimadas_mes` | Numérico ou `nao_verificado` | Estimativa de visitas do domínio oficial no Similarweb, com período e data registrados | Não comprova leads, conversões, investimento em mídia ou conversas no WhatsApp |

@@ -28,10 +28,37 @@ As fontes aparecem em ordem de preferência. “Manual” significa que o result
 | `operacao_por_bandeira` | Site da bandeira/unidade | Localizador da montadora | Site do grupo | Instagram oficial | Google Maps |
 | `unidades_comerciais_ativas` | Site/“lojas” do grupo | Localizadores das montadoras | Google Maps | Google Search | Instagram por unidade |
 | `ads_ativos_detectados` | Meta Ad Library | Google Ads Transparency | Landing pages do site | Instagram/Facebook oficial | Resultados patrocinados no Google |
-| `whatsapp_comercial_publico` | Site/landing page | Google Business/Maps | Instagram oficial | Anúncio ativo | Link de oferta/test-drive |
+| `whatsapp_comercial_publico` | Site/landing page com Firecrawl | Google Business/Maps | Instagram oficial | Anúncio ativo | Link de oferta/test-drive |
 | `estrutura_comercial_publica` | LinkedIn empresa/funcionários | Vagas públicas | Site/imprensa oficial | Instagram institucional | Eventos/associações do setor |
 | `persona_prioritaria_encontrada` | LinkedIn | Site/imprensa oficial | Instagram | Google Search | Eventos, montadoras e associações |
 | Cargo e vínculo da pessoa | LinkedIn atual | Publicação institucional | Site/imprensa | Instagram com evidência profissional | Evento/associação com data |
+
+## Links, widgets e schema de WhatsApp no site
+
+No Firecrawl, procurar primeiro páginas de contato, lojas, ofertas, test-drive e vendas; coletar links e HTML para encontrar CTAs renderizados e links presentes em scripts/widgets. Detectar ao menos estes formatos:
+
+| Padrão | Interpretação |
+|---|---|
+| `https://wa.me/<numero>` ou `https://wa.me/message/<codigo>` | Link curto do WhatsApp / link curto de negócio |
+| `https://api.whatsapp.com/send?phone=<numero>` | Link click-to-chat via `api.whatsapp.com` |
+| `https://www.whatsapp.com/send?phone=<numero>` | Link click-to-chat via domínio principal |
+| `https://web.whatsapp.com/send?phone=<numero>` | Abertura do chat pela versão web |
+| `whatsapp://send?phone=<numero>` | Deep link para abrir o app |
+| `tel:`, botão/ícone com evento JavaScript ou widget de terceiro | Canal telefônico ou CTA cuja URL final precisa ser inspecionada |
+
+O Schema.org não tem um tipo/campo exclusivo chamado “WhatsApp”. Inspecionar `Organization` ou `AutomotiveBusiness`, especialmente `contactPoint`, `telephone`, `url` e `sameAs`; em paralelo, procurar os links nos elementos `<a>`, botões, atributos `data-*` e scripts/widgets. `telephone` sozinho não prova que o número recebe WhatsApp. Endpoints de backend da WhatsApp Business Platform (por exemplo, Graph API) são infraestrutura de servidor e não devem ser classificados como CTA público.
+
+### Varredura piloto com Firecrawl
+
+Em 07/10/2026, Firecrawl coletou links, HTML e JSON-LD das páginas abaixo. A busca cobriu links `wa.me`, `api.whatsapp.com`, `whatsapp.com/send`, `web.whatsapp.com/send` e variações. Nenhuma dessas três páginas expôs um link direto de WhatsApp no HTML/links coletados; isso não prova ausência no site inteiro, pois widgets podem carregar depois e concessionárias usam domínios próprios.
+
+| Empresa | Página inspecionada | Tipos JSON-LD detectados | Link direto de WhatsApp nessa página |
+|---|---|---|---|
+| Grupo Saga | <https://www.gruposaga.com.br/saga-distrito-federal/contato> | `AutomotiveBusiness` | Não localizado |
+| Grupo Navesa | <https://www.navesa.com.br/> | Nenhum detectado | Não localizado |
+| Grupo Líder | <https://grupolider.com.br/fale-conosco/contato> | `Organization` | Não localizado |
+
+Na Navesa e no Grupo Líder, o mapa também revelou domínios próprios por bandeira/unidade. A próxima coleta deve testar essas páginas de vendas/oferta, além do site do grupo, para localizar os links realmente usados na entrada de leads.
 
 ## Tráfego do site — Similarweb
 
@@ -50,7 +77,7 @@ Esse sinal complementa Ads detectados e WhatsApp comercial público. Não substi
 ## Ordem de extração
 
 1. Descobrir empresas e unidades por localizador de marca, Google Search e Google Maps.
-2. Rastrear o domínio oficial no Firecrawl e extrair páginas de lojas, marcas, ofertas e contato.
+2. Rastrear o domínio oficial no Firecrawl; coletar páginas de lojas, marcas, ofertas e contato; extrair links de WhatsApp e tipos/campos de JSON-LD.
 3. Usar o domínio oficial no Data Stone para localizar a empresa raiz, contar CNPJs ativos e sócios; validar filiais pela situação cadastral, sem presumir que todo CNPJ seja uma unidade comercial.
 4. Enriquecer o mesmo domínio no Apollo para estimar colaboradores e localizar a página corporativa correta no LinkedIn.
 5. Deduplicar unidades por endereço e confirmar autorização/bandeira.

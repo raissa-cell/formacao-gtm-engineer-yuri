@@ -6,5 +6,6 @@
 |---|---|---|---|
 | [ICP, personas e fontes públicas da Patagon AI](atividade-icp-personas-patagon.md) | 07/10/2026 | Dia 02 — Sourcing | Concluída |
 | [Mapa de fontes e concorrentes](atividade-mapa-fontes-concorrentes.md) | 07/10/2026 | Dia 02 — Sourcing | Concluída |
+| [Leads automotivos vindos de influenciadores](leads-influenciadores-automotivos.md) | 07/10/2026 | Dia 02 — Sourcing | Triagem inicial |
 
 Cada registro informa o que foi executado, as decisões tomadas, os arquivos produzidos e o que ainda depende de execução ou validação prática.
